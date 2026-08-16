@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrowM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="45" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">MOSFET — công tắc điều khiển bằng điện áp</text>
+
+  <circle cx="400" cy="220" r="90" fill="#F97316" opacity="0.06" stroke="#F97316" stroke-width="2.5"/>
+  <text x="400" y="225" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">N-channel</text>
+
+  <!-- Gate -->
+  <line x1="150" y1="220" x2="330" y2="220" stroke="#2563EB" stroke-width="3" stroke-dasharray="0"/>
+  <polygon points="325,212 335,220 325,228" fill="#2563EB"/>
+  <text x="150" y="200" font-size="13" font-weight="600" fill="#2563EB">G (Gate)</text>
+  <text x="150" y="245" font-size="11" fill="#6B7280">chỉ cần ĐIỆN ÁP,</text>
+  <text x="150" y="262" font-size="11" fill="#6B7280">gần như không tốn dòng</text>
+
+  <!-- Drain -->
+  <line x1="400" y1="60" x2="400" y2="150" stroke="#2563EB" stroke-width="3" marker-end="url(#arrowM)"/>
+  <text x="400" y="45" text-anchor="middle" font-size="13" font-weight="600" fill="#2563EB">D (Drain)</text>
+  <rect x="350" y="10" width="100" height="35" rx="4" fill="#F3F5F8" stroke="#2563EB"/>
+  <text x="400" y="32" text-anchor="middle" font-size="11" fill="#111827">tải dòng lớn</text>
+
+  <!-- Source -->
+  <line x1="400" y1="290" x2="400" y2="380" stroke="#16A34A" stroke-width="3" marker-end="url(#arrowM)"/>
+  <text x="400" y="410" text-anchor="middle" font-size="13" font-weight="600" fill="#16A34A">S (Source) → GND</text>
+
+  <rect x="550" y="140" width="210" height="180" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="655" y="165" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">So với BJT</text>
+  <text x="655" y="190" text-anchor="middle" font-size="11" fill="#111827">Gate cách điện với kênh</text>
+  <text x="655" y="208" text-anchor="middle" font-size="11" fill="#111827">dẫn → không tốn dòng</text>
+  <text x="655" y="226" text-anchor="middle" font-size="11" fill="#111827">điều khiển như BJT</text>
+  <text x="655" y="252" text-anchor="middle" font-size="11" fill="#111827">Đóng/cắt được dòng</text>
+  <text x="655" y="270" text-anchor="middle" font-size="11" fill="#111827">rất lớn, hiệu suất cao</text>
+  <text x="655" y="296" text-anchor="middle" font-size="10" fill="#6B7280">→ phổ biến trong driver</text>
+  <text x="655" y="312" text-anchor="middle" font-size="10" fill="#6B7280">động cơ, mạch nguồn</text>
+</svg>

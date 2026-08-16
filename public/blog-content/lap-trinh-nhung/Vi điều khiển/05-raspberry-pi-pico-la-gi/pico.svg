@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="40" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">RP2040 — CPU chính + PIO độc lập</text>
+
+  <rect x="110" y="80" width="580" height="220" rx="12" fill="#2563EB" opacity="0.05" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="400" y="105" text-anchor="middle" font-size="12" fill="#6B7280">1 chip RP2040</text>
+
+  <!-- CPU cores -->
+  <rect x="140" y="125" width="120" height="70" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="200" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Core 0</text>
+  <text x="200" y="168" text-anchor="middle" font-size="9" fill="#6B7280">Cortex-M0+</text>
+
+  <rect x="270" y="125" width="120" height="70" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="330" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Core 1</text>
+  <text x="330" y="168" text-anchor="middle" font-size="9" fill="#6B7280">Cortex-M0+</text>
+
+  <!-- PIO block -->
+  <rect x="430" y="115" width="230" height="150" rx="8" fill="#F97316" opacity="0.10" stroke="#F97316" stroke-width="2.5"/>
+  <text x="545" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">PIO (8 state machine)</text>
+
+  <rect x="445" y="150" width="60" height="35" rx="4" fill="#FFFFFF" stroke="#F97316"/>
+  <rect x="515" y="150" width="60" height="35" rx="4" fill="#FFFFFF" stroke="#F97316"/>
+  <rect x="585" y="150" width="60" height="35" rx="4" fill="#FFFFFF" stroke="#F97316"/>
+  <rect x="445" y="195" width="60" height="35" rx="4" fill="#FFFFFF" stroke="#F97316"/>
+  <rect x="515" y="195" width="60" height="35" rx="4" fill="#FFFFFF" stroke="#F97316"/>
+  <rect x="585" y="195" width="60" height="35" rx="4" fill="#FFFFFF" stroke="#F97316"/>
+  <text x="545" y="250" text-anchor="middle" font-size="10" fill="#6B7280">Tự chạy timing riêng, độc lập CPU</text>
+
+  <rect x="150" y="225" width="240" height="55" rx="6" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="270" y="248" text-anchor="middle" font-size="10" fill="#111827">Nạp code 1 lần cho PIO,</text>
+  <text x="270" y="264" text-anchor="middle" font-size="10" fill="#111827">rồi CPU rảnh tay hoàn toàn</text>
+
+  <text x="400" y="345" text-anchor="middle" font-size="12" fill="#111827">PIO tạo xung timing chính xác (VD: LED WS2812)</text>
+  <text x="400" y="365" text-anchor="middle" font-size="12" fill="#111827">mà không tốn một chu kỳ CPU chính nào</text>
+  <text x="400" y="400" text-anchor="middle" font-size="12" fill="#6B7280">Lập trình bằng C/C++ (Pico SDK) hoặc MicroPython</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <line x1="400" y1="20" x2="400" y2="430" stroke="#E5E9EF" stroke-width="2"/>
+
+  <!-- ANALOG -->
+  <text x="200" y="45" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Analog — liên tục</text>
+  <line x1="70" y1="220" x2="340" y2="220" stroke="#E5E9EF" stroke-width="1"/>
+  <path d="M 70 220 C 100 120, 140 320, 170 220 C 200 120, 240 320, 270 220 C 290 160, 310 260, 340 220"
+        fill="none" stroke="#2563EB" stroke-width="3"/>
+  <text x="200" y="380" text-anchor="middle" font-size="12" fill="#6B7280">Giá trị thay đổi mượt,</text>
+  <text x="200" y="398" text-anchor="middle" font-size="12" fill="#6B7280">vô số mức (VD: âm thanh, nhiệt độ)</text>
+
+  <!-- DIGITAL -->
+  <text x="600" y="45" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Digital — rời rạc</text>
+  <line x1="470" y1="220" x2="740" y2="220" stroke="#E5E9EF" stroke-width="1"/>
+  <path d="M 470 280 L 470 160 L 530 160 L 530 280 L 590 280 L 590 160 L 650 160 L 650 280 L 710 280 L 710 160 L 740 160"
+        fill="none" stroke="#F97316" stroke-width="3"/>
+  <text x="480" y="150" font-size="12" fill="#F97316">HIGH (1)</text>
+  <text x="480" y="300" font-size="12" fill="#F97316">LOW (0)</text>
+  <text x="600" y="380" text-anchor="middle" font-size="12" fill="#6B7280">Chỉ có 2 mức rõ ràng:</text>
+  <text x="600" y="398" text-anchor="middle" font-size="12" fill="#6B7280">0 (0V) hoặc 1 (VD: 3.3V/5V)</text>
+</svg>

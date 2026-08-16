@@ -1,0 +1,91 @@
+{
+  "Common": {
+    "comingSoon": "内容即将上线。"
+  },
+  "Nav": {
+    "blog": "博客",
+    "projects": "项目",
+    "shop": "商店",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "cart": "购物车"
+  },
+  "Home": {
+    "heroTitlePrefix": "打造 AMR/AGV 机器人，从",
+    "heroTitleHighlight1": "知识",
+    "heroTitleMiddle": "到",
+    "heroTitleHighlight2": "实战",
+    "heroDescription": "分享自主移动机器人相关知识、项目经验和硬件设备。",
+    "ctaBlog": "阅读博客",
+    "ctaShop": "浏览商店",
+    "latestPosts": "最新文章",
+    "featuredProjects": "精选项目",
+    "featuredProducts": "精选产品"
+  },
+  "Footer": {
+    "tagline": "分享 AMR/AGV 知识与硬件设备。"
+  },
+  "Blog": {
+    "title": "博客",
+    "searchPlaceholder": "搜索文章...",
+    "sortNewest": "最新",
+    "sortOldest": "最早",
+    "sortByLevel": "基础 → 进阶",
+    "allCategories": "全部主题",
+    "noResults": "未找到匹配的文章。",
+    "relatedPosts": "相关文章",
+    "readingTime": "{minutes} 分钟阅读",
+    "levelBasic": "基础",
+    "levelIntermediate": "中级",
+    "levelAdvanced": "进阶",
+    "prevPost": "上一篇",
+    "nextPost": "下一篇"
+  },
+  "Projects": {
+    "title": "项目",
+    "specsTitle": "技术规格",
+    "githubLink": "在 GitHub 上查看源码"
+  },
+  "Shop": {
+    "title": "商店",
+    "filterTitle": "分类",
+    "applyFilter": "应用筛选",
+    "priceRange": "价格区间",
+    "allCategories": "全部",
+    "addToCart": "加入购物车",
+    "categories": {
+      "sensor": "传感器",
+      "mcu": "微控制器与控制板",
+      "motor": "电机与驱动器",
+      "chassis": "机架与结构件",
+      "drivetrain": "轮子与传动系统",
+      "battery": "电池与电源"
+    }
+  },
+  "Cart": {
+    "title": "购物车",
+    "empty": "购物车是空的。",
+    "continueShopping": "继续购物",
+    "quantity": "数量",
+    "remove": "删除",
+    "subtotal": "小计",
+    "checkout": "去下单"
+  },
+  "Checkout": {
+    "title": "提交订单",
+    "name": "姓名",
+    "phone": "电话号码",
+    "address": "收货地址",
+    "orderSummary": "订单摘要",
+    "note": "提交后，订单状态为\"待确认\"。请通过 Messenger 或 Zalo 发送订单内容以确认并直接付款——目前暂不支持在线支付。",
+    "sendMessenger": "通过 Messenger 发送订单",
+    "sendZalo": "通过 Zalo 发送订单",
+    "contactMissing": "该渠道尚未配置，请使用另一个渠道联系。"
+  },
+  "About": {
+    "title": "关于我们"
+  },
+  "Contact": {
+    "title": "联系我们"
+  }
+}

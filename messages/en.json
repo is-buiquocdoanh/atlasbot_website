@@ -1,0 +1,91 @@
+{
+  "Common": {
+    "comingSoon": "Content coming soon."
+  },
+  "Nav": {
+    "blog": "Blog",
+    "projects": "Projects",
+    "shop": "Shop",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "Home": {
+    "heroTitlePrefix": "Build AMR/AGV robots from",
+    "heroTitleHighlight1": "knowledge",
+    "heroTitleMiddle": "to",
+    "heroTitleHighlight2": "real-world builds",
+    "heroDescription": "Sharing knowledge, projects, and hardware for building autonomous mobile robots.",
+    "ctaBlog": "Read the Blog",
+    "ctaShop": "Browse the Shop",
+    "latestPosts": "Latest posts",
+    "featuredProjects": "Featured projects",
+    "featuredProducts": "Featured products"
+  },
+  "Footer": {
+    "tagline": "Sharing AMR/AGV knowledge & hardware."
+  },
+  "Blog": {
+    "title": "Blog",
+    "searchPlaceholder": "Search posts...",
+    "sortNewest": "Newest",
+    "sortOldest": "Oldest",
+    "sortByLevel": "Basic → Advanced",
+    "allCategories": "All topics",
+    "noResults": "No matching posts found.",
+    "relatedPosts": "Related posts",
+    "readingTime": "{minutes} min read",
+    "levelBasic": "Basic",
+    "levelIntermediate": "Intermediate",
+    "levelAdvanced": "Advanced",
+    "prevPost": "Previous",
+    "nextPost": "Next"
+  },
+  "Projects": {
+    "title": "Projects",
+    "specsTitle": "Specifications",
+    "githubLink": "View source on GitHub"
+  },
+  "Shop": {
+    "title": "Shop",
+    "filterTitle": "Category",
+    "applyFilter": "Apply filter",
+    "priceRange": "Price range",
+    "allCategories": "All",
+    "addToCart": "Add to cart",
+    "categories": {
+      "sensor": "Sensors",
+      "mcu": "Microcontrollers & control boards",
+      "motor": "Motors & drivers",
+      "chassis": "Chassis & mechanics",
+      "drivetrain": "Wheels & drivetrain",
+      "battery": "Batteries & power"
+    }
+  },
+  "Cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty.",
+    "continueShopping": "Continue shopping",
+    "quantity": "Quantity",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to order"
+  },
+  "Checkout": {
+    "title": "Place order",
+    "name": "Full name",
+    "phone": "Phone number",
+    "address": "Shipping address",
+    "orderSummary": "Order summary",
+    "note": "After submitting, your order will be marked \"pending confirmation\". Please send the order details via Messenger or Zalo to confirm and pay directly — online payment isn't supported yet.",
+    "sendMessenger": "Send order via Messenger",
+    "sendZalo": "Send order via Zalo",
+    "contactMissing": "This channel isn't configured yet, please use the other one."
+  },
+  "About": {
+    "title": "About"
+  },
+  "Contact": {
+    "title": "Contact"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "Common": {
+    "comingSoon": "Nội dung sẽ sớm được cập nhật."
+  },
+  "Nav": {
+    "blog": "Blog",
+    "projects": "Dự án",
+    "shop": "Shop",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "cart": "Giỏ hàng"
+  },
+  "Home": {
+    "heroTitlePrefix": "Xây robot AMR/AGV từ",
+    "heroTitleHighlight1": "kiến thức",
+    "heroTitleMiddle": "đến",
+    "heroTitleHighlight2": "thực chiến",
+    "heroDescription": "Chia sẻ kiến thức, dự án và cung cấp thiết bị phục vụ xây dựng robot di động tự hành.",
+    "ctaBlog": "Đọc Blog",
+    "ctaShop": "Xem Shop",
+    "latestPosts": "Bài viết mới nhất",
+    "featuredProjects": "Dự án nổi bật",
+    "featuredProducts": "Sản phẩm nổi bật"
+  },
+  "Footer": {
+    "tagline": "Chia sẻ kiến thức & thiết bị AMR/AGV."
+  },
+  "Blog": {
+    "title": "Blog",
+    "searchPlaceholder": "Tìm bài viết...",
+    "sortNewest": "Mới nhất",
+    "sortOldest": "Cũ nhất",
+    "sortByLevel": "Cơ bản → Nâng cao",
+    "allCategories": "Tất cả chủ đề",
+    "noResults": "Không tìm thấy bài viết phù hợp.",
+    "relatedPosts": "Bài viết liên quan",
+    "readingTime": "{minutes} phút đọc",
+    "levelBasic": "Cơ bản",
+    "levelIntermediate": "Trung bình",
+    "levelAdvanced": "Nâng cao",
+    "prevPost": "Bài trước",
+    "nextPost": "Bài tiếp theo"
+  },
+  "Projects": {
+    "title": "Dự án",
+    "specsTitle": "Thông số kỹ thuật",
+    "githubLink": "Xem mã nguồn trên GitHub"
+  },
+  "Shop": {
+    "title": "Shop",
+    "filterTitle": "Danh mục",
+    "applyFilter": "Áp dụng lọc",
+    "priceRange": "Khoảng giá",
+    "allCategories": "Tất cả",
+    "addToCart": "Thêm vào giỏ hàng",
+    "categories": {
+      "sensor": "Cảm biến",
+      "mcu": "Vi điều khiển & mạch điều khiển",
+      "motor": "Motor & driver",
+      "chassis": "Khung robot/cơ khí",
+      "drivetrain": "Bánh xe & hệ truyền động",
+      "battery": "Pin & nguồn"
+    }
+  },
+  "Cart": {
+    "title": "Giỏ hàng",
+    "empty": "Giỏ hàng của bạn đang trống.",
+    "continueShopping": "Tiếp tục mua sắm",
+    "quantity": "Số lượng",
+    "remove": "Xóa",
+    "subtotal": "Tổng tạm tính",
+    "checkout": "Tiến hành đặt hàng"
+  },
+  "Checkout": {
+    "title": "Đặt hàng",
+    "name": "Họ tên",
+    "phone": "Số điện thoại",
+    "address": "Địa chỉ giao hàng",
+    "orderSummary": "Tóm tắt đơn hàng",
+    "note": "Sau khi gửi, đơn hàng sẽ ở trạng thái \"chờ xác nhận\". Vui lòng nhắn nội dung đơn hàng qua Messenger hoặc Zalo để chốt đơn và thanh toán trực tiếp — chúng tôi chưa hỗ trợ thanh toán online.",
+    "sendMessenger": "Gửi đơn qua Messenger",
+    "sendZalo": "Gửi đơn qua Zalo",
+    "contactMissing": "Kênh này chưa được cấu hình, vui lòng liên hệ qua kênh còn lại."
+  },
+  "About": {
+    "title": "Giới thiệu"
+  },
+  "Contact": {
+    "title": "Liên hệ"
+  }
+}

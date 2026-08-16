@@ -1,0 +1,91 @@
+{
+  "Common": {
+    "comingSoon": "콘텐츠가 곧 업데이트될 예정입니다."
+  },
+  "Nav": {
+    "blog": "블로그",
+    "projects": "프로젝트",
+    "shop": "샵",
+    "about": "소개",
+    "contact": "문의",
+    "cart": "장바구니"
+  },
+  "Home": {
+    "heroTitlePrefix": "AMR/AGV 로봇을",
+    "heroTitleHighlight1": "지식에서",
+    "heroTitleMiddle": "",
+    "heroTitleHighlight2": "실전까지",
+    "heroDescription": "자율주행 모바일 로봇 제작에 필요한 지식, 프로젝트, 부품을 공유합니다.",
+    "ctaBlog": "블로그 보기",
+    "ctaShop": "샵 둘러보기",
+    "latestPosts": "최신 글",
+    "featuredProjects": "주요 프로젝트",
+    "featuredProducts": "추천 상품"
+  },
+  "Footer": {
+    "tagline": "AMR/AGV 지식과 부품을 공유합니다."
+  },
+  "Blog": {
+    "title": "블로그",
+    "searchPlaceholder": "글 검색...",
+    "sortNewest": "최신순",
+    "sortOldest": "오래된순",
+    "sortByLevel": "기초 → 심화",
+    "allCategories": "전체 주제",
+    "noResults": "일치하는 글이 없습니다.",
+    "relatedPosts": "관련 글",
+    "readingTime": "{minutes}분 소요",
+    "levelBasic": "기초",
+    "levelIntermediate": "중급",
+    "levelAdvanced": "심화",
+    "prevPost": "이전 글",
+    "nextPost": "다음 글"
+  },
+  "Projects": {
+    "title": "프로젝트",
+    "specsTitle": "사양",
+    "githubLink": "GitHub에서 소스 보기"
+  },
+  "Shop": {
+    "title": "샵",
+    "filterTitle": "카테고리",
+    "applyFilter": "필터 적용",
+    "priceRange": "가격대",
+    "allCategories": "전체",
+    "addToCart": "장바구니에 담기",
+    "categories": {
+      "sensor": "센서",
+      "mcu": "마이크로컨트롤러 & 제어보드",
+      "motor": "모터 & 드라이버",
+      "chassis": "섀시 & 기구부",
+      "drivetrain": "휠 & 구동계",
+      "battery": "배터리 & 전원"
+    }
+  },
+  "Cart": {
+    "title": "장바구니",
+    "empty": "장바구니가 비어 있습니다.",
+    "continueShopping": "계속 쇼핑하기",
+    "quantity": "수량",
+    "remove": "삭제",
+    "subtotal": "소계",
+    "checkout": "주문 진행"
+  },
+  "Checkout": {
+    "title": "주문하기",
+    "name": "이름",
+    "phone": "전화번호",
+    "address": "배송 주소",
+    "orderSummary": "주문 요약",
+    "note": "제출 후 주문은 \"확인 대기\" 상태가 됩니다. Messenger 또는 Zalo로 주문 내용을 보내주시면 직접 확인 후 결제를 도와드립니다 — 온라인 결제는 아직 지원하지 않습니다.",
+    "sendMessenger": "Messenger로 주문 보내기",
+    "sendZalo": "Zalo로 주문 보내기",
+    "contactMissing": "이 채널은 아직 설정되지 않았습니다. 다른 채널을 이용해 주세요."
+  },
+  "About": {
+    "title": "소개"
+  },
+  "Contact": {
+    "title": "문의"
+  }
+}

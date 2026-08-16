@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrowV" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="45" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Ví von với dòng nước</text>
+
+  <!-- Tank (voltage/pressure) -->
+  <rect x="80" y="80" width="120" height="180" fill="#2563EB" opacity="0.10" stroke="#2563EB" stroke-width="2"/>
+  <rect x="80" y="150" width="120" height="110" fill="#2563EB" opacity="0.25"/>
+  <text x="140" y="70" text-anchor="middle" font-size="14" font-weight="600" fill="#2563EB">Điện áp (V)</text>
+  <text x="140" y="290" text-anchor="middle" font-size="12" fill="#6B7280">Áp suất nước</text>
+  <text x="140" y="306" text-anchor="middle" font-size="12" fill="#6B7280">(chênh lệch càng cao,</text>
+  <text x="140" y="320" text-anchor="middle" font-size="12" fill="#6B7280">nước chảy càng mạnh)</text>
+
+  <!-- Pipe with narrow section (resistance) -->
+  <path d="M 200 190 L 340 190" stroke="#6B7280" stroke-width="18" fill="none"/>
+  <path d="M 340 190 L 400 190" stroke="#6B7280" stroke-width="8" fill="none"/>
+  <path d="M 400 190 L 460 190" stroke="#6B7280" stroke-width="18" fill="none"/>
+  <text x="370" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="#DC2626">Điện trở (R)</text>
+  <text x="370" y="230" text-anchor="middle" font-size="11" fill="#6B7280">ống hẹp cản dòng chảy</text>
+
+  <!-- Flow arrow (current) -->
+  <line x1="210" y1="190" x2="330" y2="190" stroke="#F97316" stroke-width="0" />
+  <text x="230" y="150" font-size="14" font-weight="600" fill="#F97316">Dòng điện (I)</text>
+  <text x="230" y="150" font-size="14" fill="none"/>
+
+  <!-- Turbine (power / load) -->
+  <circle cx="560" cy="190" r="50" fill="#16A34A" opacity="0.10" stroke="#16A34A" stroke-width="2.5"/>
+  <text x="560" y="185" text-anchor="middle" font-size="13" font-weight="700" fill="#16A34A">Tải</text>
+  <text x="560" y="203" text-anchor="middle" font-size="11" fill="#16A34A">(sinh công suất)</text>
+  <line x1="460" y1="190" x2="510" y2="190" stroke="#111827" stroke-width="3" marker-end="url(#arrowV)"/>
+
+  <text x="560" y="265" text-anchor="middle" font-size="12" fill="#6B7280">Công suất (P) = nước chảy qua tải</text>
+  <text x="560" y="281" text-anchor="middle" font-size="12" fill="#6B7280">càng mạnh × áp càng cao</text>
+
+  <!-- Formula box -->
+  <rect x="150" y="350" width="500" height="70" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="378" text-anchor="middle" font-size="16" font-family="'JetBrains Mono', monospace" fill="#111827">V = I × R</text>
+  <text x="400" y="402" text-anchor="middle" font-size="16" font-family="'JetBrains Mono', monospace" fill="#111827">P = V × I</text>
+</svg>

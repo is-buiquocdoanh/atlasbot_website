@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+
+  <!-- 6 stacked layers, bottom = hardware, top = application -->
+  <!-- Layer 6: Ứng dụng -->
+  <rect x="100" y="30" width="600" height="52" rx="6" fill="#2563EB" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Ứng dụng (giao hàng, lau sàn, tuần tra...)</text>
+
+  <!-- Layer 5: Nav2 -->
+  <rect x="100" y="88" width="600" height="52" rx="6" fill="#2563EB" opacity="0.72"/>
+  <text x="400" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Nav2 — Lập kế hoạch đường đi, tránh vật cản</text>
+
+  <!-- Layer 4: SLAM -->
+  <rect x="100" y="146" width="600" height="52" rx="6" fill="#2563EB" opacity="0.58"/>
+  <text x="400" y="178" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">SLAM — Xây bản đồ &amp; tự định vị</text>
+
+  <!-- Layer 3: ROS2 -->
+  <rect x="100" y="204" width="600" height="52" rx="6" fill="#2563EB" opacity="0.44"/>
+  <text x="400" y="236" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">ROS2 — Node, Topic, Service kết nối các module</text>
+
+  <!-- Layer 2: Middleware giao tiep -->
+  <rect x="100" y="262" width="600" height="52" rx="6" fill="#F97316" opacity="0.35"/>
+  <text x="400" y="294" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Giao tiếp — UART / CAN / Ethernet giữa MCU và máy tính chính</text>
+
+  <!-- Layer 1: Firmware -->
+  <rect x="100" y="320" width="600" height="52" rx="6" fill="#F97316" opacity="0.55"/>
+  <text x="400" y="352" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Firmware — điều khiển động cơ, đọc cảm biến thời gian thực</text>
+
+  <!-- Layer 0: Hardware -->
+  <rect x="100" y="378" width="600" height="52" rx="6" fill="#F97316" opacity="0.85"/>
+  <text x="400" y="410" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Phần cứng — MCU, cảm biến, động cơ, khung robot</text>
+
+  <!-- side arrow indicating direction -->
+  <text x="60" y="30" font-size="12" fill="#6B7280" transform="rotate(-90 60 30)" text-anchor="end"></text>
+  <text x="45" y="400" font-size="12" fill="#6B7280">thời gian thực</text>
+  <text x="45" y="60" font-size="12" fill="#6B7280">trừu tượng hoá</text>
+</svg>

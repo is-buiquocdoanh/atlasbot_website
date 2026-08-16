@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrowL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="45" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">LDO — bộ ổn áp tuyến tính, đơn giản nhưng sinh nhiệt</text>
+
+  <rect x="100" y="150" width="120" height="60" rx="6" fill="#2563EB" opacity="0.08" stroke="#2563EB" stroke-width="2"/>
+  <text x="160" y="185" text-anchor="middle" font-size="14" font-weight="700" fill="#2563EB">Vin = 5V</text>
+
+  <line x1="220" y1="180" x2="310" y2="180" stroke="#111827" stroke-width="3" marker-end="url(#arrowL)"/>
+
+  <rect x="310" y="150" width="140" height="60" rx="6" fill="#F3F5F8" stroke="#111827" stroke-width="2.5"/>
+  <text x="380" y="185" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">LDO</text>
+
+  <line x1="450" y1="180" x2="540" y2="180" stroke="#111827" stroke-width="3" marker-end="url(#arrowL)"/>
+
+  <rect x="540" y="150" width="140" height="60" rx="6" fill="#16A34A" opacity="0.08" stroke="#16A34A" stroke-width="2"/>
+  <text x="610" y="185" text-anchor="middle" font-size="14" font-weight="700" fill="#16A34A">Vout = 3.3V</text>
+
+  <!-- heat waves -->
+  <path d="M 355 230 Q 365 215 375 230 T 395 230" stroke="#F97316" stroke-width="2" fill="none"/>
+  <path d="M 355 250 Q 365 235 375 250 T 395 250" stroke="#F97316" stroke-width="2" fill="none"/>
+  <text x="380" y="280" text-anchor="middle" font-size="12" fill="#F97316">phần chênh lệch điện áp</text>
+  <text x="380" y="298" text-anchor="middle" font-size="12" fill="#F97316">(5V − 3.3V) biến thành NHIỆT</text>
+
+  <rect x="130" y="340" width="540" height="80" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="365" text-anchor="middle" font-size="13" font-family="'JetBrains Mono', monospace" fill="#111827">P(nhiệt) = (Vin − Vout) × I</text>
+  <text x="400" y="390" text-anchor="middle" font-size="12" fill="#111827">Đơn giản, ít nhiễu — nhưng lãng phí năng lượng khi chênh áp lớn/dòng cao</text>
+</svg>

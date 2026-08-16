@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Chọn MCU theo đúng bài toán</text>
+
+  <!-- 4 columns -->
+  <rect x="45" y="65" width="170" height="270" rx="10" fill="#2563EB" opacity="0.06" stroke="#2563EB" stroke-width="2"/>
+  <text x="130" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">Arduino</text>
+  <text x="130" y="130" text-anchor="middle" font-size="11" fill="#6B7280">Thử ý tưởng</text>
+  <text x="130" y="148" text-anchor="middle" font-size="11" fill="#6B7280">nhanh nhất</text>
+  <text x="130" y="180" text-anchor="middle" font-size="10" fill="#111827">Dễ nhất</text>
+  <text x="130" y="198" text-anchor="middle" font-size="10" fill="#111827">Giá thấp</text>
+  <text x="130" y="216" text-anchor="middle" font-size="10" fill="#111827">1 nhân, 2KB RAM</text>
+
+  <rect x="230" y="65" width="170" height="270" rx="10" fill="#16A34A" opacity="0.06" stroke="#16A34A" stroke-width="2"/>
+  <text x="315" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">ESP32</text>
+  <text x="315" y="130" text-anchor="middle" font-size="11" fill="#6B7280">Kết nối</text>
+  <text x="315" y="148" text-anchor="middle" font-size="11" fill="#6B7280">không dây</text>
+  <text x="315" y="180" text-anchor="middle" font-size="10" fill="#111827">WiFi/BLE sẵn</text>
+  <text x="315" y="198" text-anchor="middle" font-size="10" fill="#111827">Dual-core 240MHz</text>
+  <text x="315" y="216" text-anchor="middle" font-size="10" fill="#111827">OTA update</text>
+
+  <rect x="415" y="65" width="170" height="270" rx="10" fill="#F97316" opacity="0.08" stroke="#F97316" stroke-width="2"/>
+  <text x="500" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">STM32</text>
+  <text x="500" y="130" text-anchor="middle" font-size="11" fill="#6B7280">Điều khiển</text>
+  <text x="500" y="148" text-anchor="middle" font-size="11" fill="#6B7280">thời gian thực</text>
+  <text x="500" y="180" text-anchor="middle" font-size="10" fill="#111827">Timer/DMA mạnh</text>
+  <text x="500" y="198" text-anchor="middle" font-size="10" fill="#111827">Độ trễ thấp</text>
+  <text x="500" y="216" text-anchor="middle" font-size="10" fill="#111827">Cần ST-Link</text>
+
+  <rect x="600" y="65" width="170" height="270" rx="10" fill="#DC2626" opacity="0.06" stroke="#DC2626" stroke-width="2"/>
+  <text x="685" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">Pico</text>
+  <text x="685" y="130" text-anchor="middle" font-size="11" fill="#6B7280">Giao thức</text>
+  <text x="685" y="148" text-anchor="middle" font-size="11" fill="#6B7280">tuỳ chỉnh</text>
+  <text x="685" y="180" text-anchor="middle" font-size="10" fill="#111827">PIO độc đáo</text>
+  <text x="685" y="198" text-anchor="middle" font-size="10" fill="#111827">Giá rất rẻ</text>
+  <text x="685" y="216" text-anchor="middle" font-size="10" fill="#111827">Dual-core M0+</text>
+
+  <rect x="45" y="360" width="725" height="60" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="407" y="385" text-anchor="middle" font-size="12" fill="#111827">Một AMR hoàn chỉnh thường dùng kết hợp nhiều loại — mỗi loại</text>
+  <text x="407" y="403" text-anchor="middle" font-size="12" fill="#111827">đảm nhiệm đúng tầng của nó, không có "loại mạnh nhất" chung</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="45" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Relay — công tắc cơ khí điều khiển bằng nam châm điện</text>
+  <line x1="400" y1="70" x2="400" y2="400" stroke="#E5E9EF" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="400" y="65" text-anchor="middle" font-size="12" fill="#DC2626">không có kết nối điện trực tiếp</text>
+
+  <!-- Control side -->
+  <text x="200" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#2563EB">Phía điều khiển (MCU)</text>
+  <rect x="120" y="130" width="160" height="60" rx="6" fill="#2563EB" opacity="0.08" stroke="#2563EB" stroke-width="2"/>
+  <text x="200" y="165" text-anchor="middle" font-size="12" fill="#111827">Cuộn dây (coil)</text>
+  <text x="200" y="210" text-anchor="middle" font-size="11" fill="#6B7280">5V/12V từ MCU cấp qua</text>
+  <text x="200" y="226" text-anchor="middle" font-size="11" fill="#6B7280">transistor → sinh từ trường</text>
+
+  <!-- magnetic field arrow -->
+  <line x1="285" y1="160" x2="345" y2="160" stroke="#F97316" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="315" y="145" text-anchor="middle" font-size="11" fill="#F97316">từ trường</text>
+
+  <!-- Power side -->
+  <text x="600" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#DC2626">Phía công suất (tải)</text>
+  <rect x="520" y="130" width="160" height="60" rx="6" fill="#DC2626" opacity="0.06" stroke="#DC2626" stroke-width="2"/>
+  <text x="600" y="155" text-anchor="middle" font-size="12" fill="#111827">Tiếp điểm cơ khí</text>
+  <text x="600" y="172" text-anchor="middle" font-size="10" fill="#111827">(đóng/mở khi có từ trường)</text>
+  <text x="600" y="210" text-anchor="middle" font-size="11" fill="#6B7280">220VAC hoặc dòng lớn,</text>
+  <text x="600" y="226" text-anchor="middle" font-size="11" fill="#6B7280">hoàn toàn cách ly với MCU</text>
+
+  <rect x="150" y="300" width="500" height="90" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="330" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">Vì sao cần Relay?</text>
+  <text x="400" y="355" text-anchor="middle" font-size="12" fill="#111827">MCU chỉ chịu được vài chục mA, vài Volt — không thể điều khiển</text>
+  <text x="400" y="374" text-anchor="middle" font-size="12" fill="#111827">trực tiếp thiết bị 220V. Relay là cầu nối an toàn, cách ly hoàn toàn.</text>
+</svg>

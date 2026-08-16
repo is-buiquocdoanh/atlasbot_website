@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+
+  <!-- Divider -->
+  <line x1="400" y1="20" x2="400" y2="430" stroke="#E5E9EF" stroke-width="2"/>
+
+  <!-- LEFT: AGV -->
+  <text x="200" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">AGV — Dẫn đường cố định</text>
+  <rect x="40" y="60" width="320" height="340" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+
+  <!-- fixed guide line (tape/wire) -->
+  <path d="M 80 340 L 80 180 L 320 180 L 320 100" fill="none" stroke="#2563EB" stroke-width="4" stroke-dasharray="10 6"/>
+  <!-- tags along line -->
+  <circle cx="80" cy="260" r="5" fill="#2563EB"/>
+  <circle cx="200" cy="180" r="5" fill="#2563EB"/>
+  <circle cx="320" cy="160" r="5" fill="#2563EB"/>
+
+  <!-- AGV robot icon on the line -->
+  <g transform="translate(80,340)">
+    <rect x="-22" y="-16" width="44" height="32" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <circle cx="0" cy="0" r="5" fill="#2563EB"/>
+  </g>
+  <text x="80" y="380" text-anchor="middle" font-size="13" fill="#6B7280">Điểm bắt đầu (A)</text>
+  <text x="320" y="90" text-anchor="middle" font-size="13" fill="#6B7280">Điểm đến (B)</text>
+
+  <text x="200" y="420" text-anchor="middle" font-size="13" fill="#6B7280">Đi theo line từ/vạch/QR/wire cố định trên sàn</text>
+
+  <!-- RIGHT: AMR -->
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">AMR — Điều hướng tự do</text>
+  <rect x="440" y="60" width="320" height="340" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+
+  <!-- obstacles -->
+  <rect x="560" y="140" width="50" height="50" rx="4" fill="#DC2626" opacity="0.15" stroke="#DC2626"/>
+  <text x="585" y="170" text-anchor="middle" font-size="11" fill="#DC2626">vật cản</text>
+  <rect x="640" y="260" width="50" height="50" rx="4" fill="#DC2626" opacity="0.15" stroke="#DC2626"/>
+  <text x="665" y="290" text-anchor="middle" font-size="11" fill="#DC2626">vật cản</text>
+
+  <!-- dynamic path around obstacles -->
+  <path d="M 480 340 C 520 300, 500 220, 560 210 C 600 200, 610 220, 630 240 C 660 270, 700 250, 720 120"
+        fill="none" stroke="#F97316" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
+
+  <!-- AMR robot icon with sensing radius -->
+  <g transform="translate(480,340)">
+    <circle cx="0" cy="0" r="34" fill="#F97316" opacity="0.10"/>
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#F97316" stroke-width="1.5" stroke-dasharray="3 4"/>
+    <rect x="-20" y="-16" width="40" height="32" rx="8" fill="#FFFFFF" stroke="#F97316" stroke-width="3"/>
+    <circle cx="0" cy="0" r="5" fill="#F97316"/>
+  </g>
+  <text x="480" y="392" text-anchor="middle" font-size="13" fill="#6B7280">Cảm biến quét môi trường realtime</text>
+  <text x="720" y="105" text-anchor="middle" font-size="13" fill="#6B7280">Điểm đến</text>
+
+  <text x="600" y="420" text-anchor="middle" font-size="13" fill="#6B7280">SLAM + tránh vật cản, không cần line cố định</text>
+</svg>

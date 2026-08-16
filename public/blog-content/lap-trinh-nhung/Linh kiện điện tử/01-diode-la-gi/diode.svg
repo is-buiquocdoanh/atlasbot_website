@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrowD" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="45" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Diode — van một chiều của dòng điện</text>
+
+  <!-- Diode symbol -->
+  <line x1="220" y1="150" x2="320" y2="150" stroke="#111827" stroke-width="3"/>
+  <polygon points="320,120 320,180 390,150" fill="#2563EB" opacity="0.15" stroke="#111827" stroke-width="2.5"/>
+  <line x1="390" y1="120" x2="390" y2="180" stroke="#111827" stroke-width="4"/>
+  <line x1="390" y1="150" x2="500" y2="150" stroke="#111827" stroke-width="3"/>
+
+  <text x="220" y="130" text-anchor="middle" font-size="14" font-weight="600" fill="#2563EB">Anode (A)</text>
+  <text x="500" y="130" text-anchor="middle" font-size="14" font-weight="600" fill="#F97316">Cathode (K)</text>
+
+  <line x1="240" y1="200" x2="470" y2="200" stroke="#16A34A" stroke-width="2.5" marker-end="url(#arrowD)"/>
+  <text x="355" y="220" text-anchor="middle" font-size="13" fill="#16A34A">Dòng điện CHỈ chạy được theo chiều này</text>
+
+  <!-- Forward vs reverse bias panels -->
+  <rect x="90" y="270" width="280" height="130" rx="8" fill="#16A34A" opacity="0.06" stroke="#16A34A" stroke-width="2"/>
+  <text x="230" y="300" text-anchor="middle" font-size="14" font-weight="700" fill="#16A34A">Phân cực thuận (Forward)</text>
+  <text x="230" y="330" text-anchor="middle" font-size="12" fill="#111827">A nối cực dương, K nối cực âm</text>
+  <text x="230" y="352" text-anchor="middle" font-size="12" fill="#111827">→ Diode dẫn điện (thông)</text>
+  <text x="230" y="380" text-anchor="middle" font-size="12" fill="#16A34A">VD: LED sáng</text>
+
+  <rect x="430" y="270" width="280" height="130" rx="8" fill="#DC2626" opacity="0.06" stroke="#DC2626" stroke-width="2"/>
+  <text x="570" y="300" text-anchor="middle" font-size="14" font-weight="700" fill="#DC2626">Phân cực ngược (Reverse)</text>
+  <text x="570" y="330" text-anchor="middle" font-size="12" fill="#111827">A nối cực âm, K nối cực dương</text>
+  <text x="570" y="352" text-anchor="middle" font-size="12" fill="#111827">→ Diode chặn dòng (khoá)</text>
+  <text x="570" y="380" text-anchor="middle" font-size="12" fill="#DC2626">VD: LED tắt, không cháy</text>
+</svg>
