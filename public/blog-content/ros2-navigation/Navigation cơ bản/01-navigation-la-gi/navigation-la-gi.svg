@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="nlArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">4 mảnh ghép của bài toán Navigation</text>
+
+  <rect x="40" y="90" width="170" height="90" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="125" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">Map</text>
+  <text x="125" y="142" text-anchor="middle" font-size="9" fill="#374151">môi trường ra sao?</text>
+
+  <line x1="210" y1="135" x2="245" y2="135" stroke="#111827" stroke-width="2" marker-end="url(#nlArrow)"/>
+
+  <rect x="250" y="90" width="170" height="90" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="335" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Localization</text>
+  <text x="335" y="142" text-anchor="middle" font-size="9" fill="#374151">tôi ở đâu?</text>
+
+  <line x1="420" y1="135" x2="455" y2="135" stroke="#111827" stroke-width="2" marker-end="url(#nlArrow)"/>
+
+  <rect x="460" y="90" width="170" height="90" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="545" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">Path Planning</text>
+  <text x="545" y="142" text-anchor="middle" font-size="9" fill="#374151">đi đường nào?</text>
+
+  <line x1="630" y1="135" x2="665" y2="135" stroke="#111827" stroke-width="2" marker-end="url(#nlArrow)"/>
+
+  <rect x="590" y="220" width="170" height="90" rx="10" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="675" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">Path Following</text>
+  <text x="675" y="272" text-anchor="middle" font-size="9" fill="#374151">bám đường thế nào?</text>
+
+  <path d="M 670 180 L 675 218" stroke="#111827" stroke-width="2" marker-end="url(#nlArrow)"/>
+
+  <rect x="60" y="220" width="480" height="90" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="300" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Map + Localization = Định vị</text>
+  <text x="300" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Path Planning + Path Following = Điều hướng</text>
+  <text x="300" y="292" text-anchor="middle" font-size="9" fill="#6B7280">4 bản chất toán học khác nhau — mỗi mảnh 1 công cụ riêng</text>
+
+  <rect x="90" y="335" width="620" height="45" rx="8" fill="#EDE9FE" stroke="#9333EA" stroke-width="1.3"/>
+  <text x="400" y="363" text-anchor="middle" font-size="11" fill="#6B21A8">Nav2 = framework ROS2 hiện thực hoá cả 4 mảnh cùng lúc</text>
+</svg>

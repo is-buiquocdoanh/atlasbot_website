@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="saArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="640" fill="#FFFFFF"/>
+  <text x="400" y="35" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Kiến trúc 3 tầng của hệ thống</text>
+
+  <!-- Layer 3: Application & Monitoring (top) -->
+  <rect x="150" y="65" width="500" height="110" rx="14" fill="#EDE9FE" stroke="#9333EA" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#6B21A8">TẦNG ỨNG DỤNG &amp; GIÁM SÁT</text>
+  <rect x="250" y="105" width="300" height="55" rx="8" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="400" y="127" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">RViz2</text>
+  <text x="400" y="145" text-anchor="middle" font-size="10" fill="#6B7280">Robot 3D, quỹ đạo, bản đồ, TF, trạng thái Nav2</text>
+
+  <line x1="400" y1="175" x2="400" y2="210" stroke="#111827" stroke-width="2" marker-end="url(#saArrow)" marker-start="url(#saArrow)"/>
+  <text x="415" y="195" font-size="9" fill="#374151">DDS / ROS2 topics</text>
+
+  <!-- Layer 2: Compute -->
+  <rect x="150" y="215" width="500" height="185" rx="14" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">TẦNG TÍNH TOÁN — Raspberry Pi 4 (ROS2)</text>
+
+  <rect x="175" y="255" width="150" height="50" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="250" y="275" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">odom_publisher</text>
+  <text x="250" y="292" text-anchor="middle" font-size="9" fill="#6B7280">tính odometry</text>
+
+  <rect x="335" y="255" width="150" height="50" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="410" y="275" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Cartographer /</text>
+  <text x="410" y="292" text-anchor="middle" font-size="10" fill="#111827">SLAM Toolbox</text>
+
+  <rect x="495" y="255" width="130" height="50" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="560" y="275" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Nav2 stack</text>
+  <text x="560" y="292" text-anchor="middle" font-size="9" fill="#6B7280">AMCL, costmap, BT</text>
+
+  <rect x="175" y="320" width="450" height="50" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="400" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">diff_serial_bridge — cmdvel_to_motorcommand</text>
+  <text x="400" y="358" text-anchor="middle" font-size="9" fill="#6B7280">chuyển /cmd_vel → lệnh PWM, đọc encoder trả về</text>
+
+  <line x1="400" y1="400" x2="400" y2="435" stroke="#111827" stroke-width="2" marker-end="url(#saArrow)" marker-start="url(#saArrow)"/>
+  <text x="415" y="420" font-size="9" fill="#374151">Serial UART 57600 baud</text>
+
+  <!-- Layer 1: Low-level control -->
+  <rect x="150" y="440" width="500" height="130" rx="14" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="400" y="465" text-anchor="middle" font-size="13" font-weight="700" fill="#9A3412">TẦNG ĐIỀU KHIỂN THẤP — Arduino Nano / ESP32</text>
+
+  <rect x="175" y="480" width="150" height="70" rx="8" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+  <text x="250" y="505" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">PWM</text>
+  <text x="250" y="522" text-anchor="middle" font-size="10" fill="#6B7280">Điều khiển motor</text>
+
+  <rect x="335" y="480" width="150" height="70" rx="8" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+  <text x="410" y="505" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Encoder</text>
+  <text x="410" y="522" text-anchor="middle" font-size="10" fill="#6B7280">Đọc tốc độ bánh</text>
+
+  <rect x="495" y="480" width="130" height="70" rx="8" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+  <text x="560" y="505" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Driver</text>
+  <text x="560" y="522" text-anchor="middle" font-size="10" fill="#6B7280">L298N/BTS7960</text>
+
+  <rect x="90" y="590" width="620" height="40" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="614" text-anchor="middle" font-size="11" fill="#111827">Mỗi tầng chỉ giao tiếp với tầng liền kề — tách rõ thời gian thực (dưới) khỏi tính toán nặng (trên)</text>
+</svg>

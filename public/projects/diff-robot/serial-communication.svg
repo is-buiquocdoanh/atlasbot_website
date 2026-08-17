@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="scArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="560" fill="#FFFFFF"/>
+  <text x="400" y="35" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Giao tiếp ROS2 ↔ Arduino qua Serial</text>
+
+  <!-- Raspberry Pi 4 zone -->
+  <rect x="150" y="65" width="500" height="180" rx="14" fill="#2563EB" opacity="0.05" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="92" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">Raspberry Pi 4</text>
+
+  <rect x="200" y="110" width="400" height="115" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">ROS2 Humble</text>
+  <text x="230" y="160" font-size="12" fill="#111827">• diff_driver</text>
+  <text x="230" y="180" font-size="12" fill="#111827">• odom_publisher</text>
+  <text x="460" y="160" font-size="12" fill="#111827">• cartographer</text>
+  <text x="460" y="180" font-size="12" fill="#111827">• nav2 stack</text>
+
+  <!-- bidirectional arrow -->
+  <line x1="400" y1="245" x2="400" y2="330" stroke="#111827" stroke-width="2.5" marker-end="url(#scArrow)" marker-start="url(#scArrow)"/>
+  <text x="415" y="275" font-size="12" font-weight="700" fill="#111827">Serial UART</text>
+  <text x="415" y="292" font-size="11" fill="#6B7280">57600 baud</text>
+  <text x="150" y="270" font-size="10" fill="#2563EB">↓ "o [pwmL] [pwmR]" — lệnh PWM</text>
+  <text x="150" y="288" font-size="10" fill="#16A34A">↑ "e_left e_right" — trả về encoder</text>
+
+  <!-- Arduino zone -->
+  <rect x="150" y="330" width="500" height="170" rx="14" fill="#F97316" opacity="0.06" stroke="#F97316" stroke-width="2"/>
+  <text x="400" y="357" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">Arduino / ESP32</text>
+
+  <rect x="200" y="375" width="400" height="100" rx="10" fill="#FFFFFF" stroke="#F97316" stroke-width="2"/>
+  <text x="230" y="405" font-size="12" fill="#111827">• PWM điều khiển motor</text>
+  <text x="230" y="430" font-size="12" fill="#111827">• Đọc encoder (trái/phải)</text>
+  <text x="230" y="455" font-size="12" fill="#111827">• Gửi dữ liệu lên ROS2 khi nhận lệnh "e"</text>
+
+  <rect x="90" y="510" width="620" height="40" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="535" text-anchor="middle" font-size="11" fill="#111827">Lệnh "r" reset encoder về 0 · toàn bộ giao thức là text thuần, debug được trực tiếp qua terminal serial</text>
+</svg>

@@ -296,16 +296,134 @@ export async function getAdjacentPosts(
   };
 }
 
+// Nội dung kỹ thuật dài (markdown) của từng dự án được tách ra file riêng,
+// co-located cùng ảnh/video trong public/projects/<slug>/content.md — giống
+// cách blog tách content khỏi cms.ts, tránh nhồi văn bản dài vào file TS.
+const PROJECTS_DIR = path.join(process.cwd(), "public", "projects");
+
+function loadProjectContent(slug: string): string | undefined {
+  const contentPath = path.join(PROJECTS_DIR, slug, "content.md");
+  if (!fs.existsSync(contentPath)) return undefined;
+  return fs.readFileSync(contentPath, "utf-8");
+}
+
 export async function getAllProjects(): Promise<Project[]> {
   return [
     {
       id: "1",
-      title: "AGV vận chuyển hàng trong nhà xưởng",
-      slug: "agv-van-chuyen-hang",
-      images: ["/images/placeholder.jpg"],
-      description: "Mô tả dự án...",
-      specs: [{ label: "Tải trọng", value: "50kg" }],
-      publishedAt: "2026-07-20",
+      title: "Robot Mecanum tự hành (Autonomous Mecanum-Wheel Robot)",
+      slug: "mecanum-robot",
+      content: loadProjectContent("mecanum-robot"),
+      images: [
+        "/projects/mecanum-robot/overview.png",
+        "/projects/mecanum-robot/front.png",
+        "/projects/mecanum-robot/right.png",
+        "/projects/mecanum-robot/floor1.png",
+        "/projects/mecanum-robot/floor2.png",
+      ],
+      videos: [
+        {
+          url: "https://youtu.be/SoL5KJzKNMY",
+          title: "Mapping — quét và dựng bản đồ bằng SLAM Cartographer",
+        },
+        {
+          url: "https://youtu.be/H2pn3pVcRK0",
+          title: "Navigation — điều hướng tự động và tránh vật cản với Nav2",
+        },
+      ],
+      description:
+        "Robot di động 4 bánh Mecanum, di chuyển được theo mọi hướng (kể cả đi ngang, xoay tại chỗ) — phù hợp cho nhà xưởng và không gian hẹp. ESP32 đảm nhiệm điều khiển động cơ và đọc encoder ở tầng thấp, Raspberry Pi 4 chạy ROS2 để xử lý SLAM, định vị và điều hướng ở tầng cao. Robot có khả năng tự quét-dựng bản đồ, định vị, tránh vật cản và tự lập kế hoạch đường đi.",
+      specs: [
+        { label: "Kiểu di chuyển", value: "4 bánh Mecanum (omnidirectional)" },
+        { label: "Vi điều khiển", value: "ESP32 — điều khiển động cơ, đọc encoder" },
+        { label: "Máy tính nhúng", value: "Raspberry Pi 4 (4GB/8GB RAM)" },
+        { label: "Cảm biến LiDAR", value: "YDLIDAR X3 Pro" },
+        { label: "Động cơ", value: "4x GA25 DC Motor kèm encoder" },
+        { label: "Driver động cơ", value: "L298N (4 kênh)" },
+        { label: "Nguồn", value: "Pin Lithium 3S2P 12V" },
+        { label: "Hệ điều hành", value: "Ubuntu 20.04 / 22.04" },
+        { label: "Framework", value: "ROS2 Foxy / Humble" },
+        { label: "SLAM", value: "Cartographer" },
+        { label: "Điều hướng", value: "Nav2 (Navigation2)" },
+      ],
+      githubUrl: "https://github.com/is-buiquocdoanh/mecanum_robot",
+      publishedAt: "2026-08-16",
+    },
+    {
+      id: "2",
+      title: "Diff Robot — Robot vi sai lập bản đồ & điều hướng ROS2",
+      slug: "diff-robot",
+      content: loadProjectContent("diff-robot"),
+      images: [
+        "/projects/diff-robot/overview.png",
+        "/projects/diff-robot/front.jpg",
+        "/projects/diff-robot/back.jpg",
+        "/projects/diff-robot/left.jpg",
+        "/projects/diff-robot/right.jpg",
+        "/projects/diff-robot/top.jpg",
+        "/projects/diff-robot/bot.jpg",
+      ],
+      videos: [
+        {
+          url: "https://youtu.be/Vxy7BAhR34U",
+          title: "Mapping — dựng bản đồ môi trường bằng SLAM",
+        },
+        {
+          url: "https://youtu.be/dPI5TLDtxFU",
+          title: "Navigation2 — điều hướng tự động và tránh vật cản",
+        },
+      ],
+      description:
+        "Robot di động 2 bánh vi sai (differential drive) phục vụ nghiên cứu lập bản đồ và điều hướng tự động trên ROS2. Kiến trúc 3 tầng: Arduino/ESP32 đọc encoder và điều khiển động cơ ở tầng thấp; Raspberry Pi 4 chạy ROS2 tính odometry, SLAM (Cartographer hoặc SLAM Toolbox) và Nav2 ở tầng tính toán; RViz2 giám sát robot, quỹ đạo, bản đồ và trạng thái Nav2 ở tầng ứng dụng.",
+      specs: [
+        { label: "Kiểu di chuyển", value: "2 bánh vi sai (differential drive)" },
+        { label: "Vi điều khiển", value: "Arduino Nano / ESP32 — đọc encoder, điều khiển động cơ" },
+        { label: "Máy tính nhúng", value: "Raspberry Pi 4 (4GB/8GB RAM)" },
+        { label: "Cảm biến LiDAR", value: "YDLIDAR X3 Pro hoặc RPLIDAR A1/A2" },
+        { label: "Động cơ", value: "GA25 — 120RPM, mô-men khoá trục 7,3kg·cm, ~1,8A khi có tải" },
+        { label: "Driver động cơ", value: "L298N / BTS7960 / Cytron" },
+        { label: "Nguồn", value: "Pin 12V 10C" },
+        { label: "Giao tiếp tầng thấp", value: "Serial UART 57600 baud (Arduino ↔ ROS2)" },
+        { label: "Framework", value: "ROS2" },
+        { label: "SLAM", value: "Cartographer hoặc SLAM Toolbox" },
+        { label: "Điều hướng", value: "Nav2 — AMCL, Costmap, BT Navigator" },
+        { label: "Giấy phép", value: "MIT License" },
+      ],
+      githubUrl: "https://github.com/is-buiquocdoanh/diff_robot",
+      publishedAt: "2026-08-16",
+    },
+    {
+      id: "3",
+      title: "Atlas A2 — Robot tự hành trong nhà trên Jetson Orin Nano",
+      slug: "atlas-a2",
+      content: loadProjectContent("atlas-a2"),
+      images: [
+        "/projects/atlas-a2/overview.jpg",
+        "/projects/atlas-a2/front.jpg",
+        "/projects/atlas-a2/inside.jpg",
+        "/projects/atlas-a2/app-ui.png",
+      ],
+      description:
+        "Robot tự hành trong nhà chạy ROS2 Humble trên Jetson Orin Nano, bánh Mecanum di chuyển đa hướng. Tích hợp SLAM (slam_toolbox) và Nav2 để tự định vị, dẫn đường và tránh vật cản; tự động về trạm sạc bằng bám vạch từ trường 16-kênh khi pin yếu; nhận diện vật thể realtime bằng YOLOv8. Điều khiển qua tầng dịch vụ REST API/WebSocket riêng (atlas_api), phục vụ đồng thời app PyQt5 trên PC (atlas_app) và app cảm ứng gắn trên robot (atlas_app_robot).",
+      specs: [
+        { label: "Kiểu di chuyển", value: "4 bánh Mecanum (Supo, omnidirectional)" },
+        { label: "Máy tính nhúng", value: "Jetson Orin Nano Developer Kit (Super)" },
+        { label: "Cảm biến LiDAR", value: "RPlidar A2M12" },
+        { label: "Động cơ", value: "4x TODE brushless — CAN bus" },
+        { label: "Driver động cơ", value: "TSDA-C12D (USB-CAN)" },
+        { label: "Cảm biến va chạm", value: "ESP32 + nút dừng khẩn cấp phần cứng" },
+        { label: "Cảm biến docking", value: "16-kênh từ trường (Modbus RTU)" },
+        { label: "Camera", value: "USB UVC (v4l2) + YOLOv8 object detection" },
+        { label: "Nguồn", value: "2x Pin Lithium-ion CSC 12VDC 40Ah" },
+        { label: "Hệ điều hành", value: "Ubuntu 22.04 LTS" },
+        { label: "Framework", value: "ROS2 Humble" },
+        { label: "SLAM", value: "slam_toolbox" },
+        { label: "Định vị", value: "AMCL" },
+        { label: "Điều hướng", value: "Nav2 — DWB / MPPI controller" },
+        { label: "Điều khiển", value: "REST API + WebSocket (Flask) — app PyQt5 (PC) và app cảm ứng (robot)" },
+      ],
+      githubUrl: "https://github.com/is-buiquocdoanh/atlas_a2",
+      publishedAt: "2026-08-17",
     },
   ];
 }

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Cấp điện tuần tự các cuộn dây → quay từng bước</text>
+
+  <!-- 4 steps -->
+  <g>
+    <circle cx="140" cy="140" r="60" fill="#F3F5F8" stroke="#6B7280" stroke-width="2"/>
+    <line x1="140" y1="90" x2="140" y2="140" stroke="#2563EB" stroke-width="4"/>
+    <text x="140" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Bước 1 — 0°</text>
+    <text x="140" y="238" text-anchor="middle" font-size="9" fill="#2563EB">Coil A ON</text>
+  </g>
+
+  <g>
+    <circle cx="320" cy="140" r="60" fill="#F3F5F8" stroke="#6B7280" stroke-width="2"/>
+    <line x1="320" y1="140" x2="370" y2="140" stroke="#F97316" stroke-width="4"/>
+    <text x="320" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Bước 2 — 90°</text>
+    <text x="320" y="238" text-anchor="middle" font-size="9" fill="#F97316">Coil B ON</text>
+  </g>
+
+  <g>
+    <circle cx="500" cy="140" r="60" fill="#F3F5F8" stroke="#6B7280" stroke-width="2"/>
+    <line x1="500" y1="140" x2="500" y2="190" stroke="#2563EB" stroke-width="4"/>
+    <text x="500" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Bước 3 — 180°</text>
+    <text x="500" y="238" text-anchor="middle" font-size="9" fill="#2563EB">Coil A đảo cực</text>
+  </g>
+
+  <g>
+    <circle cx="680" cy="140" r="60" fill="#F3F5F8" stroke="#6B7280" stroke-width="2"/>
+    <line x1="680" y1="140" x2="630" y2="140" stroke="#F97316" stroke-width="4"/>
+    <text x="680" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Bước 4 — 270°</text>
+    <text x="680" y="238" text-anchor="middle" font-size="9" fill="#F97316">Coil B đảo cực</text>
+  </g>
+
+  <!-- STEP/DIR to driver -->
+  <rect x="90" y="290" width="620" height="55" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="313" text-anchor="middle" font-size="12" font-family="monospace" fill="#111827">MCU gửi STEP + DIR → Driver (A4988/TMC2209) tự tạo trình tự cuộn dây</text>
+  <text x="400" y="332" text-anchor="middle" font-size="10" fill="#6B7280">MCU không tự điều khiển từng cuộn dây</text>
+
+  <rect x="90" y="370" width="620" height="45" rx="8" fill="#DC2626" opacity="0.06" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="400" y="397" text-anchor="middle" font-size="12" fill="#111827">Tải quá lớn → mất bước (step loss), vị trí đếm được sai lệch thực tế</text>
+</svg>

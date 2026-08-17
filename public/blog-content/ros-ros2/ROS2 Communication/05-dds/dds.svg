@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="ddsArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">RMW — lớp trừu tượng cho phép đổi DDS</text>
+
+  <rect x="250" y="65" width="300" height="55" rx="8" fill="#2563EB" opacity="0.10" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">Code ứng dụng (node của bạn)</text>
+
+  <line x1="400" y1="120" x2="400" y2="150" stroke="#6B7280" stroke-width="2" marker-end="url(#ddsArrow)"/>
+
+  <rect x="250" y="155" width="300" height="45" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="400" y="182" text-anchor="middle" font-size="12" fill="#111827">rclpy / rclcpp</text>
+
+  <line x1="400" y1="200" x2="400" y2="230" stroke="#6B7280" stroke-width="2" marker-end="url(#ddsArrow)"/>
+
+  <rect x="230" y="235" width="340" height="50" rx="8" fill="#9333EA" opacity="0.10" stroke="#9333EA" stroke-width="2.5"/>
+  <text x="400" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">RMW (ROS Middleware interface)</text>
+
+  <line x1="330" y1="285" x2="240" y2="330" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ddsArrow)"/>
+  <line x1="400" y1="285" x2="400" y2="330" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ddsArrow)"/>
+  <line x1="470" y1="285" x2="560" y2="330" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ddsArrow)"/>
+
+  <rect x="140" y="335" width="200" height="55" rx="8" fill="#16A34A" opacity="0.10" stroke="#16A34A" stroke-width="2"/>
+  <text x="240" y="358" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Fast DDS</text>
+  <text x="240" y="375" text-anchor="middle" font-size="9" fill="#6B7280">(mặc định phổ biến)</text>
+
+  <rect x="300" y="335" width="200" height="55" rx="8" fill="#F97316" opacity="0.10" stroke="#F97316" stroke-width="2"/>
+  <text x="400" y="358" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Cyclone DDS</text>
+  <text x="400" y="375" text-anchor="middle" font-size="9" fill="#6B7280">(nhẹ, phổ biến trên nhúng)</text>
+
+  <rect x="460" y="335" width="200" height="55" rx="8" fill="#6B7280" opacity="0.10" stroke="#6B7280" stroke-width="2"/>
+  <text x="560" y="358" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Connext DDS</text>
+  <text x="560" y="375" text-anchor="middle" font-size="9" fill="#6B7280">(thương mại)</text>
+
+  <text x="400" y="425" text-anchor="middle" font-size="11" fill="#6B7280">Đổi RMW_IMPLEMENTATION → đổi DDS bên dưới, code ứng dụng không cần sửa</text>
+</svg>

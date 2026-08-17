@@ -44,7 +44,10 @@
   "Projects": {
     "title": "Dự án",
     "specsTitle": "Thông số kỹ thuật",
-    "githubLink": "Xem mã nguồn trên GitHub"
+    "galleryTitle": "Hình ảnh dự án",
+    "videosTitle": "Video demo",
+    "githubLink": "Xem mã nguồn trên GitHub",
+    "backToProjects": "← Tất cả dự án"
   },
   "Shop": {
     "title": "Shop",

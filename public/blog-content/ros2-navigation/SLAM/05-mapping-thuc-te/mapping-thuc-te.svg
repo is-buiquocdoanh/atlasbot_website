@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Quét bản đồ tốt — đường khép kín, tốc độ chậm</text>
+
+  <rect x="60" y="65" width="330" height="180" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="225" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#7F1D1D">Sai — đường thẳng, nhanh</text>
+  <path d="M 90 200 L 350 200" stroke="#DC2626" stroke-width="2" fill="none"/>
+  <text x="220" y="220" text-anchor="middle" font-size="9" fill="#7F1D1D">không có loop closure</text>
+  <text x="220" y="160" text-anchor="middle" font-size="9" fill="#7F1D1D">xoay gấp → mất phương hướng</text>
+  <path d="M 300 200 A 15 15 0 1 1 299 200" stroke="#DC2626" stroke-width="2" fill="none"/>
+
+  <rect x="410" y="65" width="330" height="180" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="575" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Đúng — vòng khép kín, chậm</text>
+  <rect x="480" y="130" width="180" height="90" fill="none" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <circle cx="480" cy="130" r="4" fill="#16A34A"/>
+  <text x="575" y="240" text-anchor="middle" font-size="9" fill="#166534">quay lại điểm xuất phát</text>
+  <text x="575" y="255" text-anchor="middle" font-size="9" fill="#166534">= cơ hội loop closure</text>
+
+  <rect x="90" y="270" width="620" height="110" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="295" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">3 lỗi hay gặp</text>
+  <text x="400" y="317" text-anchor="middle" font-size="10" fill="#374151">Méo chữ S → sai calibration odometry (bán kính bánh, khoảng cách 2 bánh)</text>
+  <text x="400" y="337" text-anchor="middle" font-size="10" fill="#374151">Vùng trắng lớn → chưa đi qua khu vực đó, không phải lỗi tham số</text>
+  <text x="400" y="357" text-anchor="middle" font-size="10" fill="#374151">Tường đôi/mờ → đi quá nhanh hoặc thiếu loop closure</text>
+</svg>

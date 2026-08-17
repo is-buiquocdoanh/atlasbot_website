@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Padding làm struct lớn hơn tưởng tượng</text>
+
+  <!-- BadOrder -->
+  <text x="90" y="80" font-size="13" font-weight="700" fill="#111827">struct BadOrder — 12 byte</text>
+  <rect x="90" y="95" width="30" height="35" fill="#2563EB" opacity="0.15" stroke="#2563EB"/>
+  <text x="105" y="117" text-anchor="middle" font-size="9" fill="#111827">flag</text>
+  <rect x="120" y="95" width="90" height="35" fill="#DC2626" opacity="0.08" stroke="#DC2626" stroke-dasharray="3 2"/>
+  <text x="165" y="117" text-anchor="middle" font-size="9" fill="#DC2626">padding (3B)</text>
+  <rect x="210" y="95" width="120" height="35" fill="#16A34A" opacity="0.15" stroke="#16A34A"/>
+  <text x="270" y="117" text-anchor="middle" font-size="9" fill="#111827">timestamp (4B)</text>
+  <rect x="330" y="95" width="30" height="35" fill="#F97316" opacity="0.15" stroke="#F97316"/>
+  <text x="345" y="117" text-anchor="middle" font-size="9" fill="#111827">status</text>
+  <rect x="360" y="95" width="90" height="35" fill="#DC2626" opacity="0.08" stroke="#DC2626" stroke-dasharray="3 2"/>
+  <text x="405" y="117" text-anchor="middle" font-size="9" fill="#DC2626">padding (3B)</text>
+
+  <!-- GoodOrder -->
+  <text x="90" y="175" font-size="13" font-weight="700" fill="#111827">struct GoodOrder — 8 byte</text>
+  <rect x="90" y="190" width="120" height="35" fill="#16A34A" opacity="0.15" stroke="#16A34A"/>
+  <text x="150" y="212" text-anchor="middle" font-size="9" fill="#111827">timestamp (4B)</text>
+  <rect x="210" y="190" width="30" height="35" fill="#2563EB" opacity="0.15" stroke="#2563EB"/>
+  <text x="225" y="212" text-anchor="middle" font-size="9" fill="#111827">flag</text>
+  <rect x="240" y="190" width="30" height="35" fill="#F97316" opacity="0.15" stroke="#F97316"/>
+  <text x="255" y="212" text-anchor="middle" font-size="9" fill="#111827">status</text>
+  <rect x="270" y="190" width="60" height="35" fill="#DC2626" opacity="0.08" stroke="#DC2626" stroke-dasharray="3 2"/>
+  <text x="300" y="212" text-anchor="middle" font-size="9" fill="#DC2626">padding (2B)</text>
+
+  <!-- hardware mapping -->
+  <rect x="90" y="260" width="620" height="140" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="285" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">Struct ánh xạ thanh ghi phần cứng thật</text>
+
+  <rect x="120" y="305" width="180" height="80" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="210" y="325" text-anchor="middle" font-size="11" font-family="monospace" fill="#111827">MODER</text>
+  <text x="210" y="345" text-anchor="middle" font-size="11" font-family="monospace" fill="#111827">ODR</text>
+  <text x="210" y="365" text-anchor="middle" font-size="11" font-family="monospace" fill="#111827">IDR</text>
+
+  <text x="330" y="350" font-size="16" fill="#6B7280">≡</text>
+
+  <rect x="370" y="305" width="300" height="80" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+  <text x="390" y="325" font-size="10" font-family="monospace" fill="#111827">0x40020000 → MODER thật trên chip</text>
+  <text x="390" y="345" font-size="10" font-family="monospace" fill="#111827">0x40020014 → ODR thật trên chip</text>
+  <text x="390" y="365" font-size="10" font-family="monospace" fill="#111827">0x40020010 → IDR thật trên chip</text>
+</svg>

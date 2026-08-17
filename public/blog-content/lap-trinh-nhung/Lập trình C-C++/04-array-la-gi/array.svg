@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="40" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Mảng = vùng nhớ liên tục, đánh chỉ số từ 0</text>
+
+  <text x="90" y="100" font-size="12" fill="#6B7280">uint16_t adc_samples[5]</text>
+
+  <rect x="90" y="115" width="120" height="60" fill="#2563EB" opacity="0.12" stroke="#2563EB" stroke-width="2"/>
+  <text x="150" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">512</text>
+  <text x="150" y="158" text-anchor="middle" font-size="10" fill="#6B7280">[0]</text>
+  <text x="150" y="200" text-anchor="middle" font-size="9" fill="#6B7280">0x2000</text>
+
+  <rect x="210" y="115" width="120" height="60" fill="#16A34A" opacity="0.12" stroke="#16A34A" stroke-width="2"/>
+  <text x="270" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">520</text>
+  <text x="270" y="158" text-anchor="middle" font-size="10" fill="#6B7280">[1]</text>
+  <text x="270" y="200" text-anchor="middle" font-size="9" fill="#6B7280">0x2002</text>
+
+  <rect x="330" y="115" width="120" height="60" fill="#F97316" opacity="0.12" stroke="#F97316" stroke-width="2"/>
+  <text x="390" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">515</text>
+  <text x="390" y="158" text-anchor="middle" font-size="10" fill="#6B7280">[2]</text>
+  <text x="390" y="200" text-anchor="middle" font-size="9" fill="#6B7280">0x2004</text>
+
+  <rect x="450" y="115" width="120" height="60" fill="#DC2626" opacity="0.10" stroke="#DC2626" stroke-width="2"/>
+  <text x="510" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">518</text>
+  <text x="510" y="158" text-anchor="middle" font-size="10" fill="#6B7280">[3]</text>
+  <text x="510" y="200" text-anchor="middle" font-size="9" fill="#6B7280">0x2006</text>
+
+  <rect x="570" y="115" width="120" height="60" fill="#6B7280" opacity="0.12" stroke="#6B7280" stroke-width="2"/>
+  <text x="630" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">522</text>
+  <text x="630" y="158" text-anchor="middle" font-size="10" fill="#6B7280">[4]</text>
+  <text x="630" y="200" text-anchor="middle" font-size="9" fill="#6B7280">0x2008</text>
+
+  <rect x="90" y="250" width="600" height="55" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="390" y="273" text-anchor="middle" font-size="12" font-family="monospace" fill="#111827">adc_samples[2]  ≡  *(adc_samples + 2)</text>
+  <text x="390" y="293" text-anchor="middle" font-size="11" fill="#6B7280">địa chỉ đầu + 2 × sizeof(uint16_t) = 0x2000 + 4 = 0x2004</text>
+
+  <rect x="90" y="330" width="600" height="60" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="390" y="353" text-anchor="middle" font-size="12" fill="#111827">Truyền vào hàm → chỉ truyền địa chỉ phần tử đầu tiên,</text>
+  <text x="390" y="373" text-anchor="middle" font-size="12" fill="#111827">phải truyền kèm số lượng phần tử riêng</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Trọng tài CAN — ID nhỏ hơn thắng, không mất dữ liệu</text>
+
+  <line x1="90" y1="100" x2="710" y2="100" stroke="#6B7280" stroke-width="3"/>
+  <text x="100" y="90" font-size="11" fill="#6B7280">Bus CAN (CAN_H / CAN_L)</text>
+
+  <!-- node A -->
+  <rect x="120" y="140" width="200" height="70" rx="8" fill="#16A34A" opacity="0.10" stroke="#16A34A" stroke-width="2"/>
+  <text x="220" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Node A — ID 0x100</text>
+  <text x="220" y="188" text-anchor="middle" font-size="10" fill="#16A34A">Ưu tiên CAO hơn → thắng</text>
+  <line x1="220" y1="140" x2="220" y2="100" stroke="#16A34A" stroke-width="2"/>
+
+  <!-- node B -->
+  <rect x="480" y="140" width="200" height="70" rx="8" fill="#DC2626" opacity="0.08" stroke="#DC2626" stroke-width="2"/>
+  <text x="580" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Node B — ID 0x200</text>
+  <text x="580" y="188" text-anchor="middle" font-size="10" fill="#DC2626">Ưu tiên thấp hơn → tự lùi</text>
+  <line x1="580" y1="140" x2="580" y2="100" stroke="#DC2626" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <text x="400" y="130" text-anchor="middle" font-size="11" fill="#111827">Cả hai gửi cùng lúc →</text>
+
+  <!-- timeline result -->
+  <rect x="120" y="250" width="560" height="50" rx="6" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="280" text-anchor="middle" font-size="12" font-family="monospace" fill="#111827">Node A gửi trọn vẹn message 0x100 (8 byte)</text>
+
+  <rect x="120" y="315" width="560" height="50" rx="6" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="345" text-anchor="middle" font-size="12" font-family="monospace" fill="#111827">Node B tự động gửi lại 0x200 ngay sau đó</text>
+
+  <text x="400" y="405" text-anchor="middle" font-size="12" fill="#111827">Không node nào cần "thử lại từ đầu" — trọng tài xử lý ở tầng phần cứng</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Inverse Kinematics — 2 lời giải cho cùng 1 đích</text>
+
+  <!-- Elbow up -->
+  <text x="220" y="65" text-anchor="middle" font-size="12" font-weight="700" fill="#2563EB">Elbow-up</text>
+  <line x1="180" y1="230" x2="260" y2="130" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <line x1="260" y1="130" x2="360" y2="200" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="180" cy="230" r="6" fill="#2563EB"/>
+  <circle cx="260" cy="130" r="6" fill="#F97316"/>
+  <circle cx="360" cy="200" r="7" fill="#DC2626"/>
+  <text x="380" y="195" font-size="11" font-weight="700" fill="#DC2626">đích (x, y)</text>
+
+  <!-- Elbow down -->
+  <text x="220" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#16A34A">Elbow-down</text>
+  <line x1="180" y1="230" x2="240" y2="330" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <line x1="240" y1="330" x2="360" y2="200" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="240" cy="330" r="6" fill="#16A34A"/>
+
+  <text x="180" y="255" text-anchor="middle" font-size="9" fill="#6B7280">gốc</text>
+
+  <rect x="440" y="80" width="320" height="150" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="600" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Cả 2 đều đúng toán học</text>
+  <text x="600" y="132" text-anchor="middle" font-size="10" font-family="monospace" fill="#374151">θ2 = ± arccos(...)</text>
+  <text x="600" y="155" text-anchor="middle" font-size="10" fill="#374151">chọn dấu nào tuỳ ràng buộc:</text>
+  <text x="600" y="175" text-anchor="middle" font-size="10" fill="#374151">tránh vật cản, gần vị trí hiện tại</text>
+  <text x="600" y="195" text-anchor="middle" font-size="10" fill="#374151">hơn để di chuyển ít nhất</text>
+
+  <rect x="90" y="280" width="620" height="110" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="305" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">So sánh với robot vi sai — inverse kinematics tuyến tính</text>
+  <text x="400" y="330" text-anchor="middle" font-size="11" font-family="monospace" fill="#374151">v_L = v − ω·L/2      v_R = v + ω·L/2</text>
+  <text x="400" y="352" text-anchor="middle" font-size="10" fill="#374151">chỉ cộng/trừ — luôn ra đúng 1 lời giải, không có elbow-up/down</text>
+  <text x="400" y="372" text-anchor="middle" font-size="9" fill="#6B7280">độ khó IK phụ thuộc cơ cấu tuyến tính hay phi tuyến, không cố định</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="mkArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="440" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">4 bánh Mecanum — con lăn nghiêng 45° kiểu chữ X</text>
+
+  <!-- Robot body top-down -->
+  <rect x="280" y="130" width="240" height="180" rx="14" fill="#F3F5F8" stroke="#111827" stroke-width="2"/>
+  <polygon points="400,130 385,155 415,155" fill="#2563EB"/>
+
+  <!-- 4 wheels with roller hatching direction -->
+  <g>
+    <rect x="245" y="140" width="35" height="60" rx="4" fill="#111827"/>
+    <line x1="250" y1="150" x2="275" y2="165" stroke="#F97316" stroke-width="2"/>
+    <line x1="250" y1="165" x2="275" y2="180" stroke="#F97316" stroke-width="2"/>
+    <line x1="250" y1="180" x2="275" y2="195" stroke="#F97316" stroke-width="2"/>
+    <text x="262" y="220" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">v1</text>
+  </g>
+
+  <g>
+    <rect x="520" y="140" width="35" height="60" rx="4" fill="#111827"/>
+    <line x1="525" y1="165" x2="550" y2="150" stroke="#F97316" stroke-width="2"/>
+    <line x1="525" y1="180" x2="550" y2="165" stroke="#F97316" stroke-width="2"/>
+    <line x1="525" y1="195" x2="550" y2="180" stroke="#F97316" stroke-width="2"/>
+    <text x="537" y="220" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">v2</text>
+  </g>
+
+  <g>
+    <rect x="245" y="240" width="35" height="60" rx="4" fill="#111827"/>
+    <line x1="250" y1="250" x2="275" y2="265" stroke="#F97316" stroke-width="2"/>
+    <line x1="250" y1="265" x2="275" y2="280" stroke="#F97316" stroke-width="2"/>
+    <line x1="250" y1="280" x2="275" y2="295" stroke="#F97316" stroke-width="2"/>
+    <text x="262" y="320" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">v3</text>
+  </g>
+
+  <g>
+    <rect x="520" y="240" width="35" height="60" rx="4" fill="#111827"/>
+    <line x1="525" y1="265" x2="550" y2="250" stroke="#F97316" stroke-width="2"/>
+    <line x1="525" y1="280" x2="550" y2="265" stroke="#F97316" stroke-width="2"/>
+    <line x1="525" y1="295" x2="550" y2="280" stroke="#F97316" stroke-width="2"/>
+    <text x="537" y="320" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">v4</text>
+  </g>
+
+  <!-- resultant vectors -->
+  <line x1="400" y1="220" x2="400" y2="150" stroke="#16A34A" stroke-width="2.5" marker-end="url(#mkArrow)"/>
+  <text x="415" y="165" font-size="12" font-weight="700" fill="#16A34A">vx (tiến)</text>
+
+  <line x1="400" y1="220" x2="470" y2="220" stroke="#DC2626" stroke-width="2.5" marker-end="url(#mkArrow)"/>
+  <text x="475" y="215" font-size="12" font-weight="700" fill="#DC2626">vy (ngang)</text>
+
+  <path d="M 400 220 A 25 25 0 0 1 425 245" fill="none" stroke="#9333EA" stroke-width="2" marker-end="url(#mkArrow)"/>
+  <text x="435" y="255" font-size="12" font-weight="700" fill="#9333EA">ω</text>
+
+  <rect x="90" y="350" width="620" height="75" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="373" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">v1 = vx−vy−ω·k   v2 = vx+vy+ω·k   v3 = vx+vy−ω·k   v4 = vx−vy+ω·k</text>
+  <text x="400" y="395" text-anchor="middle" font-size="9" fill="#6B7280">3 bậc tự do độc lập (vx, vy, ω) từ 4 bánh — robot vi sai chỉ có 2 (v, ω)</text>
+  <text x="400" y="412" text-anchor="middle" font-size="9" fill="#6B7280">k = (lx+ly)/2</text>
+</svg>

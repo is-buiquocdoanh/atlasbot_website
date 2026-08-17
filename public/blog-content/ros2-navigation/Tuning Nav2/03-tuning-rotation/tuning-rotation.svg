@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Arial, sans-serif">
+  <rect width="800" height="380" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Oscillation — lắc lư thay vì xoay dứt khoát</text>
+
+  <circle cx="200" cy="200" r="40" fill="#F3F5F8" stroke="#111827" stroke-width="1.5"/>
+  <path d="M 200 200 L 200 160" stroke="#DC2626" stroke-width="2.5"/>
+  <path d="M 200 160 A 40 40 0 0 1 225 175" fill="none" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <path d="M 200 160 A 40 40 0 0 0 175 175" fill="none" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="200" y="260" text-anchor="middle" font-size="10" font-weight="700" fill="#7F1D1D">Sai — lắc phải/trái liên tục</text>
+  <text x="200" y="278" text-anchor="middle" font-size="9" fill="#7C2D12">min_vel_theta quá thấp,</text>
+  <text x="200" y="293" text-anchor="middle" font-size="9" fill="#7C2D12">critic xung đột</text>
+
+  <circle cx="600" cy="200" r="40" fill="#F3F5F8" stroke="#111827" stroke-width="1.5"/>
+  <path d="M 600 200 L 600 160" stroke="#16A34A" stroke-width="2.5"/>
+  <path d="M 600 160 A 40 40 0 0 1 635 180" fill="none" stroke="#16A34A" stroke-width="2" marker-end="url(#trArrow)"/>
+  <defs>
+    <marker id="trArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16A34A"/>
+    </marker>
+  </defs>
+  <text x="600" y="260" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">Đúng — xoay dứt khoát 1 chiều</text>
+
+  <rect x="90" y="300" width="620" height="65" rx="8" fill="#EDE9FE" stroke="#9333EA" stroke-width="1.3"/>
+  <text x="400" y="325" text-anchor="middle" font-size="10" font-weight="700" fill="#6B21A8">RotationShimController: xoay đúng hướng TRƯỚC, bám path SAU</text>
+  <text x="400" y="347" text-anchor="middle" font-size="9" fill="#6B7280">tách 2 giai đoạn khi góc lệch quá lớn — thay vì 1 controller làm cả 2 cùng lúc</text>
+</svg>

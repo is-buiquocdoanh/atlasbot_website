@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="lnvArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="360" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Localization trong chuỗi Navigation</text>
+
+  <rect x="40" y="70" width="150" height="60" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="115" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">Map (đã lưu)</text>
+
+  <rect x="40" y="150" width="150" height="60" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="115" y="185" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">Scan LiDAR + Odom</text>
+
+  <line x1="190" y1="100" x2="260" y2="140" stroke="#111827" stroke-width="2" marker-end="url(#lnvArrow)"/>
+  <line x1="190" y1="180" x2="260" y2="150" stroke="#111827" stroke-width="2" marker-end="url(#lnvArrow)"/>
+
+  <rect x="265" y="115" width="180" height="70" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="355" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">AMCL</text>
+  <text x="355" y="163" text-anchor="middle" font-size="9" fill="#374151">particle filter</text>
+
+  <line x1="445" y1="150" x2="500" y2="150" stroke="#111827" stroke-width="2" marker-end="url(#lnvArrow)"/>
+
+  <rect x="505" y="115" width="150" height="70" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="580" y="145" text-anchor="middle" font-size="11" font-weight="700" fill="#92400E">Pose (x,y,θ)</text>
+  <text x="580" y="163" text-anchor="middle" font-size="9" fill="#374151">hệ map</text>
+
+  <line x1="580" y1="185" x2="580" y2="220" stroke="#111827" stroke-width="2" marker-end="url(#lnvArrow)"/>
+
+  <rect x="470" y="225" width="220" height="55" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="580" y="257" text-anchor="middle" font-size="11" font-weight="700" fill="#9A3412">Path Planning</text>
+
+  <rect x="90" y="300" width="620" height="45" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="327" text-anchor="middle" font-size="10" fill="#111827">SLAM = dựng map + định vị đồng thời · AMCL = chỉ định vị trên map đã có sẵn</text>
+</svg>

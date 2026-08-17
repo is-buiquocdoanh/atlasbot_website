@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Ba cảm biến bên trong một IMU</text>
+
+  <rect x="40" y="60" width="230" height="140" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="155" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">Accelerometer</text>
+  <text x="155" y="108" text-anchor="middle" font-size="9" fill="#374151">gia tốc tuyến tính 3 trục</text>
+  <text x="155" y="124" text-anchor="middle" font-size="9" fill="#374151">(x, y, z), gồm cả trọng lực</text>
+  <text x="155" y="148" text-anchor="middle" font-size="9" fill="#166534">→ ước lượng Roll/Pitch tĩnh</text>
+  <text x="155" y="165" text-anchor="middle" font-size="8" fill="#6B7280">(hướng vector trọng lực)</text>
+  <text x="155" y="185" text-anchor="middle" font-size="8" fill="#7F1D1D">tích phân kép → trôi nhanh</text>
+
+  <rect x="285" y="60" width="230" height="140" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Gyroscope</text>
+  <text x="400" y="108" text-anchor="middle" font-size="9" fill="#374151">vận tốc góc 3 trục (rad/s)</text>
+  <text x="400" y="124" text-anchor="middle" font-size="9" fill="#374151">tốc độ thay đổi Roll/Pitch/Yaw</text>
+  <text x="400" y="148" text-anchor="middle" font-size="9" fill="#166534">→ độc lập với bánh xe trượt</text>
+  <text x="400" y="165" text-anchor="middle" font-size="8" fill="#6B7280">đo trực tiếp thân robot</text>
+  <text x="400" y="185" text-anchor="middle" font-size="8" fill="#7F1D1D">tích phân đơn → trôi chậm hơn</text>
+
+  <rect x="530" y="60" width="230" height="140" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="645" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">Magnetometer</text>
+  <text x="645" y="108" text-anchor="middle" font-size="9" fill="#374151">đo từ trường Trái Đất</text>
+  <text x="645" y="124" text-anchor="middle" font-size="9" fill="#374151">hướng tuyệt đối (Bắc từ)</text>
+  <text x="645" y="148" text-anchor="middle" font-size="9" fill="#166534">→ Yaw tuyệt đối, không trôi</text>
+  <text x="645" y="165" text-anchor="middle" font-size="8" fill="#6B7280">tuỳ chọn — không phải IMU nào cũng có</text>
+  <text x="645" y="185" text-anchor="middle" font-size="8" fill="#7F1D1D">dễ nhiễu bởi động cơ/kim loại</text>
+
+  <rect x="90" y="230" width="620" height="130" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="255" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">MPU6050 = 6-DOF (accel + gyro) — phổ biến ở robot DIY</text>
+  <text x="400" y="280" text-anchor="middle" font-size="10" fill="#374151">Encoder tin cậy khi bánh có tiếp xúc tốt · IMU tin cậy khi cần biết</text>
+  <text x="400" y="298" text-anchor="middle" font-size="10" fill="#374151">chuyển động thân robot bất kể bánh xe có trượt hay không</text>
+  <text x="400" y="325" text-anchor="middle" font-size="10" font-weight="700" fill="#9A3412">Không nguồn nào một mình đủ tốt cho mọi tình huống → Sensor Fusion</text>
+</svg>

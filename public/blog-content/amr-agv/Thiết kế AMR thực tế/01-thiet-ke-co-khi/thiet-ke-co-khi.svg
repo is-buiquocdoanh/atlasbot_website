@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Trọng tâm thấp — đế rộng = ổn định hơn khi vào cua</text>
+
+  <!-- Unstable: tall + narrow -->
+  <text x="200" y="65" text-anchor="middle" font-size="12" font-weight="700" fill="#DC2626">Trọng tâm cao, đế hẹp — dễ lật</text>
+  <rect x="170" y="90" width="60" height="140" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <circle cx="200" cy="130" r="8" fill="#DC2626"/>
+  <text x="240" y="134" font-size="9" fill="#DC2626">trọng tâm cao (h lớn)</text>
+  <circle cx="175" cy="235" r="10" fill="#111827"/>
+  <circle cx="225" cy="235" r="10" fill="#111827"/>
+  <line x1="175" y1="250" x2="225" y2="250" stroke="#6B7280" stroke-width="1" stroke-dasharray="3 2"/>
+  <text x="200" y="265" text-anchor="middle" font-size="8" fill="#6B7280">w hẹp</text>
+
+  <!-- unstable tipping illustration -->
+  <path d="M 230 230 Q 260 200 250 160" stroke="#DC2626" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+  <text x="270" y="180" font-size="8" fill="#DC2626">lực ly tâm dễ lật</text>
+
+  <!-- Stable: short + wide -->
+  <text x="580" y="65" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Trọng tâm thấp, đế rộng — ổn định</text>
+  <rect x="500" y="180" width="160" height="50" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <circle cx="580" cy="200" r="8" fill="#16A34A"/>
+  <text x="580" y="245" text-anchor="middle" font-size="9" fill="#166534">trọng tâm thấp (h nhỏ)</text>
+  <circle cx="510" cy="235" r="10" fill="#111827"/>
+  <circle cx="650" cy="235" r="10" fill="#111827"/>
+  <line x1="510" y1="250" x2="650" y2="250" stroke="#6B7280" stroke-width="1" stroke-dasharray="3 2"/>
+  <text x="580" y="265" text-anchor="middle" font-size="8" fill="#6B7280">w rộng</text>
+
+  <rect x="90" y="290" width="620" height="60" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="315" text-anchor="middle" font-size="12" font-family="monospace" fill="#111827">v² &lt; g · R · w / (2h)</text>
+  <text x="400" y="335" text-anchor="middle" font-size="10" fill="#6B7280">tốc độ an toàn khi vào cua tỉ lệ nghịch với chiều cao trọng tâm h</text>
+
+  <rect x="90" y="365" width="620" height="40" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="390" text-anchor="middle" font-size="10" fill="#9A3412">Đặt pin/động cơ (nặng nhất) càng thấp càng tốt — nguyên tắc rẻ nhất để tăng ổn định</text>
+</svg>

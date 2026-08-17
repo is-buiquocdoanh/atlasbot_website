@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="ctArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Submap + Pose-graph Optimization</text>
+
+  <rect x="40" y="65" width="150" height="110" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="115" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="#1E3A8A">Submap 1</text>
+  <text x="115" y="115" text-anchor="middle" font-size="8" fill="#374151">chuỗi scan</text>
+  <text x="115" y="128" text-anchor="middle" font-size="8" fill="#374151">liên tiếp</text>
+
+  <rect x="220" y="65" width="150" height="110" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="295" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">Submap 2</text>
+
+  <rect x="400" y="65" width="150" height="110" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="475" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="#92400E">Submap 3</text>
+
+  <rect x="580" y="65" width="150" height="110" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="655" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="#9A3412">Submap N</text>
+
+  <line x1="190" y1="120" x2="220" y2="120" stroke="#111827" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="370" y1="120" x2="400" y2="120" stroke="#111827" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="550" y1="120" x2="580" y2="120" stroke="#111827" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <path d="M 115 175 Q 400 260 475 175" fill="none" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="400" y="255" text-anchor="middle" font-size="8" fill="#7F1D1D">loop closure constraint</text>
+
+  <line x1="400" y1="195" x2="400" y2="240" stroke="#111827" stroke-width="2" marker-end="url(#ctArrow)"/>
+
+  <rect x="200" y="245" width="400" height="90" rx="10" fill="#EDE9FE" stroke="#9333EA" stroke-width="2"/>
+  <text x="400" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#6B21A8">Ceres Solver — Pose-graph Optimization</text>
+  <text x="400" y="295" text-anchor="middle" font-size="10" fill="#374151">tìm vị trí đặt từng submap để tổng sai lệch nhỏ nhất</text>
+  <text x="400" y="313" text-anchor="middle" font-size="9" fill="#6B7280">chạy định kỳ, không phải mỗi scan</text>
+
+  <rect x="90" y="360" width="620" height="45" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="388" text-anchor="middle" font-size="10" fill="#111827">Front-end khớp vào submap "tươi" — Back-end ghép các submap thành bản đồ toàn cục</text>
+</svg>

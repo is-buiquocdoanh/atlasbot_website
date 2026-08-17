@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Arial, sans-serif">
+  <rect width="800" height="380" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">acc_lim_x — quá thấp ì, quá cao giật</text>
+
+  <line x1="80" y1="280" x2="740" y2="280" stroke="#9CA3AF" stroke-width="1.3"/>
+  <line x1="80" y1="280" x2="80" y2="80" stroke="#9CA3AF" stroke-width="1.3"/>
+
+  <path d="M 80 280 L 130 280 L 450 200 L 450 280" fill="none" stroke="#F97316" stroke-width="2"/>
+  <text x="265" y="185" text-anchor="middle" font-size="9" fill="#9A3412">acc_lim thấp — chậm đạt tốc độ ("ì")</text>
+
+  <path d="M 500 280 L 520 280 L 540 130 L 540 280" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <text x="530" y="115" text-anchor="middle" font-size="9" fill="#7F1D1D">acc_lim cao — giật, có thể trượt</text>
+
+  <path d="M 580 280 L 610 280 L 700 200 L 700 280" fill="none" stroke="#16A34A" stroke-width="2.5"/>
+  <text x="650" y="185" text-anchor="middle" font-size="9" fill="#166534">vừa đủ</text>
+
+  <rect x="90" y="300" width="620" height="65" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="325" text-anchor="middle" font-size="10" fill="#111827">decel_lim_x thường lớn hơn acc_lim_x — ưu tiên khả năng dừng nhanh</text>
+  <text x="400" y="347" text-anchor="middle" font-size="9" fill="#6B7280">đo thực tế qua /cmd_vel + /odom thay vì đoán số "nghe hợp lý"</text>
+</svg>

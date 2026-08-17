@@ -44,7 +44,10 @@
   "Projects": {
     "title": "프로젝트",
     "specsTitle": "사양",
-    "githubLink": "GitHub에서 소스 보기"
+    "galleryTitle": "프로젝트 갤러리",
+    "videosTitle": "데모 영상",
+    "githubLink": "GitHub에서 소스 보기",
+    "backToProjects": "← 전체 프로젝트"
   },
   "Shop": {
     "title": "샵",

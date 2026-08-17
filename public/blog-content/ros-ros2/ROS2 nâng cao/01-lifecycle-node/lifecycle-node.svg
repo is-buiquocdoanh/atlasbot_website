@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="lnArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Lifecycle Node — 4 trạng thái chính</text>
+
+  <rect x="30" y="70" width="170" height="80" rx="10" fill="#F3F5F8" stroke="#6B7280" stroke-width="2"/>
+  <text x="115" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Unconfigured</text>
+  <text x="115" y="120" text-anchor="middle" font-size="9" fill="#6B7280">chưa cấp phát</text>
+  <text x="115" y="134" text-anchor="middle" font-size="9" fill="#6B7280">tài nguyên</text>
+
+  <line x1="200" y1="110" x2="245" y2="110" stroke="#111827" stroke-width="2" marker-end="url(#lnArrow)"/>
+  <text x="222" y="98" text-anchor="middle" font-size="8" fill="#374151">configure</text>
+
+  <rect x="250" y="70" width="170" height="80" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="335" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">Inactive</text>
+  <text x="335" y="120" text-anchor="middle" font-size="9" fill="#374151">đã cấu hình xong</text>
+  <text x="335" y="134" text-anchor="middle" font-size="9" fill="#374151">chưa xử lý dữ liệu</text>
+
+  <line x1="420" y1="110" x2="465" y2="110" stroke="#111827" stroke-width="2" marker-end="url(#lnArrow)"/>
+  <text x="442" y="98" text-anchor="middle" font-size="8" fill="#374151">activate</text>
+
+  <line x1="465" y1="130" x2="420" y2="130" stroke="#111827" stroke-width="1.5" marker-end="url(#lnArrow)"/>
+  <text x="442" y="148" text-anchor="middle" font-size="8" fill="#374151">deactivate</text>
+
+  <rect x="470" y="70" width="170" height="80" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="555" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Active</text>
+  <text x="555" y="120" text-anchor="middle" font-size="9" fill="#374151">publisher/subscriber</text>
+  <text x="555" y="134" text-anchor="middle" font-size="9" fill="#374151">chạy thật</text>
+
+  <line x1="640" y1="110" x2="685" y2="110" stroke="#111827" stroke-width="2" marker-end="url(#lnArrow)"/>
+  <text x="662" y="98" text-anchor="middle" font-size="8" fill="#374151">shutdown</text>
+
+  <rect x="690" y="70" width="90" height="80" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="735" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#7F1D1D">Finalized</text>
+  <text x="735" y="120" text-anchor="middle" font-size="8" fill="#374151">giải phóng</text>
+  <text x="735" y="132" text-anchor="middle" font-size="8" fill="#374151">hoàn toàn</text>
+
+  <line x1="335" y1="150" x2="335" y2="185" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="400" y="175" text-anchor="middle" font-size="8" fill="#6B7280">cleanup → quay lại Unconfigured</text>
+
+  <rect x="90" y="220" width="620" height="90" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">lifecycle_manager (nav2_lifecycle_manager)</text>
+  <text x="400" y="266" text-anchor="middle" font-size="10" fill="#374151">tự gọi đúng chuỗi configure → activate cho từng node theo thứ tự khai</text>
+  <text x="400" y="283" text-anchor="middle" font-size="10" fill="#374151">map_server sẵn sàng → amcl active → planner_server/controller_server mới nhận lệnh</text>
+  <text x="400" y="300" text-anchor="middle" font-size="9" fill="#6B7280">đây là cách Nav2 tránh race-condition khi khởi động nhiều node phụ thuộc</text>
+
+  <rect x="150" y="335" width="500" height="45" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="362" text-anchor="middle" font-size="10" fill="#111827">Publisher tồn tại từ on_configure() nhưng chỉ publish thật sau on_activate()</text>
+</svg>

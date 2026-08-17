@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Trapezoidal Velocity Profile</text>
+
+  <line x1="80" y1="330" x2="740" y2="330" stroke="#9CA3AF" stroke-width="1.3"/>
+  <line x1="80" y1="330" x2="80" y2="80" stroke="#9CA3AF" stroke-width="1.3"/>
+  <text x="745" y="335" font-size="10" fill="#6B7280">t</text>
+  <text x="70" y="75" font-size="10" fill="#6B7280">v</text>
+
+  <!-- Bad: step change (dashed red) -->
+  <path d="M 80 330 L 150 330 L 150 150 L 550 150 L 550 330 L 620 330" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="300" y="130" text-anchor="middle" font-size="10" fill="#DC2626">bậc thang — đổi tốc độ tức thời (không nên)</text>
+
+  <!-- Good: trapezoidal -->
+  <path d="M 80 330 L 150 330 L 300 150 L 400 150 L 550 330 L 620 330" fill="none" stroke="#16A34A" stroke-width="3"/>
+
+  <rect x="150" y="335" width="150" height="18" fill="#DCFCE7"/>
+  <text x="225" y="349" text-anchor="middle" font-size="9" font-weight="700" fill="#166534">accel (a_max)</text>
+
+  <rect x="300" y="335" width="100" height="18" fill="#DBEAFE"/>
+  <text x="350" y="349" text-anchor="middle" font-size="9" font-weight="700" fill="#1E3A8A">cruise</text>
+
+  <rect x="400" y="335" width="150" height="18" fill="#FEE2E2"/>
+  <text x="475" y="349" text-anchor="middle" font-size="9" font-weight="700" fill="#7F1D1D">decel (−a_max)</text>
+
+  <line x1="80" y1="150" x2="740" y2="150" stroke="#6B7280" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="745" y="153" font-size="9" fill="#6B7280">v_mục_tiêu</text>
+
+  <rect x="90" y="375" width="620" height="35" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="398" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">v(t) = v(t−1) + clamp(v_target − v(t−1), −a_max·dt, +a_max·dt)</text>
+</svg>

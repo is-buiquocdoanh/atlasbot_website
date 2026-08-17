@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Anatomy của một package ROS2</text>
+
+  <rect x="200" y="65" width="400" height="330" rx="12" fill="#2563EB" opacity="0.05" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">my_robot_package/</text>
+
+  <rect x="230" y="110" width="150" height="45" rx="6" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+  <text x="305" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">package.xml</text>
+  <text x="305" y="146" text-anchor="middle" font-size="9" fill="#6B7280">bắt buộc — khai dependency</text>
+
+  <rect x="400" y="110" width="170" height="45" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="485" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">setup.py / CMakeLists.txt</text>
+  <text x="485" y="146" text-anchor="middle" font-size="9" fill="#6B7280">cách biên dịch/cài đặt</text>
+
+  <rect x="230" y="175" width="150" height="40" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="305" y="200" text-anchor="middle" font-size="11" fill="#111827">launch/</text>
+
+  <rect x="400" y="175" width="170" height="40" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="485" y="200" text-anchor="middle" font-size="11" fill="#111827">config/ (tham số YAML)</text>
+
+  <rect x="230" y="235" width="150" height="40" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="305" y="260" text-anchor="middle" font-size="11" fill="#111827">msg/ srv/ action/</text>
+
+  <rect x="400" y="235" width="170" height="40" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="485" y="260" text-anchor="middle" font-size="11" fill="#111827">my_robot_package/ (code)</text>
+
+  <rect x="230" y="300" width="340" height="70" rx="6" fill="#F97316" opacity="0.10" stroke="#F97316" stroke-width="2"/>
+  <text x="400" y="325" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">entry_points trong setup.py</text>
+  <text x="400" y="343" text-anchor="middle" font-size="10" fill="#6B7280">khai executable → dùng được với</text>
+  <text x="400" y="358" text-anchor="middle" font-size="10" fill="#6B7280">ros2 run my_robot_package &lt;node&gt;</text>
+
+  <text x="400" y="425" text-anchor="middle" font-size="11" fill="#6B7280">ros2 pkg create --build-type ament_python my_robot_package</text>
+</svg>

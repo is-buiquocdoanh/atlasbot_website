@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="acArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">ros2 action send_goal — goal, feedback, result</text>
+
+  <rect x="260" y="60" width="280" height="50" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#1E3A8A">action send_goal /navigate_to_pose</text>
+
+  <line x1="400" y1="110" x2="400" y2="140" stroke="#111827" stroke-width="2" marker-end="url(#acArrow)"/>
+
+  <rect x="300" y="145" width="200" height="40" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="400" y="170" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Goal accepted</text>
+
+  <line x1="400" y1="185" x2="400" y2="210" stroke="#111827" stroke-width="2" marker-end="url(#acArrow)"/>
+
+  <rect x="150" y="215" width="500" height="100" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="400" y="238" text-anchor="middle" font-size="11" font-weight="700" fill="#92400E">Feedback (lặp lại liên tục, --feedback)</text>
+  <text x="400" y="258" text-anchor="middle" font-size="10" font-family="monospace" fill="#374151">distance_remaining: 3.42 → 2.87 → 1.05 → ...</text>
+  <text x="400" y="278" text-anchor="middle" font-size="9" fill="#6B7280">giảm dần đều = robot đang tiến đúng hướng</text>
+  <text x="400" y="296" text-anchor="middle" font-size="9" fill="#6B7280">đứng yên/tăng = Nav2 đang gặp vấn đề</text>
+
+  <line x1="400" y1="315" x2="400" y2="340" stroke="#111827" stroke-width="2" marker-end="url(#acArrow)"/>
+
+  <rect x="300" y="345" width="200" height="40" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="370" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">Result: error_code: 0</text>
+
+  <rect x="590" y="215" width="170" height="100" rx="8" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="675" y="240" text-anchor="middle" font-size="10" font-weight="700" fill="#7F1D1D">Ctrl+C</text>
+  <text x="675" y="258" text-anchor="middle" font-size="9" fill="#374151">gửi cancel</text>
+  <text x="675" y="273" text-anchor="middle" font-size="9" fill="#374151">tới action server</text>
+  <text x="675" y="291" text-anchor="middle" font-size="8" fill="#6B7280">test logic dừng</text>
+  <text x="675" y="303" text-anchor="middle" font-size="8" fill="#6B7280">khẩn cấp giữa chừng</text>
+</svg>

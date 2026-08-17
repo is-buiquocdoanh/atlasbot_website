@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="ttArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">view_frames — chụp toàn bộ TF tree</text>
+
+  <rect x="300" y="60" width="200" height="50" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#1E3A8A">map</text>
+
+  <line x1="400" y1="110" x2="400" y2="140" stroke="#111827" stroke-width="2" marker-end="url(#ttArrow)"/>
+  <text x="420" y="128" font-size="8" fill="#6B7280">10Hz</text>
+
+  <rect x="300" y="145" width="200" height="50" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="400" y="175" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#92400E">odom</text>
+
+  <line x1="400" y1="195" x2="400" y2="225" stroke="#111827" stroke-width="2" marker-end="url(#ttArrow)"/>
+  <text x="420" y="213" font-size="8" fill="#6B7280">50Hz</text>
+
+  <rect x="300" y="230" width="200" height="50" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="260" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#166534">base_link</text>
+
+  <line x1="400" y1="280" x2="400" y2="310" stroke="#111827" stroke-width="2" marker-end="url(#ttArrow)"/>
+  <text x="420" y="298" font-size="8" fill="#6B7280">static</text>
+
+  <rect x="300" y="315" width="200" height="45" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="400" y="343" text-anchor="middle" font-size="10" font-weight="700" font-family="monospace" fill="#9A3412">lidar_link</text>
+
+  <!-- orphan frame -->
+  <rect x="580" y="145" width="180" height="50" rx="8" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="670" y="175" text-anchor="middle" font-size="10" font-weight="700" font-family="monospace" fill="#7F1D1D">camera_link?</text>
+  <text x="670" y="215" text-anchor="middle" font-size="8" fill="#7F1D1D">"mồ côi" — thiếu</text>
+  <text x="670" y="228" text-anchor="middle" font-size="8" fill="#7F1D1D">static_transform_publisher</text>
+
+  <rect x="40" y="150" width="180" height="45" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.3"/>
+  <text x="130" y="170" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">tf2_echo map</text>
+  <text x="130" y="184" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">base_link</text>
+</svg>

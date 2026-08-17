@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Bên trong servo đã có sẵn cả vòng điều khiển</text>
+
+  <rect x="90" y="70" width="300" height="220" rx="12" fill="#2563EB" opacity="0.05" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="240" y="95" text-anchor="middle" font-size="12" fill="#6B7280">Vỏ servo (1 khối)</text>
+
+  <rect x="115" y="115" width="110" height="45" rx="6" fill="#FFFFFF" stroke="#2563EB"/>
+  <text x="170" y="142" text-anchor="middle" font-size="11" fill="#111827">Motor DC nhỏ</text>
+
+  <rect x="240" y="115" width="130" height="45" rx="6" fill="#FFFFFF" stroke="#F97316"/>
+  <text x="305" y="142" text-anchor="middle" font-size="11" fill="#111827">Chiết áp (góc)</text>
+
+  <rect x="115" y="175" width="255" height="45" rx="6" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="242" y="202" text-anchor="middle" font-size="11" fill="#111827">Mạch so sánh + điều khiển</text>
+
+  <text x="240" y="255" text-anchor="middle" font-size="10" fill="#6B7280">Tự chỉnh động cơ tới đúng góc yêu cầu</text>
+  <text x="240" y="272" text-anchor="middle" font-size="10" fill="#6B7280">MCU không cần tự làm việc này</text>
+
+  <!-- signal wire -->
+  <line x1="390" y1="130" x2="450" y2="130" stroke="#111827" stroke-width="2"/>
+  <text x="420" y="120" text-anchor="middle" font-size="9" fill="#111827">1 dây tín hiệu</text>
+
+  <rect x="450" y="100" width="120" height="60" rx="6" fill="#F3F5F8" stroke="#6B7280"/>
+  <text x="510" y="135" text-anchor="middle" font-size="12" fill="#111827">MCU</text>
+
+  <!-- PWM to angle mapping -->
+  <text x="500" y="330" text-anchor="middle" font-size="12" fill="#111827">Độ rộng xung → góc quay</text>
+  <rect x="150" y="345" width="500" height="70" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="180" y="370" font-size="11" font-family="monospace" fill="#111827">1.0 ms → 0°</text>
+  <text x="330" y="370" font-size="11" font-family="monospace" fill="#111827">1.5 ms → 90°</text>
+  <text x="480" y="370" font-size="11" font-family="monospace" fill="#111827">2.0 ms → 180°</text>
+  <text x="400" y="398" text-anchor="middle" font-size="10" fill="#6B7280">Xung lặp lại mỗi 20ms</text>
+</svg>

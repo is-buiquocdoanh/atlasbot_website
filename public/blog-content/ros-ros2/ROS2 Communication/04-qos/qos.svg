@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Arial, sans-serif">
+  <rect width="800" height="460" fill="#FFFFFF"/>
+  <text x="400" y="35" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">QoS không khớp → không bao giờ kết nối được</text>
+
+  <!-- compatible case -->
+  <text x="200" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#16A34A">✓ Tương thích</text>
+  <rect x="60" y="85" width="130" height="55" rx="8" fill="#16A34A" opacity="0.10" stroke="#16A34A" stroke-width="2"/>
+  <text x="125" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Publisher</text>
+  <text x="125" y="124" text-anchor="middle" font-size="9" fill="#6B7280">Reliable</text>
+
+  <rect x="250" y="85" width="130" height="55" rx="8" fill="#16A34A" opacity="0.10" stroke="#16A34A" stroke-width="2"/>
+  <text x="315" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Subscriber</text>
+  <text x="315" y="124" text-anchor="middle" font-size="9" fill="#6B7280">Best Effort</text>
+
+  <line x1="190" y1="112" x2="248" y2="112" stroke="#16A34A" stroke-width="3"/>
+  <text x="219" y="102" text-anchor="middle" font-size="16" fill="#16A34A">✓</text>
+  <text x="220" y="165" text-anchor="middle" font-size="9" fill="#6B7280">Publisher đảm bảo NHIỀU HƠN</text>
+  <text x="220" y="180" text-anchor="middle" font-size="9" fill="#6B7280">yêu cầu của subscriber → OK</text>
+
+  <!-- incompatible case -->
+  <text x="600" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#DC2626">✕ Không tương thích</text>
+  <rect x="460" y="85" width="130" height="55" rx="8" fill="#DC2626" opacity="0.08" stroke="#DC2626" stroke-width="2"/>
+  <text x="525" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Publisher</text>
+  <text x="525" y="124" text-anchor="middle" font-size="9" fill="#6B7280">Best Effort</text>
+
+  <rect x="650" y="85" width="130" height="55" rx="8" fill="#DC2626" opacity="0.08" stroke="#DC2626" stroke-width="2"/>
+  <text x="715" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Subscriber</text>
+  <text x="715" y="124" text-anchor="middle" font-size="9" fill="#6B7280">Reliable</text>
+
+  <line x1="590" y1="112" x2="648" y2="112" stroke="#DC2626" stroke-width="3" stroke-dasharray="5 3"/>
+  <text x="619" y="102" text-anchor="middle" font-size="16" fill="#DC2626">✕</text>
+  <text x="620" y="165" text-anchor="middle" font-size="9" fill="#6B7280">Subscriber yêu cầu CAO HƠN</text>
+  <text x="620" y="180" text-anchor="middle" font-size="9" fill="#6B7280">publisher có thể đảm bảo → từ chối kết nối</text>
+
+  <!-- table -->
+  <rect x="60" y="230" width="680" height="180" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="255" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Chọn QoS theo loại dữ liệu</text>
+
+  <text x="90" y="285" font-size="11" font-weight="700" fill="#111827">Cảm biến tần suất cao (LiDAR, IMU)</text>
+  <text x="90" y="302" font-size="10" fill="#6B7280">→ Best Effort, Volatile — mất 1 khung không sao</text>
+
+  <text x="90" y="335" font-size="11" font-weight="700" fill="#111827">Lệnh quan trọng (dừng khẩn cấp, cấu hình)</text>
+  <text x="90" y="352" font-size="10" fill="#6B7280">→ Reliable — không được phép mất</text>
+
+  <text x="90" y="385" font-size="11" font-weight="700" fill="#111827">Bản đồ SLAM, dữ liệu ít thay đổi</text>
+  <text x="90" y="400" font-size="10" fill="#6B7280">→ Transient Local — node vào sau vẫn nhận được bản mới nhất</text>
+</svg>

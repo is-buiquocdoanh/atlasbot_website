@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="Arial, sans-serif">
+  <rect width="800" height="440" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Ba lớp cấu hình DDS trong thực tế</text>
+
+  <rect x="40" y="55" width="230" height="110" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="155" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">RMW_IMPLEMENTATION</text>
+  <text x="155" y="100" text-anchor="middle" font-size="9" fill="#374151">chọn LOẠI DDS chạy bên dưới</text>
+  <text x="155" y="118" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">rmw_cyclonedds_cpp</text>
+  <text x="155" y="140" text-anchor="middle" font-size="8" fill="#6B7280">không cần build lại code</text>
+
+  <rect x="285" y="55" width="230" height="110" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">ROS_DOMAIN_ID</text>
+  <text x="400" y="100" text-anchor="middle" font-size="9" fill="#374151">chọn KÊNH cô lập</text>
+  <text x="400" y="120" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">export ROS_DOMAIN_ID=42</text>
+  <text x="400" y="142" text-anchor="middle" font-size="8" fill="#7F1D1D">phải khớp mọi máy tham gia hệ thống</text>
+
+  <rect x="530" y="55" width="230" height="110" rx="10" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="645" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">QoS Profile XML</text>
+  <text x="645" y="100" text-anchor="middle" font-size="9" fill="#374151">tinh chỉnh sâu hơn API</text>
+  <text x="645" y="120" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">CYCLONEDDS_URI=file://...</text>
+  <text x="645" y="142" text-anchor="middle" font-size="8" fill="#6B7280">khai &lt;Peers&gt; unicast rõ IP</text>
+
+  <text x="400" y="205" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">Kiến trúc thực tế: PC + robot cùng ROS_DOMAIN_ID</text>
+
+  <rect x="120" y="225" width="220" height="90" rx="10" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="230" y="250" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">PC điều khiển</text>
+  <text x="230" y="270" text-anchor="middle" font-size="9" font-family="monospace" fill="#374151">192.168.1.10</text>
+  <text x="230" y="288" text-anchor="middle" font-size="9" font-family="monospace" fill="#374151">DOMAIN_ID=42</text>
+
+  <line x1="340" y1="270" x2="460" y2="270" stroke="#111827" stroke-width="2"/>
+  <text x="400" y="258" text-anchor="middle" font-size="8" fill="#6B7280">multicast bị chặn</text>
+  <text x="400" y="290" text-anchor="middle" font-size="8" fill="#6B7280">trên WiFi công ty?</text>
+
+  <rect x="460" y="225" width="220" height="90" rx="10" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="570" y="250" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Jetson trên robot</text>
+  <text x="570" y="270" text-anchor="middle" font-size="9" font-family="monospace" fill="#374151">192.168.1.50</text>
+  <text x="570" y="288" text-anchor="middle" font-size="9" font-family="monospace" fill="#374151">DOMAIN_ID=42</text>
+
+  <rect x="90" y="345" width="620" height="70" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="368" text-anchor="middle" font-size="10" font-weight="700" fill="#9A3412">Multicast bị chặn (phổ biến trên mạng công ty/toà nhà)</text>
+  <text x="400" y="388" text-anchor="middle" font-size="10" fill="#7C2D12">→ dùng &lt;Peers&gt; khai rõ IP từng máy (unicast discovery) trong file XML</text>
+</svg>

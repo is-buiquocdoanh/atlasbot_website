@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Arial, sans-serif">
+  <rect width="800" height="460" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Bố cục giao diện RViz2</text>
+
+  <rect x="40" y="55" width="760" height="360" rx="10" fill="#F9FAFB" stroke="#6B7280" stroke-width="1.5"/>
+
+  <!-- Left panel: Displays -->
+  <rect x="55" y="70" width="200" height="330" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="155" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">Displays</text>
+
+  <rect x="70" y="105" width="170" height="34" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+  <text x="155" y="126" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">Global Options</text>
+
+  <rect x="70" y="145" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="155" y="166" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">TF</text>
+
+  <rect x="70" y="185" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="155" y="206" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">LaserScan — /scan</text>
+
+  <rect x="70" y="225" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="155" y="246" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">Map — /map</text>
+
+  <rect x="70" y="265" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="155" y="286" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">RobotModel</text>
+
+  <rect x="70" y="305" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1"/>
+  <text x="155" y="326" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">Path — /plan</text>
+
+  <rect x="70" y="350" width="170" height="34" rx="4" fill="#16A34A" opacity="0.12" stroke="#16A34A" stroke-width="1.3"/>
+  <text x="155" y="371" text-anchor="middle" font-size="9" font-weight="700" fill="#166534">+ Add</text>
+
+  <!-- Main 3D view -->
+  <rect x="270" y="70" width="440" height="330" rx="6" fill="#111827"/>
+  <text x="490" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="#F9FAFB">Khung nhìn 3D</text>
+  <circle cx="490" cy="240" r="60" fill="none" stroke="#F97316" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="490" cy="240" r="120" fill="none" stroke="#F97316" stroke-width="1" opacity="0.4"/>
+  <rect x="470" y="220" width="40" height="40" fill="#2563EB" opacity="0.85"/>
+  <text x="490" y="215" text-anchor="middle" font-size="8" fill="#93C5FD">robot (RobotModel)</text>
+  <g stroke="#DC2626" stroke-width="1.5" opacity="0.8">
+    <line x1="490" y1="240" x2="420" y2="180"/>
+    <line x1="490" y1="240" x2="560" y2="175"/>
+    <line x1="490" y1="240" x2="580" y2="260"/>
+    <line x1="490" y1="240" x2="410" y2="290"/>
+  </g>
+  <text x="490" y="335" text-anchor="middle" font-size="8" fill="#FCA5A5">tia đỏ = LaserScan</text>
+
+  <rect x="55" y="410" width="380" height="35" rx="6" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="245" y="432" text-anchor="middle" font-size="10" fill="#9A3412">Fixed Frame sai → mọi thứ "quay quanh" robot vô lý</text>
+
+  <rect x="445" y="410" width="315" height="35" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.3"/>
+  <text x="602" y="432" text-anchor="middle" font-size="10" fill="#166534">Save Config As → .rviz để mở lại đúng layout</text>
+</svg>

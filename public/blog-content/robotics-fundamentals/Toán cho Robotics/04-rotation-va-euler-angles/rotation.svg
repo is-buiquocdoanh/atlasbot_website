@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="rtArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="440" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Roll — Pitch — Yaw, ba trục xoay</text>
+
+  <ellipse cx="400" cy="210" rx="170" ry="95" fill="#F3F5F8" stroke="#9CA3AF" stroke-width="1.3"/>
+  <rect x="360" y="185" width="80" height="45" rx="8" fill="#2563EB" opacity="0.85"/>
+  <polygon points="440,190 465,207 440,225" fill="#2563EB"/>
+
+  <!-- Roll axis (x, front-back) -->
+  <line x1="250" y1="207" x2="465" y2="207" stroke="#DC2626" stroke-width="2" marker-end="url(#rtArrow)"/>
+  <text x="230" y="212" text-anchor="middle" font-size="11" font-weight="700" fill="#DC2626">x</text>
+  <path d="M 400 165 A 40 40 0 0 1 440 190" fill="none" stroke="#DC2626" stroke-width="2" marker-end="url(#rtArrow)"/>
+  <text x="405" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#DC2626">Roll (φ)</text>
+
+  <!-- Pitch axis (y, left-right) -->
+  <line x1="400" y1="320" x2="400" y2="100" stroke="#16A34A" stroke-width="2" marker-end="url(#rtArrow)"/>
+  <text x="400" y="335" text-anchor="middle" font-size="11" font-weight="700" fill="#16A34A">y</text>
+  <path d="M 355 240 A 40 40 0 0 1 380 190" fill="none" stroke="#16A34A" stroke-width="2" marker-end="url(#rtArrow)"/>
+  <text x="330" y="255" text-anchor="middle" font-size="12" font-weight="700" fill="#16A34A">Pitch (θ)</text>
+
+  <!-- Yaw axis (z, up-down, shown as circle from top) -->
+  <circle cx="400" cy="207" r="60" fill="none" stroke="#F97316" stroke-width="2" stroke-dasharray="6 4"/>
+  <path d="M 460 207 A 60 60 0 0 1 430 258" fill="none" stroke="#F97316" stroke-width="2" marker-end="url(#rtArrow)"/>
+  <text x="480" y="270" text-anchor="middle" font-size="12" font-weight="700" fill="#F97316">Yaw (ψ)</text>
+  <text x="480" y="286" text-anchor="middle" font-size="9" fill="#6B7280">= θ trong robot 2D</text>
+
+  <rect x="90" y="335" width="620" height="90" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="360" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">Gimbal Lock</text>
+  <text x="400" y="380" text-anchor="middle" font-size="10" fill="#7C2D12">Khi Pitch → 90°, trục Roll và Yaw hiệu ứng trùng nhau — mất 1 bậc tự do xoay</text>
+  <text x="400" y="398" text-anchor="middle" font-size="10" fill="#7C2D12">Hạn chế toán học cố hữu của Euler angles — Quaternion (bài sau) không có vấn đề này</text>
+</svg>

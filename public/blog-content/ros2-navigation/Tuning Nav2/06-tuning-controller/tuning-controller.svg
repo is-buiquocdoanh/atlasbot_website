@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="tcArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Mỗi Critic kéo quỹ đạo theo 1 hướng</text>
+
+  <circle cx="400" cy="180" r="10" fill="#2563EB"/>
+  <text x="400" y="205" text-anchor="middle" font-size="9" fill="#1E3A8A">quỹ đạo ứng viên</text>
+
+  <line x1="400" y1="180" x2="280" y2="120" stroke="#DC2626" stroke-width="2" marker-end="url(#tcArrow)"/>
+  <text x="240" y="105" text-anchor="middle" font-size="9" fill="#7F1D1D">ObstacleFootprint</text>
+  <text x="240" y="118" text-anchor="middle" font-size="8" fill="#7F1D1D">(tránh xa vật cản)</text>
+
+  <line x1="400" y1="180" x2="530" y2="110" stroke="#16A34A" stroke-width="2" marker-end="url(#tcArrow)"/>
+  <text x="570" y="100" text-anchor="middle" font-size="9" fill="#166534">PathAlign/PathDist</text>
+  <text x="570" y="113" text-anchor="middle" font-size="8" fill="#166534">(bám path)</text>
+
+  <line x1="400" y1="180" x2="620" y2="220" stroke="#D97706" stroke-width="2" marker-end="url(#tcArrow)"/>
+  <text x="670" y="230" text-anchor="middle" font-size="9" fill="#92400E">GoalAlign/GoalDist</text>
+  <text x="670" y="243" text-anchor="middle" font-size="8" fill="#92400E">(hướng về đích)</text>
+
+  <line x1="400" y1="180" x2="280" y2="250" stroke="#9333EA" stroke-width="2" marker-end="url(#tcArrow)"/>
+  <text x="220" y="265" text-anchor="middle" font-size="9" fill="#6B21A8">Oscillation</text>
+  <text x="220" y="278" text-anchor="middle" font-size="8" fill="#6B21A8">(phạt đổi chiều)</text>
+
+  <rect x="90" y="300" width="620" height="100" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="325" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Quy trình chỉnh có hệ thống</text>
+  <text x="400" y="347" text-anchor="middle" font-size="10" fill="#374151">1 lần chỉ đổi 1 critic, thay đổi nhỏ (±20%), test lại trên CÙNG kịch bản</text>
+  <text x="400" y="367" text-anchor="middle" font-size="10" fill="#374151">Đổi nhiều critic cùng lúc = không biết cái nào gây hiệu ứng</text>
+  <text x="400" y="387" text-anchor="middle" font-size="9" fill="#6B7280">Dùng ros2 bag để lặp lại đúng cùng kịch bản mỗi lần test</text>
+</svg>

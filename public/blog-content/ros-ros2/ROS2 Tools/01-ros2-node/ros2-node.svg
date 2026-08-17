@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="ndArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">ros2 node — từ danh sách đến chi tiết</text>
+
+  <rect x="260" y="60" width="280" height="46" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="88" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#1E3A8A">ros2 node list</text>
+
+  <line x1="400" y1="106" x2="400" y2="135" stroke="#111827" stroke-width="2" marker-end="url(#ndArrow)"/>
+
+  <rect x="150" y="140" width="500" height="60" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.3"/>
+  <text x="400" y="163" text-anchor="middle" font-size="11" font-family="monospace" fill="#111827">/motor_node  /lidar_node  /slam_toolbox  /rviz2</text>
+  <text x="400" y="182" text-anchor="middle" font-size="9" fill="#6B7280">không thấy tên cần tìm = node đó chưa chạy / đã crash</text>
+
+  <line x1="400" y1="200" x2="400" y2="230" stroke="#111827" stroke-width="2" marker-end="url(#ndArrow)"/>
+
+  <rect x="240" y="235" width="320" height="46" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="263" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#1E3A8A">ros2 node info /motor_node</text>
+
+  <line x1="400" y1="281" x2="400" y2="305" stroke="#111827" stroke-width="2" marker-end="url(#ndArrow)"/>
+
+  <rect x="60" y="310" width="165" height="60" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="142" y="333" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Subscribers</text>
+  <text x="142" y="350" text-anchor="middle" font-size="9" fill="#6B7280">/cmd_vel</text>
+
+  <rect x="240" y="310" width="165" height="60" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="322" y="333" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Publishers</text>
+  <text x="322" y="350" text-anchor="middle" font-size="9" fill="#6B7280">/odom</text>
+
+  <rect x="420" y="310" width="165" height="60" rx="8" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+  <text x="502" y="333" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Service Servers</text>
+  <text x="502" y="350" text-anchor="middle" font-size="9" fill="#6B7280">/motor_node/set_parameters</text>
+
+  <rect x="600" y="310" width="145" height="60" rx="8" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="672" y="333" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Action Servers</text>
+  <text x="672" y="350" text-anchor="middle" font-size="9" fill="#6B7280">(rỗng)</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="tbArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="440" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">3 bước tính thời gian hoạt động</text>
+
+  <rect x="40" y="60" width="220" height="130" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="150" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">1. Tổng công suất</text>
+  <text x="150" y="110" text-anchor="middle" font-size="9" fill="#374151">SBC ~12.5W</text>
+  <text x="150" y="126" text-anchor="middle" font-size="9" fill="#374151">MCU ~1W · LiDAR ~2W</text>
+  <text x="150" y="142" text-anchor="middle" font-size="9" fill="#374151">2× Motor ~19.2W</text>
+  <text x="150" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">P_tổng ≈ 35W</text>
+
+  <line x1="260" y1="125" x2="300" y2="125" stroke="#111827" stroke-width="2" marker-end="url(#tbArrow)"/>
+
+  <rect x="305" y="60" width="220" height="130" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="415" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">2. Đọc đúng nhãn pin</text>
+  <text x="415" y="112" text-anchor="middle" font-size="10" font-family="monospace" fill="#374151">3S 2200mAh 10C</text>
+  <text x="415" y="132" text-anchor="middle" font-size="9" fill="#374151">3S → ~11.1V</text>
+  <text x="415" y="148" text-anchor="middle" font-size="9" fill="#374151">10C → dòng xả tối đa, KHÔNG</text>
+  <text x="415" y="164" text-anchor="middle" font-size="9" fill="#374151">phải dung lượng</text>
+
+  <line x1="525" y1="125" x2="565" y2="125" stroke="#111827" stroke-width="2" marker-end="url(#tbArrow)"/>
+
+  <rect x="570" y="60" width="200" height="130" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="670" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">3. Thời gian hoạt động</text>
+  <text x="670" y="112" text-anchor="middle" font-size="9" font-family="monospace" fill="#374151">T = (Wh×0.8×0.85)/P</text>
+  <text x="670" y="135" text-anchor="middle" font-size="9" fill="#374151">24.4Wh, 35W</text>
+  <text x="670" y="160" text-anchor="middle" font-size="12" font-weight="700" fill="#7C2D12">T ≈ 28 phút</text>
+
+  <rect x="90" y="220" width="620" height="90" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="245" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Hai hệ số hiệu chỉnh hay bị quên</text>
+  <text x="400" y="268" text-anchor="middle" font-size="10" fill="#374151">k_dùng ≈ 0.8 — chỉ xả 80% để bảo vệ tuổi thọ pin Lithium</text>
+  <text x="400" y="288" text-anchor="middle" font-size="10" fill="#374151">k_hiệu_suất ≈ 0.85 — hao phí qua BMS, buck/boost converter</text>
+
+  <rect x="90" y="330" width="620" height="90" rx="10" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="355" text-anchor="middle" font-size="11" font-weight="700" fill="#9A3412">Thực tế luôn ngắn hơn lý thuyết</text>
+  <text x="400" y="377" text-anchor="middle" font-size="10" fill="#7C2D12">Dòng khởi động, tải CPU/GPU cao, nhiệt độ, pin xuống cấp theo chu kỳ</text>
+  <text x="400" y="397" text-anchor="middle" font-size="9" fill="#7C2D12">→ luôn chọn dung lượng dư 20-30% so với mức tính toán tối thiểu</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Đơn luồng nghẽn cổ chai vs đa luồng song song</text>
+
+  <text x="205" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">SingleThreadedExecutor (mặc định)</text>
+  <rect x="60" y="75" width="290" height="45" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="205" y="102" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">save_map_cb (3 giây)</text>
+
+  <rect x="60" y="130" width="290" height="45" rx="6" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.3" opacity="0.6"/>
+  <text x="205" y="157" text-anchor="middle" font-size="10" font-family="monospace" fill="#6B7280">collision_cb (đợi...)</text>
+
+  <text x="205" y="195" text-anchor="middle" font-size="9" fill="#7F1D1D">cảnh báo va chạm bị trễ tới 3 giây — vấn đề an toàn thật sự</text>
+
+  <text x="595" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">MultiThreadedExecutor + Reentrant group</text>
+  <rect x="450" y="75" width="290" height="45" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="595" y="102" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">save_map_cb — thread 1</text>
+
+  <rect x="450" y="130" width="290" height="45" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="595" y="157" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">collision_cb — thread 2</text>
+
+  <text x="595" y="195" text-anchor="middle" font-size="9" fill="#166534">chạy song song thật — collision_cb phản hồi ngay lập tức</text>
+
+  <rect x="90" y="230" width="620" height="90" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="255" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">Ba điều kiện phải đi cùng nhau</text>
+  <text x="400" y="278" text-anchor="middle" font-size="10" fill="#374151">1. MultiThreadedExecutor (đủ luồng vật lý)</text>
+  <text x="400" y="295" text-anchor="middle" font-size="10" fill="#374151">2. ReentrantCallbackGroup (cho phép về mặt logic)</text>
+  <text x="400" y="312" text-anchor="middle" font-size="10" fill="#374151">3. Code thread-safe (tự thêm mutex nếu đụng biến chung)</text>
+
+  <rect x="150" y="340" width="500" height="55" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="363" text-anchor="middle" font-size="10" fill="#111827">Thiếu điều kiện (2) — chỉ đổi executor thôi callback vẫn "đứng hình"</text>
+  <text x="400" y="380" text-anchor="middle" font-size="10" fill="#111827">y hệt như trước, vì mọi callback mặc định vẫn chung 1 group</text>
+</svg>

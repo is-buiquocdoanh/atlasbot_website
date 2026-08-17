@@ -44,7 +44,10 @@
   "Projects": {
     "title": "项目",
     "specsTitle": "技术规格",
-    "githubLink": "在 GitHub 上查看源码"
+    "galleryTitle": "项目图集",
+    "videosTitle": "演示视频",
+    "githubLink": "在 GitHub 上查看源码",
+    "backToProjects": "← 所有项目"
   },
   "Shop": {
     "title": "商店",

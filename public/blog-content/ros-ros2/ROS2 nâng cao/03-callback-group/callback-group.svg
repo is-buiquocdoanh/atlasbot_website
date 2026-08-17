@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="Arial, sans-serif">
+  <rect width="800" height="440" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Callback Group — ai được chạy song song với ai</text>
+
+  <rect x="40" y="60" width="340" height="140" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="210" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#7F1D1D">MutuallyExclusiveCallbackGroup</text>
+  <text x="210" y="102" text-anchor="middle" font-size="9" fill="#374151">(mặc định)</text>
+
+  <rect x="65" y="115" width="130" height="35" rx="6" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.3"/>
+  <text x="130" y="137" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">scan_cb</text>
+
+  <rect x="65" y="160" width="130" height="35" rx="6" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.3" opacity="0.5"/>
+  <text x="130" y="182" text-anchor="middle" font-size="9" font-family="monospace" fill="#6B7280">save_map_cb (đợi)</text>
+
+  <text x="330" y="140" font-size="16" fill="#7F1D1D">✕</text>
+  <text x="290" y="170" text-anchor="middle" font-size="8" fill="#7F1D1D">không bao giờ</text>
+  <text x="290" y="182" text-anchor="middle" font-size="8" fill="#7F1D1D">chạy song song</text>
+
+  <rect x="420" y="60" width="340" height="140" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="590" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">ReentrantCallbackGroup</text>
+
+  <rect x="445" y="115" width="130" height="35" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.3"/>
+  <text x="510" y="137" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">scan_cb #1</text>
+
+  <rect x="600" y="115" width="130" height="35" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.3"/>
+  <text x="665" y="137" text-anchor="middle" font-size="9" font-family="monospace" fill="#111827">scan_cb #2</text>
+
+  <text x="590" y="175" text-anchor="middle" font-size="9" fill="#166534">có thể chạy song song — cần tự lo mutex</text>
+
+  <rect x="150" y="230" width="500" height="90" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="255" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">Hai group khác nhau → luôn chạy song song được</text>
+  <text x="400" y="278" text-anchor="middle" font-size="10" fill="#374151">fast_group (Reentrant): scan_cb — tần số cao, cần nhanh</text>
+  <text x="400" y="296" text-anchor="middle" font-size="10" fill="#374151">slow_group (Mutually Exclusive): save_map_cb — chậm, ít gọi</text>
+
+  <rect x="90" y="350" width="620" height="70" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="374" text-anchor="middle" font-size="11" font-weight="700" fill="#9A3412">MultiThreadedExecutor = điều kiện CẦN</text>
+  <text x="400" y="393" text-anchor="middle" font-size="10" fill="#7C2D12">Callback Group đúng = điều kiện ĐỦ — đổi executor mà không tách group thì callback vẫn "đứng hình" như cũ</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="dsArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="560" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Auto-docking — state machine của line_follow.py</text>
+  <text x="400" y="52" text-anchor="middle" font-size="11" fill="#6B7280">Spawn subprocess khi atlas_api nhận lệnh /atlas/nav/dock (thường sau khi Nav2 đưa robot đến gần trạm sạc)</text>
+
+  <!-- 4 state boxes in sequence -->
+  <rect x="30" y="90" width="165" height="95" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="112" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A8A">INIT</text>
+  <text x="112" y="140" text-anchor="middle" font-size="9" fill="#374151">Tìm vạch từ trường</text>
+  <text x="112" y="155" text-anchor="middle" font-size="9" fill="#374151">bằng cảm biến 16-kênh</text>
+
+  <rect x="215" y="90" width="165" height="95" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="297" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#92400E">SEARCH</text>
+  <text x="297" y="140" text-anchor="middle" font-size="9" fill="#374151">Quét ±45°</text>
+  <text x="297" y="155" text-anchor="middle" font-size="9" fill="#374151">nếu chưa thấy vạch ngay</text>
+
+  <rect x="400" y="90" width="165" height="95" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="482" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">FOLLOW</text>
+  <text x="482" y="140" text-anchor="middle" font-size="9" fill="#374151">Bám vạch từ,</text>
+  <text x="482" y="155" text-anchor="middle" font-size="9" fill="#374151">tiến về trạm sạc</text>
+
+  <rect x="585" y="90" width="185" height="95" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="677" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#7F1D1D">STOPPED</text>
+  <text x="677" y="140" text-anchor="middle" font-size="9" fill="#374151">Hết vạch từ</text>
+  <text x="677" y="155" text-anchor="middle" font-size="9" fill="#374151">= đã ở trạm sạc</text>
+
+  <!-- Arrows between states -->
+  <line x1="195" y1="137" x2="212" y2="137" stroke="#111827" stroke-width="2" marker-end="url(#dsArrow)"/>
+  <line x1="380" y1="137" x2="397" y2="137" stroke="#111827" stroke-width="2" marker-end="url(#dsArrow)"/>
+  <line x1="565" y1="137" x2="582" y2="137" stroke="#111827" stroke-width="2" marker-end="url(#dsArrow)"/>
+
+  <!-- SEARCH loop back to itself / found -> FOLLOW -->
+  <path d="M 297 90 C 297 60, 380 60, 380 90" stroke="#6B7280" stroke-width="1.5" fill="none" marker-end="url(#dsArrow)" stroke-dasharray="4 3"/>
+  <text x="337" y="55" text-anchor="middle" font-size="8" fill="#6B7280">thấy vạch</text>
+
+  <!-- STOPPED -> publish zero velocity -> docked=true -->
+  <line x1="677" y1="185" x2="677" y2="230" stroke="#111827" stroke-width="2" marker-end="url(#dsArrow)"/>
+  <rect x="560" y="235" width="240" height="60" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.3"/>
+  <text x="680" y="258" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Publish zero velocity (5s) → exit(0)</text>
+  <text x="680" y="275" text-anchor="middle" font-size="9" fill="#6B7280">atlas_api_node phát hiện subprocess thoát</text>
+  <text x="680" y="288" text-anchor="middle" font-size="9" fill="#6B7280">→ set /atlas/docked = true</text>
+
+  <!-- Undock flow -->
+  <rect x="30" y="345" width="740" height="150" rx="12" fill="#EDE9FE" stroke="#9333EA" stroke-width="2"/>
+  <text x="400" y="372" text-anchor="middle" font-size="13" font-weight="700" fill="#6B21A8">Undock tự động</text>
+
+  <rect x="55" y="390" width="200" height="70" rx="8" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="155" y="415" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">/atlas/docked = true</text>
+  <text x="155" y="432" text-anchor="middle" font-size="9" fill="#6B7280">robot đang ở trạm sạc</text>
+  <text x="155" y="446" text-anchor="middle" font-size="9" fill="#6B7280">nhận nav goal mới</text>
+
+  <line x1="255" y1="425" x2="300" y2="425" stroke="#111827" stroke-width="2" marker-end="url(#dsArrow)"/>
+
+  <rect x="305" y="390" width="200" height="70" rx="8" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="405" y="415" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Dừng docking</text>
+  <text x="405" y="432" text-anchor="middle" font-size="9" fill="#6B7280">tiến thẳng 30cm</text>
+  <text x="405" y="446" text-anchor="middle" font-size="9" fill="#6B7280">ra khỏi trạm sạc</text>
+
+  <line x1="505" y1="425" x2="550" y2="425" stroke="#111827" stroke-width="2" marker-end="url(#dsArrow)"/>
+
+  <rect x="555" y="390" width="195" height="70" rx="8" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="652" y="415" text-anchor="middle" font-size="10" font-weight="700" fill="#111827">Gửi nav goal bình thường</text>
+  <text x="652" y="432" text-anchor="middle" font-size="9" fill="#6B7280">Nav2 điều hướng như</text>
+  <text x="652" y="446" text-anchor="middle" font-size="9" fill="#6B7280">mọi lệnh khác</text>
+
+  <text x="400" y="530" text-anchor="middle" font-size="10" fill="#6B7280">SENSOR_GATE / THRESHOLD_SUM trong line_follow.py quyết định độ nhạy bám vạch — sai lệch là nguyên nhân phổ biến nhất khi docking trượt</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="msArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Một định nghĩa .msg, sinh code cho nhiều ngôn ngữ</text>
+
+  <rect x="90" y="80" width="200" height="130" rx="8" fill="#2563EB" opacity="0.08" stroke="#2563EB" stroke-width="2"/>
+  <text x="190" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Twist.msg</text>
+  <text x="115" y="130" font-size="11" font-family="monospace" fill="#111827">Vector3 linear</text>
+  <text x="115" y="150" font-size="11" font-family="monospace" fill="#111827">Vector3 angular</text>
+  <text x="115" y="180" font-size="9" fill="#6B7280">(Vector3 = x, y, z float64)</text>
+
+  <line x1="290" y1="145" x2="360" y2="110" stroke="#6B7280" stroke-width="2" marker-end="url(#msArrow)"/>
+  <line x1="290" y1="145" x2="360" y2="190" stroke="#6B7280" stroke-width="2" marker-end="url(#msArrow)"/>
+  <text x="330" y="100" text-anchor="middle" font-size="9" fill="#6B7280">rosidl</text>
+
+  <rect x="370" y="70" width="200" height="70" rx="8" fill="#16A34A" opacity="0.10" stroke="#16A34A" stroke-width="2"/>
+  <text x="470" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Python class</text>
+  <text x="470" y="115" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">geometry_msgs.msg.Twist</text>
+
+  <rect x="370" y="160" width="200" height="70" rx="8" fill="#F97316" opacity="0.10" stroke="#F97316" stroke-width="2"/>
+  <text x="470" y="185" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">C++ struct</text>
+  <text x="470" y="205" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">geometry_msgs::msg::Twist</text>
+
+  <rect x="90" y="270" width="620" height="55" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="293" text-anchor="middle" font-size="12" fill="#111827">Cả hai class sinh từ CÙNG MỘT định nghĩa .msg</text>
+  <text x="400" y="311" text-anchor="middle" font-size="11" fill="#6B7280">→ node Python và node C++ luôn hiểu đúng cấu trúc dữ liệu của nhau</text>
+</svg>

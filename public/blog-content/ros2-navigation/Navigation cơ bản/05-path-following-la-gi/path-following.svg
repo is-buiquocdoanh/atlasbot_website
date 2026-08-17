@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="pfArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Pure Pursuit — nhắm tới điểm phía trước</text>
+
+  <path d="M 100 300 Q 250 280 350 200 T 600 100" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="620" y="90" font-size="10" fill="#6B7280">path đã lập kế hoạch</text>
+
+  <circle cx="200" cy="280" r="10" fill="#2563EB"/>
+  <text x="200" y="305" text-anchor="middle" font-size="10" font-weight="700" fill="#1E3A8A">robot</text>
+
+  <circle cx="380" cy="190" r="7" fill="#DC2626"/>
+  <text x="380" y="215" text-anchor="middle" font-size="10" font-weight="700" fill="#7F1D1D">lookahead point</text>
+
+  <line x1="200" y1="280" x2="380" y2="190" stroke="#DC2626" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="270" y="220" font-size="9" fill="#7F1D1D">L (lookahead distance)</text>
+
+  <path d="M 220 270 A 40 40 0 0 1 250 240" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <text x="255" y="255" font-size="10" font-weight="700" fill="#166534">α</text>
+
+  <path d="M 200 280 Q 280 220 380 190" fill="none" stroke="#16A34A" stroke-width="2.5" marker-end="url(#pfArrow)"/>
+  <text x="310" y="255" text-anchor="middle" font-size="9" fill="#166534">cung xoay R = L/(2sinα)</text>
+
+  <rect x="90" y="330" width="620" height="60" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="353" text-anchor="middle" font-size="11" font-family="monospace" fill="#111827">R = L / (2 sin α)     ω = v / R</text>
+  <text x="400" y="373" text-anchor="middle" font-size="9" fill="#6B7280">L nhỏ = bám sát, dễ dao động · L lớn = mượt, cắt góc cua gấp</text>
+</svg>

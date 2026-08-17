@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">planner_server — plugin thay thế được</text>
+
+  <rect x="280" y="55" width="240" height="55" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="400" y="87" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">planner_server (interface)</text>
+
+  <rect x="40" y="150" width="220" height="120" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="150" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">NavfnPlanner</text>
+  <text x="150" y="200" text-anchor="middle" font-size="9" fill="#374151">A* cổ điển, nhanh</text>
+  <text x="150" y="218" text-anchor="middle" font-size="9" fill="#7F1D1D">gấp khúc, cần smoother</text>
+  <text x="150" y="240" text-anchor="middle" font-size="8" fill="#6B7280">robot xoay tại chỗ được</text>
+
+  <rect x="290" y="150" width="220" height="120" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">SmacPlanner</text>
+  <text x="400" y="200" text-anchor="middle" font-size="9" fill="#374151">2D hoặc Hybrid</text>
+  <text x="400" y="218" text-anchor="middle" font-size="9" fill="#166534">Hybrid: tôn trọng bán kính quay</text>
+  <text x="400" y="240" text-anchor="middle" font-size="8" fill="#6B7280">cần cho robot Ackermann</text>
+
+  <rect x="540" y="150" width="220" height="120" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="650" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">ThetaStar</text>
+  <text x="650" y="200" text-anchor="middle" font-size="9" fill="#374151">không giới hạn 8 hướng</text>
+  <text x="650" y="218" text-anchor="middle" font-size="9" fill="#166534">đường mượt hơn</text>
+  <text x="650" y="240" text-anchor="middle" font-size="8" fill="#6B7280">chi phí tính toán cao hơn</text>
+
+  <line x1="400" y1="110" x2="150" y2="145" stroke="#111827" stroke-width="1.5"/>
+  <line x1="400" y1="110" x2="400" y2="145" stroke="#111827" stroke-width="1.5"/>
+  <line x1="400" y1="110" x2="650" y2="145" stroke="#111827" stroke-width="1.5"/>
+
+  <rect x="90" y="300" width="620" height="65" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="325" text-anchor="middle" font-size="11" font-weight="700" fill="#9A3412">Chọn sai plugin = đường đi robot không thể đi theo</text>
+  <text x="400" y="347" text-anchor="middle" font-size="10" fill="#7C2D12">NavFn cho robot Ackermann → đường đi giả định xoay tại chỗ, vật lý không làm được</text>
+</svg>

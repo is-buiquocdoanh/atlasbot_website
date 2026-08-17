@@ -44,7 +44,10 @@
   "Projects": {
     "title": "Projects",
     "specsTitle": "Specifications",
-    "githubLink": "View source on GitHub"
+    "galleryTitle": "Project gallery",
+    "videosTitle": "Demo videos",
+    "githubLink": "View source on GitHub",
+    "backToProjects": "← All projects"
   },
   "Shop": {
     "title": "Shop",

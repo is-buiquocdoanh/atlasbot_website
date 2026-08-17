@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Mỗi node chỉ làm đúng một việc</text>
+
+  <g>
+    <circle cx="150" cy="140" r="55" fill="#2563EB" opacity="0.10" stroke="#2563EB" stroke-width="2"/>
+    <text x="150" y="135" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">lidar_driver</text>
+    <text x="150" y="153" text-anchor="middle" font-size="10" fill="#6B7280">đọc cảm biến</text>
+  </g>
+
+  <g>
+    <circle cx="340" cy="100" r="55" fill="#16A34A" opacity="0.10" stroke="#16A34A" stroke-width="2"/>
+    <text x="340" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">slam_node</text>
+    <text x="340" y="113" text-anchor="middle" font-size="10" fill="#6B7280">dựng bản đồ</text>
+  </g>
+
+  <g>
+    <circle cx="530" cy="140" r="55" fill="#F97316" opacity="0.10" stroke="#F97316" stroke-width="2"/>
+    <text x="530" y="135" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">nav2_node</text>
+    <text x="530" y="153" text-anchor="middle" font-size="10" fill="#6B7280">lập kế hoạch</text>
+  </g>
+
+  <g>
+    <circle cx="670" cy="260" r="55" fill="#DC2626" opacity="0.08" stroke="#DC2626" stroke-width="2"/>
+    <text x="670" y="255" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">motor_driver</text>
+    <text x="670" y="273" text-anchor="middle" font-size="10" fill="#6B7280">điều khiển động cơ</text>
+  </g>
+
+  <g>
+    <circle cx="150" cy="290" r="55" fill="#6B7280" opacity="0.10" stroke="#6B7280" stroke-width="2"/>
+    <text x="150" y="285" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">imu_driver</text>
+    <text x="150" y="303" text-anchor="middle" font-size="10" fill="#6B7280">đọc cảm biến quán tính</text>
+  </g>
+
+  <g>
+    <circle cx="400" cy="330" r="55" fill="#9333EA" opacity="0.08" stroke="#9333EA" stroke-width="2"/>
+    <text x="400" y="325" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">odom_node</text>
+    <text x="400" y="343" text-anchor="middle" font-size="10" fill="#6B7280">tính vị trí robot</text>
+  </g>
+
+  <line x1="200" y1="150" x2="295" y2="115" stroke="#6B7280" stroke-width="1.2"/>
+  <line x1="385" y1="115" x2="485" y2="145" stroke="#6B7280" stroke-width="1.2"/>
+  <line x1="580" y1="165" x2="640" y2="225" stroke="#6B7280" stroke-width="1.2"/>
+  <line x1="200" y1="280" x2="355" y2="325" stroke="#6B7280" stroke-width="1.2"/>
+  <line x1="445" y1="325" x2="620" y2="270" stroke="#6B7280" stroke-width="1.2"/>
+  <line x1="150" y1="195" x2="150" y2="235" stroke="#6B7280" stroke-width="1.2"/>
+
+  <rect x="140" y="395" width="520" height="40" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="420" text-anchor="middle" font-size="11" fill="#111827">Restart 1 node không cần dừng cả hệ thống — điểm mạnh của kiến trúc phân tán</text>
+</svg>

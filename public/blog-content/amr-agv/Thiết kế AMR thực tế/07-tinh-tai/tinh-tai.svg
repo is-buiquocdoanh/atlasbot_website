@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Arial, sans-serif">
+  <rect width="800" height="460" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">4 điểm kiểm tra lại khi thêm tải trọng</text>
+
+  <rect x="40" y="60" width="340" height="110" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="210" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">1. Mô-men động cơ</text>
+  <text x="210" y="108" text-anchor="middle" font-size="9" font-family="monospace" fill="#374151">T = ((m_robot+m_hàng)·g·μ·r)/n</text>
+  <text x="210" y="130" text-anchor="middle" font-size="10" fill="#7F1D1D">3kg→2.93 kgf·cm, +5kg hàng→7.8 kgf·cm</text>
+  <text x="210" y="148" text-anchor="middle" font-size="9" fill="#7F1D1D">có thể vượt cả stall torque đã chọn!</text>
+
+  <rect x="420" y="60" width="340" height="110" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="590" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">2. Trọng tâm &amp; ổn định</text>
+  <text x="590" y="110" text-anchor="middle" font-size="10" fill="#374151">h = trọng tâm CỦA CẢ robot + hàng</text>
+  <text x="590" y="130" text-anchor="middle" font-size="10" fill="#374151">hàng đặt cao → h tăng → tốc độ</text>
+  <text x="590" y="148" text-anchor="middle" font-size="10" fill="#374151">an toàn khi vào cua giảm</text>
+
+  <rect x="40" y="190" width="340" height="110" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="210" y="215" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">3. Thời gian hoạt động pin</text>
+  <text x="210" y="240" text-anchor="middle" font-size="10" fill="#374151">P_tổng tăng theo tải</text>
+  <text x="210" y="258" text-anchor="middle" font-size="10" fill="#7C2D12">28 phút (rỗng) → 15-20 phút (có tải)</text>
+  <text x="210" y="278" text-anchor="middle" font-size="9" fill="#6B7280">công bố con số CÓ TẢI cho vận hành</text>
+
+  <rect x="420" y="190" width="340" height="110" rx="10" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="590" y="215" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">4. Tải trọng tĩnh</text>
+  <text x="590" y="240" text-anchor="middle" font-size="10" fill="#374151">so sánh trực tiếp với datasheet</text>
+  <text x="590" y="258" text-anchor="middle" font-size="10" fill="#374151">tải trọng định mức bánh xe/vòng bi</text>
+  <text x="590" y="278" text-anchor="middle" font-size="9" fill="#6B7280">phép so sánh đơn giản, không cần công thức</text>
+
+  <rect x="90" y="330" width="620" height="110" rx="10" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="355" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Thứ tự thiết kế đúng</text>
+  <text x="400" y="378" text-anchor="middle" font-size="10" fill="#374151">Xác định tải trọng mục tiêu TRƯỚC → thiết kế cơ khí → chọn motor/encoder</text>
+  <text x="400" y="396" text-anchor="middle" font-size="10" fill="#374151">→ chọn LiDAR/computer → tính battery có tải → kiểm tra chéo (bài này)</text>
+  <text x="400" y="418" text-anchor="middle" font-size="9" fill="#6B7280">Bài này là bước kiểm tra chéo cuối, không phải nơi phát hiện lỗi thiết kế ngược</text>
+</svg>

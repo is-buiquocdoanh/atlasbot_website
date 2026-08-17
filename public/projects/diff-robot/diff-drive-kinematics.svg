@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="ddArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+    <marker id="ddArrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+  </defs>
+  <rect width="800" height="520" fill="#FFFFFF"/>
+  <text x="400" y="35" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Mô hình động học robot 2 bánh vi sai (Differential Drive)</text>
+
+  <!-- chassis top-down -->
+  <rect x="260" y="90" width="140" height="220" rx="60" fill="#2563EB" opacity="0.05" stroke="#2563EB" stroke-width="2"/>
+
+  <!-- left wheel -->
+  <rect x="215" y="150" width="30" height="90" rx="8" fill="#16A34A" opacity="0.15" stroke="#16A34A" stroke-width="2"/>
+  <text x="180" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Bánh trái</text>
+  <line x1="230" y1="150" x2="230" y2="95" stroke="#2563EB" stroke-width="2.5" marker-end="url(#ddArrowBlue)"/>
+  <text x="175" y="90" font-size="11" fill="#2563EB">v_left</text>
+
+  <!-- right wheel -->
+  <rect x="435" y="150" width="30" height="90" rx="8" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-width="2"/>
+  <text x="500" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Bánh phải</text>
+  <line x1="450" y1="150" x2="450" y2="65" stroke="#2563EB" stroke-width="2.5" marker-end="url(#ddArrowBlue)"/>
+  <text x="500" y="70" font-size="11" fill="#2563EB">v_right</text>
+
+  <!-- caster wheels (small, front/back, not driven) -->
+  <circle cx="330" cy="105" r="10" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="330" y="80" text-anchor="middle" font-size="9" fill="#6B7280">Bánh đỡ (caster)</text>
+
+  <!-- center point + body frame -->
+  <circle cx="330" cy="195" r="5" fill="#111827"/>
+  <line x1="330" y1="195" x2="330" y2="150" stroke="#111827" stroke-width="2.5" marker-end="url(#ddArrow)"/>
+  <text x="345" y="155" font-size="12" font-weight="700" fill="#111827">v</text>
+  <path d="M 355 195 A 25 25 0 1 1 330 170" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#ddArrow)"/>
+  <text x="362" y="180" font-size="12" font-weight="700" fill="#111827">ω</text>
+
+  <!-- wheelbase dimension -->
+  <line x1="230" y1="340" x2="450" y2="340" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="230" y1="245" x2="230" y2="345" stroke="#6B7280" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="450" y1="245" x2="450" y2="345" stroke="#6B7280" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="340" y="360" text-anchor="middle" font-size="11" fill="#6B7280">L — khoảng cách 2 bánh (wheelbase)</text>
+
+  <!-- equations -->
+  <rect x="110" y="395" width="580" height="105" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="130" y="420" font-size="13" font-family="monospace" fill="#111827">v = (v_right + v_left) / 2</text>
+  <text x="130" y="443" font-size="13" font-family="monospace" fill="#111827">ω = (v_right − v_left) / L</text>
+  <text x="130" y="470" font-size="11" fill="#6B7280">Chiều nghịch (từ v, ω ra tốc độ từng bánh — dùng khi gửi lệnh điều khiển):</text>
+  <text x="130" y="490" font-size="13" font-family="monospace" fill="#111827">v_left = v − ω·L/2      v_right = v + ω·L/2</text>
+</svg>

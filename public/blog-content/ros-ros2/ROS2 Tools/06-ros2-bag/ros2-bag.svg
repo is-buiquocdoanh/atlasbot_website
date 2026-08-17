@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="bgArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">ros2 bag — ghi ngoài thực địa, debug ở bàn làm việc</text>
+
+  <rect x="40" y="60" width="330" height="120" rx="10" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="205" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">Ngoài thực địa</text>
+  <text x="205" y="108" text-anchor="middle" font-size="10" font-family="monospace" fill="#374151">ros2 bag record -o test_hanh_lang</text>
+  <text x="205" y="126" text-anchor="middle" font-size="10" font-family="monospace" fill="#374151">/scan /odom /tf /tf_static</text>
+  <text x="205" y="150" text-anchor="middle" font-size="9" fill="#6B7280">ghi đúng lúc lỗi SLAM xảy ra</text>
+  <text x="205" y="165" text-anchor="middle" font-size="9" fill="#6B7280">— chỉ 1 lần, không lặp lại được</text>
+
+  <line x1="370" y1="120" x2="420" y2="120" stroke="#111827" stroke-width="2" marker-end="url(#bgArrow)"/>
+  <text x="395" y="105" text-anchor="middle" font-size="9" fill="#6B7280">file .db3</text>
+
+  <rect x="425" y="60" width="335" height="120" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="592" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">Bàn làm việc — phát lại vô hạn lần</text>
+  <text x="592" y="108" text-anchor="middle" font-size="10" font-family="monospace" fill="#374151">ros2 bag play test_hanh_lang</text>
+  <text x="592" y="130" text-anchor="middle" font-size="9" fill="#6B7280">publish lại đúng timing đã ghi</text>
+  <text x="592" y="148" text-anchor="middle" font-size="9" fill="#6B7280">slam_toolbox không phân biệt được</text>
+  <text x="592" y="163" text-anchor="middle" font-size="9" fill="#6B7280">đây là bag hay robot thật</text>
+
+  <rect x="150" y="205" width="500" height="80" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.3"/>
+  <text x="400" y="228" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">ros2 bag info test_hanh_lang</text>
+  <text x="400" y="248" text-anchor="middle" font-size="9" font-family="monospace" fill="#374151">/scan: 473 msgs @ 10.0 Hz   /odom: 4730 msgs @ 100.0 Hz</text>
+  <text x="400" y="266" text-anchor="middle" font-size="9" fill="#6B7280">tần số ghi thấp hơn tần số thật = máy quá tải lúc ghi</text>
+
+  <rect x="100" y="310" width="280" height="55" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="240" y="333" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#111827">--rate 0.5</text>
+  <text x="240" y="350" text-anchor="middle" font-size="9" fill="#6B7280">phát chậm để quan sát kỹ trong RViz2</text>
+
+  <rect x="420" y="310" width="280" height="55" rx="8" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="560" y="333" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#111827">--loop</text>
+  <text x="560" y="350" text-anchor="middle" font-size="9" fill="#6B7280">phát lặp liên tục khi đang tune tham số</text>
+</svg>

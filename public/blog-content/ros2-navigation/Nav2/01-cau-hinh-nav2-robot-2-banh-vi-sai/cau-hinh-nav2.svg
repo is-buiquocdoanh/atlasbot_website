@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Cấu trúc params.yaml — mỗi khối 1 khái niệm đã học</text>
+
+  <rect x="40" y="60" width="220" height="70" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="150" y="88" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#166534">amcl:</text>
+  <text x="150" y="108" text-anchor="middle" font-size="9" fill="#374151">DifferentialMotionModel</text>
+
+  <rect x="290" y="60" width="220" height="70" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="88" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#1E3A8A">controller_server:</text>
+  <text x="400" y="108" text-anchor="middle" font-size="9" fill="#374151">DWBLocalPlanner</text>
+
+  <rect x="540" y="60" width="220" height="70" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="650" y="88" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#92400E">planner_server:</text>
+  <text x="650" y="108" text-anchor="middle" font-size="9" fill="#374151">NavfnPlanner</text>
+
+  <rect x="165" y="150" width="220" height="70" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="275" y="178" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#9A3412">local_costmap:</text>
+  <text x="275" y="198" text-anchor="middle" font-size="9" fill="#374151">3x3m, resolution 0.05</text>
+
+  <rect x="415" y="150" width="220" height="70" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="525" y="178" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#9A3412">global_costmap:</text>
+  <text x="525" y="198" text-anchor="middle" font-size="9" fill="#374151">resolution 0.05</text>
+
+  <rect x="200" y="250" width="400" height="70" rx="10" fill="#EDE9FE" stroke="#9333EA" stroke-width="2"/>
+  <text x="400" y="278" text-anchor="middle" font-size="12" font-weight="700" fill="#6B21A8">lifecycle_manager</text>
+  <text x="400" y="300" text-anchor="middle" font-size="9" fill="#374151">configure → activate tất cả node theo đúng thứ tự</text>
+
+  <rect x="90" y="345" width="620" height="60" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="370" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">ros2 launch nav2_bringup bringup_launch.py map:=my_map.yaml params_file:=nav2_params.yaml</text>
+  <text x="400" y="390" text-anchor="middle" font-size="9" fill="#6B7280">RViz2: 2D Pose Estimate → Set Pose, Nav2 Goal → gửi đích</text>
+</svg>

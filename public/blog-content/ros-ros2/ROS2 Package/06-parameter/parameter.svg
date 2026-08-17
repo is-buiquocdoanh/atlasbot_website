@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="paArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Ba nguồn giá trị parameter — ai nạp sau cùng thắng</text>
+
+  <rect x="60" y="65" width="200" height="80" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="160" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">1. declare_parameter()</text>
+  <text x="160" y="108" text-anchor="middle" font-size="9" fill="#6B7280">giá trị mặc định trong code</text>
+  <text x="160" y="124" text-anchor="middle" font-size="9" fill="#6B7280">ưu tiên thấp nhất</text>
+
+  <rect x="300" y="65" width="200" height="80" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">2. YAML qua launch</text>
+  <text x="400" y="108" text-anchor="middle" font-size="9" fill="#374151">parameters=["config.yaml"]</text>
+  <text x="400" y="124" text-anchor="middle" font-size="9" fill="#6B7280">ưu tiên trung bình</text>
+
+  <rect x="540" y="65" width="200" height="80" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="640" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">3. -p trên dòng lệnh</text>
+  <text x="640" y="108" text-anchor="middle" font-size="9" fill="#374151">--ros-args -p max_speed:=1.2</text>
+  <text x="640" y="124" text-anchor="middle" font-size="9" fill="#6B7280">ưu tiên cao nhất — nạp sau cùng</text>
+
+  <line x1="160" y1="145" x2="380" y2="185" stroke="#111827" stroke-width="1.5" marker-end="url(#paArrow)"/>
+  <line x1="400" y1="145" x2="400" y2="185" stroke="#111827" stroke-width="1.5" marker-end="url(#paArrow)"/>
+  <line x1="640" y1="145" x2="420" y2="185" stroke="#111827" stroke-width="1.5" marker-end="url(#paArrow)"/>
+
+  <rect x="220" y="190" width="360" height="60" rx="10" fill="#FFFFFF" stroke="#F97316" stroke-width="2"/>
+  <text x="400" y="215" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Giá trị parameter cuối cùng node dùng</text>
+  <text x="400" y="233" text-anchor="middle" font-size="9" fill="#6B7280">get_parameter("max_speed").value</text>
+
+  <line x1="400" y1="250" x2="400" y2="280" stroke="#111827" stroke-width="2" marker-end="url(#paArrow)"/>
+
+  <rect x="150" y="285" width="500" height="70" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="308" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">add_on_set_parameters_callback()</text>
+  <text x="400" y="326" text-anchor="middle" font-size="10" fill="#374151">phản ứng ngay khi ros2 param set đổi giá trị lúc đang chạy</text>
+  <text x="400" y="343" text-anchor="middle" font-size="9" fill="#6B7280">— không cần restart node</text>
+
+  <rect x="90" y="375" width="620" height="35" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="397" text-anchor="middle" font-size="10" fill="#9A3412">Luôn đặt giá trị mặc định trong declare_parameter() là giá trị AN TOÀN nhất, không phải giá trị "hay dùng nhất"</text>
+</svg>

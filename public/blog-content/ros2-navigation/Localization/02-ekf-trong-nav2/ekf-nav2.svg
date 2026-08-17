@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="ekArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Hai tầng EKF trong Nav2</text>
+
+  <rect x="60" y="60" width="250" height="120" rx="10" fill="#EDE9FE" stroke="#9333EA" stroke-width="2"/>
+  <text x="185" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#6B21A8">EKF Global</text>
+  <text x="185" y="108" text-anchor="middle" font-size="9" fill="#374151">odom + IMU + AMCL pose</text>
+  <text x="185" y="128" text-anchor="middle" font-size="9" fill="#166534">publish: map → odom</text>
+  <text x="185" y="148" text-anchor="middle" font-size="8" fill="#6B7280">chính xác dài hạn</text>
+  <text x="185" y="163" text-anchor="middle" font-size="8" fill="#6B7280">cập nhật thưa hơn</text>
+
+  <rect x="490" y="60" width="250" height="120" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="615" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">EKF Local</text>
+  <text x="615" y="108" text-anchor="middle" font-size="9" fill="#374151">odom + IMU (không AMCL)</text>
+  <text x="615" y="128" text-anchor="middle" font-size="9" fill="#166534">publish: odom → base_link</text>
+  <text x="615" y="148" text-anchor="middle" font-size="8" fill="#6B7280">mượt, tần số cao</text>
+  <text x="615" y="163" text-anchor="middle" font-size="8" fill="#6B7280">liên tục, không trôi vô hạn</text>
+
+  <text x="400" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">Ghép thành chuỗi TF hoàn chỉnh</text>
+
+  <rect x="80" y="255" width="150" height="55" rx="8" fill="#EDE9FE" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="155" y="288" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#6B21A8">map</text>
+
+  <line x1="230" y1="282" x2="290" y2="282" stroke="#111827" stroke-width="2" marker-end="url(#ekArrow)"/>
+  <text x="260" y="270" text-anchor="middle" font-size="8" fill="#6B7280">ekf_global</text>
+
+  <rect x="295" y="255" width="150" height="55" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="370" y="288" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#92400E">odom</text>
+
+  <line x1="445" y1="282" x2="505" y2="282" stroke="#111827" stroke-width="2" marker-end="url(#ekArrow)"/>
+  <text x="475" y="270" text-anchor="middle" font-size="8" fill="#6B7280">ekf_local</text>
+
+  <rect x="510" y="255" width="170" height="55" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="595" y="288" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#1E3A8A">base_link</text>
+
+  <rect x="90" y="335" width="620" height="55" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="358" text-anchor="middle" font-size="10" fill="#111827">tf2_echo map odom → cập nhật thưa · tf2_echo odom base_link → cập nhật liên tục</text>
+  <text x="400" y="378" text-anchor="middle" font-size="9" fill="#6B7280">một EKF publish thẳng map→base_link sẽ làm controller nhận dữ liệu "giật"</text>
+</svg>

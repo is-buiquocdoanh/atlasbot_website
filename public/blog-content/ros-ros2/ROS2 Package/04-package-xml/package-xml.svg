@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Arial, sans-serif">
+  <rect width="800" height="460" fill="#FFFFFF"/>
+  <text x="400" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">package.xml — bốn loại depend</text>
+
+  <rect x="60" y="60" width="680" height="60" rx="8" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.3"/>
+  <text x="400" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">name · version · description · maintainer · license</text>
+  <text x="400" y="102" text-anchor="middle" font-size="9" fill="#6B7280">định danh package — rosdep/công cụ đóng gói tra cứu bằng các trường này</text>
+
+  <text x="400" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Depend cần lúc nào?</text>
+
+  <rect x="40" y="165" width="175" height="90" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="127" y="188" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#1E3A8A">&lt;depend&gt;</text>
+  <text x="127" y="208" text-anchor="middle" font-size="9" fill="#374151">build + chạy</text>
+  <text x="127" y="223" text-anchor="middle" font-size="9" fill="#6B7280">vd: rclcpp, std_msgs</text>
+  <text x="127" y="240" text-anchor="middle" font-size="8" fill="#6B7280">— dùng khi không chắc, an toàn nhất</text>
+
+  <rect x="230" y="165" width="175" height="90" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+  <text x="317" y="188" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#9A3412">&lt;build_depend&gt;</text>
+  <text x="317" y="208" text-anchor="middle" font-size="9" fill="#374151">chỉ lúc build</text>
+  <text x="317" y="225" text-anchor="middle" font-size="8" fill="#6B7280">vd: thư viện header-only</text>
+  <text x="317" y="240" text-anchor="middle" font-size="8" fill="#6B7280">không cần lúc chạy</text>
+
+  <rect x="420" y="165" width="175" height="90" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="507" y="188" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#166534">&lt;exec_depend&gt;</text>
+  <text x="507" y="208" text-anchor="middle" font-size="9" fill="#374151">chỉ lúc chạy</text>
+  <text x="507" y="225" text-anchor="middle" font-size="8" fill="#6B7280">vd: package gọi qua ros2 run</text>
+  <text x="507" y="240" text-anchor="middle" font-size="8" fill="#6B7280">không cần lúc build</text>
+
+  <rect x="610" y="165" width="150" height="90" rx="8" fill="#EDE9FE" stroke="#9333EA" stroke-width="2"/>
+  <text x="685" y="188" text-anchor="middle" font-size="11" font-weight="700" font-family="monospace" fill="#6B21A8">&lt;test_depend&gt;</text>
+  <text x="685" y="208" text-anchor="middle" font-size="9" fill="#374151">chỉ lúc test</text>
+  <text x="685" y="225" text-anchor="middle" font-size="8" fill="#6B7280">vd: ament_lint_auto</text>
+
+  <line x1="400" y1="270" x2="400" y2="300" stroke="#111827" stroke-width="2"/>
+
+  <rect x="60" y="305" width="680" height="80" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="400" y="330" text-anchor="middle" font-size="12" font-weight="700" font-family="monospace" fill="#111827">rosdep install --from-paths src --ignore-src -r -y</text>
+  <text x="400" y="350" text-anchor="middle" font-size="10" fill="#374151">quét mọi &lt;depend&gt; trong src/ → tra cơ sở dữ liệu rosdep</text>
+  <text x="400" y="367" text-anchor="middle" font-size="10" fill="#374151">→ apt install đúng gói hệ thống tương ứng</text>
+
+  <rect x="90" y="405" width="620" height="40" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="430" text-anchor="middle" font-size="11" fill="#111827">Khai sai/thiếu depend không lỗi ngay — âm thầm làm colcon tính sai thứ tự build</text>
+</svg>

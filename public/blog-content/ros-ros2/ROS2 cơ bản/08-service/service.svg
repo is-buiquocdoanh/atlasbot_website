@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="svArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Topic (chảy liên tục) vs Service (một-yêu-cầu-một-phản-hồi)</text>
+
+  <!-- Topic side -->
+  <text x="185" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">Topic</text>
+  <text x="90" y="115" font-size="11" fill="#16A34A">Publisher</text>
+  <line x1="90" y1="130" x2="90" y2="330" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="280" y="115" font-size="11" fill="#F97316">Subscriber</text>
+  <line x1="280" y1="130" x2="280" y2="330" stroke="#6B7280" stroke-width="1.5"/>
+
+  <line x1="90" y1="150" x2="275" y2="150" stroke="#16A34A" stroke-width="1.8" marker-end="url(#svArrow)"/>
+  <line x1="90" y1="190" x2="275" y2="190" stroke="#16A34A" stroke-width="1.8" marker-end="url(#svArrow)"/>
+  <line x1="90" y1="230" x2="275" y2="230" stroke="#16A34A" stroke-width="1.8" marker-end="url(#svArrow)"/>
+  <line x1="90" y1="270" x2="275" y2="270" stroke="#16A34A" stroke-width="1.8" marker-end="url(#svArrow)"/>
+  <text x="185" y="355" text-anchor="middle" font-size="10" fill="#6B7280">gửi liên tục, không chờ phản hồi</text>
+
+  <line x1="400" y1="60" x2="400" y2="380" stroke="#E5E9EF" stroke-width="2"/>
+
+  <!-- Service side -->
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">Service</text>
+  <text x="500" y="115" font-size="11" fill="#2563EB">Client</text>
+  <line x1="500" y1="130" x2="500" y2="330" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="700" y="115" font-size="11" fill="#2563EB">Server</text>
+  <line x1="700" y1="130" x2="700" y2="330" stroke="#6B7280" stroke-width="1.5"/>
+
+  <line x1="500" y1="170" x2="695" y2="170" stroke="#2563EB" stroke-width="2" marker-end="url(#svArrow)"/>
+  <text x="600" y="163" text-anchor="middle" font-size="9" fill="#2563EB">request</text>
+
+  <rect x="490" y="200" width="10" height="60" fill="#F3F5F8" stroke="#6B7280"/>
+  <text x="470" y="235" text-anchor="middle" font-size="9" fill="#6B7280" transform="rotate(-90 470 235)">đang chờ</text>
+
+  <line x1="695" y1="260" x2="500" y2="260" stroke="#16A34A" stroke-width="2" marker-end="url(#svArrow)"/>
+  <text x="600" y="253" text-anchor="middle" font-size="9" fill="#16A34A">response</text>
+
+  <text x="600" y="355" text-anchor="middle" font-size="10" fill="#6B7280">đúng 1 request → đúng 1 response</text>
+</svg>

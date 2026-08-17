@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">3 thông số LiDAR — đánh đổi lẫn nhau</text>
+
+  <rect x="40" y="65" width="220" height="160" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="150" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">Tầm quét (Range)</text>
+  <text x="150" y="120" text-anchor="middle" font-size="10" fill="#374151">quyết định thấy xa</text>
+  <text x="150" y="136" text-anchor="middle" font-size="10" fill="#374151">bao nhiêu để kịp phanh</text>
+  <text x="150" y="165" text-anchor="middle" font-size="9" fill="#166534">quan trọng ở tốc độ cao,</text>
+  <text x="150" y="180" text-anchor="middle" font-size="9" fill="#166534">không gian mở</text>
+
+  <rect x="290" y="65" width="220" height="160" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Độ phân giải góc</text>
+  <text x="400" y="120" text-anchor="middle" font-size="10" fill="#374151">quyết định thấy được</text>
+  <text x="400" y="136" text-anchor="middle" font-size="10" fill="#374151">vật cản nhỏ/mỏng hay không</text>
+  <text x="400" y="165" text-anchor="middle" font-size="9" fill="#166534">quan trọng nhất với AMR</text>
+  <text x="400" y="180" text-anchor="middle" font-size="9" fill="#166534">trong nhà, tốc độ thấp</text>
+
+  <rect x="540" y="65" width="220" height="160" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="650" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">Tần số quét</text>
+  <text x="650" y="120" text-anchor="middle" font-size="10" fill="#374151">quyết định độ trễ</text>
+  <text x="650" y="136" text-anchor="middle" font-size="10" fill="#374151">phát hiện vật cản động</text>
+  <text x="650" y="165" text-anchor="middle" font-size="9" fill="#166534">quan trọng khi nhiều</text>
+  <text x="650" y="180" text-anchor="middle" font-size="9" fill="#166534">người qua lại</text>
+
+  <rect x="90" y="250" width="620" height="70" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="275" text-anchor="middle" font-size="11" font-family="monospace" fill="#111827">khoảng_cách_2_điểm ≈ khoảng_cách_tới_vật × (độ_phân_giải × π/180)</text>
+  <text x="400" y="298" text-anchor="middle" font-size="10" fill="#6B7280">1°, vật cách 5m → 2 điểm cách nhau ~8.7cm — vật mỏng hơn có thể "lọt qua"</text>
+
+  <rect x="90" y="335" width="620" height="65" rx="8" fill="#FFEDD5" stroke="#F97316" stroke-width="1.3"/>
+  <text x="400" y="360" text-anchor="middle" font-size="10" font-weight="700" fill="#9A3412">Ba thông số đánh đổi lẫn nhau trong cùng mức giá</text>
+  <text x="400" y="380" text-anchor="middle" font-size="10" fill="#7C2D12">Xác định môi trường vận hành trước — đừng chọn theo "cao nhất mọi mặt"</text>
+</svg>

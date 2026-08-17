@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">LiDAR và Camera — bổ sung, không thay thế nhau</text>
+
+  <rect x="40" y="65" width="330" height="220" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="205" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A8A">LiDAR</text>
+  <text x="205" y="115" text-anchor="middle" font-size="10" fill="#166534">✓ đo khoảng cách chính xác</text>
+  <text x="205" y="133" text-anchor="middle" font-size="10" fill="#166534">✓ hoạt động tốt ban đêm</text>
+  <text x="205" y="151" text-anchor="middle" font-size="10" fill="#166534">✓ xử lý nhẹ (mảng 1D)</text>
+  <text x="205" y="180" text-anchor="middle" font-size="10" fill="#7F1D1D">✕ không biết vật thể LÀ GÌ</text>
+  <text x="205" y="198" text-anchor="middle" font-size="10" fill="#7F1D1D">✕ mù với QR/biển báo</text>
+  <text x="205" y="216" text-anchor="middle" font-size="10" fill="#7F1D1D">✕ sai lệch với kính/gương</text>
+
+  <rect x="430" y="65" width="330" height="220" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="595" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">Camera</text>
+  <text x="595" y="115" text-anchor="middle" font-size="10" fill="#166534">✓ nhận diện, phân loại (YOLO)</text>
+  <text x="595" y="133" text-anchor="middle" font-size="10" fill="#166534">✓ đọc QR/vạch/biển báo</text>
+  <text x="595" y="151" text-anchor="middle" font-size="10" fill="#166534">✓ ít bị ảnh hưởng bởi kính</text>
+  <text x="595" y="180" text-anchor="middle" font-size="10" fill="#7F1D1D">✕ đo khoảng cách kém tin cậy</text>
+  <text x="595" y="198" text-anchor="middle" font-size="10" fill="#7F1D1D">✕ xử lý nặng (mảng 2D + AI)</text>
+  <text x="595" y="216" text-anchor="middle" font-size="10" fill="#7F1D1D">✕ nhạy điều kiện ánh sáng</text>
+
+  <rect x="90" y="310" width="620" height="70" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="335" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Kiến trúc cảm biến chuẩn: kết hợp cả hai</text>
+  <text x="400" y="357" text-anchor="middle" font-size="10" fill="#6B7280">LiDAR cho SLAM/né vật cản · Camera cho nhận diện/phân loại — chi phí tính toán cao hơn cần GPU (Jetson)</text>
+</svg>

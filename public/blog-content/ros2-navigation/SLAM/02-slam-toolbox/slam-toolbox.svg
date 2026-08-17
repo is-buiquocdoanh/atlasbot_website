@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">slam_toolbox — 3 chế độ hoạt động</text>
+
+  <rect x="40" y="65" width="230" height="150" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="155" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">Online</text>
+  <text x="155" y="115" text-anchor="middle" font-size="9" fill="#374151">dựng bản đồ</text>
+  <text x="155" y="130" text-anchor="middle" font-size="9" fill="#374151">thời gian thực</text>
+  <text x="155" y="160" text-anchor="middle" font-size="8" fill="#6B7280">phổ biến nhất —</text>
+  <text x="155" y="174" text-anchor="middle" font-size="8" fill="#6B7280">quét khu vực mới</text>
+
+  <rect x="285" y="65" width="230" height="150" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Offline</text>
+  <text x="400" y="115" text-anchor="middle" font-size="9" fill="#374151">xử lý từ ros2 bag</text>
+  <text x="400" y="130" text-anchor="middle" font-size="9" fill="#374151">đã ghi sẵn</text>
+  <text x="400" y="160" text-anchor="middle" font-size="8" fill="#6B7280">thử nhiều tham số</text>
+  <text x="400" y="174" text-anchor="middle" font-size="8" fill="#6B7280">trên cùng dữ liệu</text>
+
+  <rect x="530" y="65" width="230" height="150" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="645" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">Lifelong Mapping</text>
+  <text x="645" y="115" text-anchor="middle" font-size="9" fill="#374151">nạp bản đồ CŨ,</text>
+  <text x="645" y="130" text-anchor="middle" font-size="9" fill="#374151">tiếp tục cập nhật</text>
+  <text x="645" y="160" text-anchor="middle" font-size="8" fill="#166534">điểm khác biệt lớn</text>
+  <text x="645" y="174" text-anchor="middle" font-size="8" fill="#166534">nhất so với hệ khác</text>
+
+  <rect x="200" y="245" width="400" height="90" rx="10" fill="#EDE9FE" stroke="#9333EA" stroke-width="2"/>
+  <text x="400" y="270" text-anchor="middle" font-size="12" font-weight="700" fill="#6B21A8">+ Localization mode</text>
+  <text x="400" y="292" text-anchor="middle" font-size="10" fill="#374151">định vị trên bản đồ tĩnh — thay thế được AMCL</text>
+  <text x="400" y="312" text-anchor="middle" font-size="9" fill="#6B7280">cùng dùng pose-graph optimization thay vì particle filter</text>
+
+  <rect x="90" y="355" width="620" height="35" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="378" text-anchor="middle" font-size="10" fill="#111827">Lưu cả .pgm/.yaml lẫn .posegraph — không chỉ ảnh, còn cả cấu trúc ràng buộc</text>
+</svg>
