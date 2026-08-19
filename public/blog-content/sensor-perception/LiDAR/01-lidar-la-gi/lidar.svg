@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">LiDAR quét 360° đo khoảng cách vật cản</text>
+
+  <!-- room walls -->
+  <rect x="130" y="90" width="540" height="290" rx="6" fill="none" stroke="#E5E9EF" stroke-width="3"/>
+  <rect x="480" y="150" width="80" height="60" fill="#F3F5F8" stroke="#6B7280" stroke-width="1.5"/>
+  <text x="520" y="185" text-anchor="middle" font-size="10" fill="#6B7280">Vật cản</text>
+
+  <!-- robot at center -->
+  <circle cx="330" cy="260" r="22" fill="#2563EB" opacity="0.12" stroke="#2563EB" stroke-width="2.5"/>
+  <circle cx="330" cy="260" r="5" fill="#2563EB"/>
+  <text x="330" y="300" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Robot (LiDAR)</text>
+
+  <!-- laser rays -->
+  <g stroke="#F97316" stroke-width="1.5" opacity="0.85">
+    <line x1="330" y1="260" x2="330" y2="95"/>
+    <line x1="330" y1="260" x2="430" y2="120"/>
+    <line x1="330" y1="260" x2="500" y2="165"/>
+    <line x1="330" y1="260" x2="540" y2="230"/>
+    <line x1="330" y1="260" x2="490" y2="330"/>
+    <line x1="330" y1="260" x2="380" y2="375"/>
+    <line x1="330" y1="260" x2="220" y2="360"/>
+    <line x1="330" y1="260" x2="140" y2="270"/>
+    <line x1="330" y1="260" x2="150" y2="150"/>
+    <line x1="330" y1="260" x2="240" y2="100"/>
+  </g>
+  <g fill="#DC2626">
+    <circle cx="330" cy="95" r="3.5"/>
+    <circle cx="430" cy="120" r="3.5"/>
+    <circle cx="500" cy="165" r="3.5"/>
+    <circle cx="540" cy="230" r="3.5"/>
+    <circle cx="490" cy="330" r="3.5"/>
+    <circle cx="380" cy="375" r="3.5"/>
+    <circle cx="220" cy="360" r="3.5"/>
+    <circle cx="140" cy="270" r="3.5"/>
+    <circle cx="150" cy="150" r="3.5"/>
+    <circle cx="240" cy="100" r="3.5"/>
+  </g>
+  <text x="620" y="270" font-size="10" fill="#DC2626">● điểm đo (point cloud)</text>
+  <text x="620" y="288" font-size="10" fill="#F97316">— tia laser</text>
+
+  <rect x="90" y="400" width="620" height="40" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="425" text-anchor="middle" font-size="12" fill="#111827">Mỗi vòng quay ~8Hz tạo ra hàng trăm điểm đo khoảng cách quanh robot</text>
+</svg>

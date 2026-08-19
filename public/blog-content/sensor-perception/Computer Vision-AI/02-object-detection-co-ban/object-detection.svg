@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Ba thành phần của Object Detection</text>
+
+  <rect x="90" y="80" width="620" height="200" rx="8" fill="#F3F5F8" stroke="#E5E9EF" stroke-width="1.5"/>
+  <rect x="280" y="115" width="150" height="130" fill="none" stroke="#2563EB" stroke-width="3"/>
+  <rect x="280" y="95" width="90" height="22" fill="#2563EB"/>
+  <text x="325" y="111" text-anchor="middle" font-size="10" fill="#FFFFFF">person 0.91</text>
+
+  <line x1="450" y1="130" x2="600" y2="100" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="605" y="100" font-size="10" fill="#2563EB" font-weight="700">Bounding box</text>
+  <text x="605" y="114" font-size="9" fill="#6B7280">(x, y, w, h)</text>
+
+  <line x1="370" y1="106" x2="600" y2="150" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="605" y="150" font-size="10" fill="#16A34A" font-weight="700">Class</text>
+  <text x="605" y="164" font-size="9" fill="#6B7280">"person"</text>
+
+  <line x1="370" y1="106" x2="600" y2="195" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="605" y="195" font-size="10" fill="#F97316" font-weight="700">Confidence</text>
+  <text x="605" y="209" font-size="9" fill="#6B7280">0.91 (91%)</text>
+
+  <rect x="90" y="310" width="620" height="55" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="332" text-anchor="middle" font-size="12" fill="#111827">Chỉ giữ lại dự đoán có confidence ≥ ngưỡng đặt trước</text>
+  <text x="400" y="349" text-anchor="middle" font-size="12" fill="#111827">(VD: 0.5) — Non-Maximum Suppression loại box trùng lặp</text>
+</svg>

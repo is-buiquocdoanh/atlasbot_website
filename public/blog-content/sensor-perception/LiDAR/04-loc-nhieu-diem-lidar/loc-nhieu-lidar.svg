@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">Dữ liệu LiDAR trước và sau khi lọc nhiễu</text>
+
+  <rect x="70" y="70" width="300" height="270" rx="10" fill="#DC2626" opacity="0.05" stroke="#DC2626" stroke-width="2"/>
+  <text x="220" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#DC2626">Thô (chưa lọc)</text>
+  <path d="M 110 300 L 130 150 L 330 150 L 330 300" fill="none" stroke="#6B7280" stroke-width="2"/>
+  <g fill="#DC2626">
+    <circle cx="130" cy="150" r="2.5"/><circle cx="160" cy="150" r="2.5"/><circle cx="190" cy="150" r="2.5"/>
+    <circle cx="220" cy="150" r="2.5"/><circle cx="250" cy="150" r="2.5"/><circle cx="280" cy="150" r="2.5"/>
+    <circle cx="330" cy="160" r="2.5"/><circle cx="330" cy="190" r="2.5"/><circle cx="330" cy="220" r="2.5"/>
+    <circle cx="330" cy="250" r="2.5"/><circle cx="330" cy="280" r="2.5"/>
+  </g>
+  <!-- noisy outliers -->
+  <g fill="#F97316">
+    <circle cx="240" cy="230" r="3"/>
+    <circle cx="200" cy="260" r="3"/>
+    <circle cx="270" cy="200" r="3"/>
+    <circle cx="180" cy="190" r="3"/>
+  </g>
+  <text x="220" y="330" text-anchor="middle" font-size="10" fill="#F97316">● điểm ma / nhiễu giữa khoảng trống</text>
+
+  <rect x="430" y="70" width="300" height="270" rx="10" fill="#16A34A" opacity="0.05" stroke="#16A34A" stroke-width="2"/>
+  <text x="580" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#16A34A">Đã lọc (laser_filters)</text>
+  <path d="M 470 300 L 490 150 L 690 150 L 690 300" fill="none" stroke="#6B7280" stroke-width="2"/>
+  <g fill="#16A34A">
+    <circle cx="490" cy="150" r="2.5"/><circle cx="520" cy="150" r="2.5"/><circle cx="550" cy="150" r="2.5"/>
+    <circle cx="580" cy="150" r="2.5"/><circle cx="610" cy="150" r="2.5"/><circle cx="640" cy="150" r="2.5"/>
+    <circle cx="690" cy="160" r="2.5"/><circle cx="690" cy="190" r="2.5"/><circle cx="690" cy="220" r="2.5"/>
+    <circle cx="690" cy="250" r="2.5"/><circle cx="690" cy="280" r="2.5"/>
+  </g>
+  <text x="580" y="330" text-anchor="middle" font-size="10" fill="#16A34A">Chỉ còn điểm bám sát tường thật</text>
+
+  <text x="400" y="225" text-anchor="middle" font-size="16" fill="#6B7280">→</text>
+</svg>

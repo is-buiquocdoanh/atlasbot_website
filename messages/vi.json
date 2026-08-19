@@ -3,6 +3,7 @@
     "comingSoon": "Nội dung sẽ sớm được cập nhật."
   },
   "Nav": {
+    "home": "Trang chủ",
     "blog": "Blog",
     "projects": "Dự án",
     "shop": "Shop",
@@ -20,7 +21,8 @@
     "ctaShop": "Xem Shop",
     "latestPosts": "Bài viết mới nhất",
     "featuredProjects": "Dự án nổi bật",
-    "featuredProducts": "Sản phẩm nổi bật"
+    "featuredProducts": "Sản phẩm nổi bật",
+    "viewAll": "Xem tất cả →"
   },
   "Footer": {
     "tagline": "Chia sẻ kiến thức & thiết bị AMR/AGV."
@@ -63,6 +65,43 @@
       "chassis": "Khung robot/cơ khí",
       "drivetrain": "Bánh xe & hệ truyền động",
       "battery": "Pin & nguồn"
+    },
+    "detail": {
+      "breadcrumbHome": "Trang chủ",
+      "breadcrumbShop": "Cửa hàng",
+      "sku": "Mã SP",
+      "noReviews": "Chưa có đánh giá",
+      "inStock": "Còn hàng — {count} sản phẩm",
+      "outOfStock": "Tạm hết hàng",
+      "chooseVariant": "Chọn tuỳ chọn",
+      "variantStock": "Còn {count}",
+      "variantOutOfStock": "Hết hàng",
+      "quantity": "Số lượng",
+      "orderMessenger": "Đặt hàng qua Messenger",
+      "chatZalo": "Chat Zalo tư vấn",
+      "manualConfirmNote": "Đơn hàng sẽ được xác nhận thủ công qua Messenger/Zalo — chúng tôi chưa hỗ trợ thanh toán online.",
+      "contactMissing": "Kênh này chưa được cấu hình, vui lòng liên hệ qua kênh còn lại.",
+      "imagePlaceholder": "Ảnh minh họa — cập nhật ảnh thật sau",
+      "trustWarranty": "Bảo hành chính hãng",
+      "trustWarrantyDesc": "12 tháng lỗi kỹ thuật",
+      "trustShipping": "Giao hàng toàn quốc",
+      "trustShippingDesc": "2-4 ngày làm việc",
+      "trustSupport": "Hỗ trợ kỹ thuật",
+      "trustSupportDesc": "Qua Messenger/Zalo",
+      "relatedTitle": "Sản phẩm liên quan"
+    },
+    "tabs": {
+      "description": "Mô tả chi tiết",
+      "specifications": "Thông số kỹ thuật",
+      "videos": "Video hướng dẫn",
+      "usage": "Hướng dẫn sử dụng",
+      "about": "Giới thiệu",
+      "noVideos": "Chưa có video hướng dẫn cho sản phẩm này.",
+      "noUsageSteps": "Chưa có hướng dẫn sử dụng cho sản phẩm này.",
+      "aboutStatCategories": "Nhóm sản phẩm",
+      "aboutStatSupport": "Hỗ trợ kỹ thuật",
+      "aboutStatWarranty": "Ngày bảo hành",
+      "aboutStatResponse": "Phản hồi trong"
     }
   },
   "Cart": {
@@ -86,9 +125,39 @@
     "contactMissing": "Kênh này chưa được cấu hình, vui lòng liên hệ qua kênh còn lại."
   },
   "About": {
-    "title": "Giới thiệu"
+    "title": "Giới thiệu",
+    "heroTitle": "Atlasbot — kiến thức và linh kiện cho robot AMR/AGV",
+    "heroSubtitle": "Từ dự án thực tế đến kiến thức chia sẻ và linh kiện đã kiểm chứng — mọi thứ trên Atlasbot đều bắt đầu từ việc tự tay lắp ráp và vận hành robot thật.",
+    "storyParagraph1": "Atlasbot bắt đầu từ một nhu cầu rất thực tế: khi tự xây dựng các robot di động tự hành (AMR) — từ robot vi sai, robot Mecanum, đến Atlas A2 chạy trên Jetson Orin Nano — luôn phải tự mày mò tài liệu rải rác, tự thử-sai với linh kiện không rõ chất lượng, và tự hệ thống lại kiến thức nền tảng vì tài liệu tiếng Việt về AMR/AGV còn khá ít.",
+    "storyParagraph2": "Atlasbot ra đời để giải quyết đúng vấn đề đó: tổng hợp kiến thức kỹ thuật có hệ thống, showcase các dự án thực tế đã chạy được, và cung cấp linh kiện được chọn lọc dựa trên kinh nghiệm dùng thật trong chính các dự án đó — thay vì chỉ bán lại những gì chưa từng tự thử nghiệm.",
+    "storyParagraph3": "Không chỉ chia sẻ kiến thức và bán linh kiện, Atlasbot còn đồng hành trực tiếp với các dự án AMR/AGV — từ đồ án tốt nghiệp, dự án nghiên cứu của sinh viên, đến các bài toán triển khai robot tự hành thực tế tại doanh nghiệp. Dù là dự án học tập hay dự án sản xuất, cách tiếp cận vẫn nhất quán: tư vấn đúng cấu hình phần cứng, hỗ trợ kỹ thuật xuyên suốt từ ý tưởng đến khi robot chạy thật.",
+    "pillarsTitle": "Atlasbot có gì",
+    "pillarBlogTitle": "Blog kỹ thuật",
+    "pillarBlogDesc": "9 chủ đề từ kiến thức nền tảng đến ROS2 Navigation nâng cao, viết theo đúng trình tự học thực tế — không lý thuyết suông.",
+    "pillarProjectsTitle": "Dự án thực tế",
+    "pillarProjectsDesc": "Robot Mecanum, Diff Robot, Atlas A2 — mã nguồn mở trên GitHub, kèm video demo và toàn bộ quá trình xây dựng.",
+    "pillarShopTitle": "Shop linh kiện",
+    "pillarShopDesc": "Cảm biến, vi điều khiển, động cơ, khung robot, bánh xe, pin — chọn lọc dựa trên kinh nghiệm thực tế, không bán những gì chưa từng thử nghiệm.",
+    "visionTitle": "Định hướng",
+    "visionText": "Atlasbot hiện đang trong giai đoạn phát triển ban đầu — phần blog và shop phục vụ chủ yếu sinh viên và kỹ sư cá nhân tại Việt Nam, còn các dự án AMR/AGV cho doanh nghiệp được hỗ trợ theo từng dự án cụ thể. Đơn hàng và yêu cầu hỗ trợ dự án đều được xác nhận thủ công qua Messenger/Zalo.",
+    "ctaBlog": "Đọc Blog",
+    "ctaProjects": "Xem Dự án",
+    "ctaShop": "Xem Shop"
   },
   "Contact": {
-    "title": "Liên hệ"
+    "title": "Liên hệ",
+    "subtitle": "Có câu hỏi về sản phẩm, cần tư vấn cấu hình cho dự án AMR/AGV, hay muốn hợp tác — nhắn trực tiếp qua Messenger hoặc Zalo bên dưới.",
+    "messengerTitle": "Messenger",
+    "messengerDesc": "Phù hợp trao đổi nhanh, gửi kèm ảnh/video mô tả sản phẩm hoặc vấn đề đang gặp.",
+    "ctaMessenger": "Chat qua Messenger",
+    "zaloTitle": "Zalo",
+    "zaloDesc": "Phù hợp nếu bạn quen dùng Zalo hơn, hoặc cần gọi điện trực tiếp để trao đổi kỹ hơn.",
+    "ctaZalo": "Chat qua Zalo",
+    "useCasesTitle": "Liên hệ Atlasbot khi bạn cần",
+    "useCase1": "Tư vấn chọn linh kiện phù hợp cho dự án AMR/AGV",
+    "useCase2": "Hỗ trợ kỹ thuật cho dự án của sinh viên hoặc doanh nghiệp",
+    "useCase3": "Báo lỗi sản phẩm, bảo hành, hoặc đổi trả",
+    "useCase4": "Hợp tác, đặt hàng số lượng lớn",
+    "contactMissing": "Kênh này chưa được cấu hình, vui lòng liên hệ qua kênh còn lại."
   }
 }

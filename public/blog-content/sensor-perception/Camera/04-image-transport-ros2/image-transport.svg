@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">image_transport — plugin nén ảnh trong suốt</text>
+
+  <rect x="60" y="90" width="160" height="70" rx="8" fill="#2563EB" opacity="0.1" stroke="#2563EB" stroke-width="2"/>
+  <text x="140" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Camera node</text>
+  <text x="140" y="138" text-anchor="middle" font-size="10" fill="#6B7280">publish qua image_transport</text>
+
+  <line x1="220" y1="125" x2="290" y2="125" stroke="#6B7280" stroke-width="2" marker-end="url(#arrowI)"/>
+  <defs>
+    <marker id="arrowI" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <rect x="300" y="70" width="200" height="110" rx="8" fill="#F3F5F8" stroke="#E5E9EF" stroke-width="1.5"/>
+  <text x="400" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">Chọn plugin</text>
+  <rect x="315" y="100" width="170" height="24" rx="4" fill="#16A34A" opacity="0.15"/>
+  <text x="400" y="117" text-anchor="middle" font-size="10" fill="#16A34A">raw — không nén</text>
+  <rect x="315" y="128" width="170" height="24" rx="4" fill="#F97316" opacity="0.15"/>
+  <text x="400" y="145" text-anchor="middle" font-size="10" fill="#F97316">compressed — JPEG/PNG</text>
+  <rect x="315" y="156" width="170" height="18" rx="4" fill="#DC2626" opacity="0.12"/>
+  <text x="400" y="169" text-anchor="middle" font-size="9" fill="#DC2626">theora — nén video</text>
+
+  <line x1="510" y1="125" x2="580" y2="125" stroke="#6B7280" stroke-width="2" marker-end="url(#arrowI)"/>
+
+  <rect x="590" y="90" width="150" height="70" rx="8" fill="#2563EB" opacity="0.1" stroke="#2563EB" stroke-width="2"/>
+  <text x="665" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Subscriber node</text>
+  <text x="665" y="138" text-anchor="middle" font-size="10" fill="#6B7280">tự động giải nén</text>
+
+  <rect x="90" y="260" width="620" height="60" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="284" text-anchor="middle" font-size="12" fill="#111827">Subscriber không cần biết publisher dùng plugin nào —</text>
+  <text x="400" y="301" text-anchor="middle" font-size="12" fill="#111827">image_transport tự thương lượng định dạng và giải nén</text>
+</svg>

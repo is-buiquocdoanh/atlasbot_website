@@ -3,6 +3,7 @@
     "comingSoon": "内容即将上线。"
   },
   "Nav": {
+    "home": "首页",
     "blog": "博客",
     "projects": "项目",
     "shop": "商店",
@@ -20,7 +21,8 @@
     "ctaShop": "浏览商店",
     "latestPosts": "最新文章",
     "featuredProjects": "精选项目",
-    "featuredProducts": "精选产品"
+    "featuredProducts": "精选产品",
+    "viewAll": "查看全部 →"
   },
   "Footer": {
     "tagline": "分享 AMR/AGV 知识与硬件设备。"
@@ -63,6 +65,43 @@
       "chassis": "机架与结构件",
       "drivetrain": "轮子与传动系统",
       "battery": "电池与电源"
+    },
+    "detail": {
+      "breadcrumbHome": "首页",
+      "breadcrumbShop": "商店",
+      "sku": "商品编号",
+      "noReviews": "暂无评价",
+      "inStock": "有货 — 剩余 {count} 件",
+      "outOfStock": "暂时缺货",
+      "chooseVariant": "选择规格",
+      "variantStock": "剩余 {count}",
+      "variantOutOfStock": "缺货",
+      "quantity": "数量",
+      "orderMessenger": "通过 Messenger 下单",
+      "chatZalo": "通过 Zalo 咨询",
+      "manualConfirmNote": "订单将通过 Messenger/Zalo 人工确认——目前暂不支持在线支付。",
+      "contactMissing": "该渠道尚未配置，请使用另一个渠道联系。",
+      "imagePlaceholder": "示意图 — 实拍图片稍后更新",
+      "trustWarranty": "正品保修",
+      "trustWarrantyDesc": "12 个月非人为故障保修",
+      "trustShipping": "全国配送",
+      "trustShippingDesc": "2-4 个工作日",
+      "trustSupport": "技术支持",
+      "trustSupportDesc": "通过 Messenger/Zalo",
+      "relatedTitle": "相关产品"
+    },
+    "tabs": {
+      "description": "详细描述",
+      "specifications": "技术规格",
+      "videos": "视频教程",
+      "usage": "使用指南",
+      "about": "关于我们",
+      "noVideos": "该产品暂无视频教程。",
+      "noUsageSteps": "该产品暂无使用指南。",
+      "aboutStatCategories": "产品分类",
+      "aboutStatSupport": "技术支持",
+      "aboutStatWarranty": "保修天数",
+      "aboutStatResponse": "响应时间"
     }
   },
   "Cart": {
@@ -86,9 +125,39 @@
     "contactMissing": "该渠道尚未配置，请使用另一个渠道联系。"
   },
   "About": {
-    "title": "关于我们"
+    "title": "关于我们",
+    "heroTitle": "Atlasbot — AMR/AGV 机器人的知识与硬件",
+    "heroSubtitle": "从真实项目到分享的知识、经过验证的硬件——Atlasbot 上的一切都始于亲手组装和运行真实的机器人。",
+    "storyParagraph1": "Atlasbot 源于一个非常实际的需求：在自主搭建移动机器人(AMR)的过程中——从差速驱动机器人、麦克纳姆轮机器人，到运行在 Jetson Orin Nano 上的 Atlas A2——每一步都要在零散的资料中摸索，用质量不明的零件反复试错，还要从头梳理基础知识，因为高质量的越南语 AMR/AGV 资料非常稀缺。",
+    "storyParagraph2": "Atlasbot 正是为解决这个问题而生：系统化整理技术知识、展示真正能跑起来的实际项目，并根据这些项目中的真实使用经验精选硬件——而不是转售从未真正测试过的零件。",
+    "storyParagraph3": "除了分享知识和销售零件，Atlasbot 还直接参与 AMR/AGV 项目——从学生的毕业设计、研究项目，到企业实际部署自主移动机器人的项目。无论是学习项目还是生产落地项目，方式始终一致：协助选择合适的硬件配置，并在从想法到机器人真正跑起来的整个过程中提供技术支持——而不只是卖出一件产品就结束。",
+    "pillarsTitle": "Atlasbot 提供什么",
+    "pillarBlogTitle": "技术博客",
+    "pillarBlogDesc": "9 大主题，从基础知识到进阶 ROS2 Navigation，按实际学习顺序编写——没有空泛的理论。",
+    "pillarProjectsTitle": "真实项目",
+    "pillarProjectsDesc": "麦克纳姆轮机器人、差速驱动机器人、Atlas A2——GitHub 开源，附带演示视频和完整搭建过程。",
+    "pillarShopTitle": "硬件商店",
+    "pillarShopDesc": "传感器、微控制器、电机、机器人底盘、轮子、电池——基于真实使用经验精选，不出售从未测试过的零件。",
+    "visionTitle": "未来方向",
+    "visionText": "Atlasbot 目前处于早期发展阶段——博客和商店主要服务越南的学生和个人工程师，而面向企业的 AMR/AGV 项目支持则按具体项目提供。订单和项目支持需求均通过 Messenger/Zalo 人工确认，暂不支持在线支付。长期目标是发展成为批发经销商，服务更大规模的企业客户和国际市场。",
+    "ctaBlog": "阅读博客",
+    "ctaProjects": "查看项目",
+    "ctaShop": "浏览商店"
   },
   "Contact": {
-    "title": "联系我们"
+    "title": "联系我们",
+    "subtitle": "有产品相关问题、需要为 AMR/AGV 项目挑选合适配置，或想寻求合作——请通过下方 Messenger 或 Zalo 直接联系。",
+    "messengerTitle": "Messenger",
+    "messengerDesc": "适合快速沟通，也可以附上产品或问题的照片/视频说明。",
+    "ctaMessenger": "通过 Messenger 联系",
+    "zaloTitle": "Zalo",
+    "zaloDesc": "如果你更习惯用 Zalo，或需要电话详细沟通，可以选择这个方式。",
+    "ctaZalo": "通过 Zalo 联系",
+    "useCasesTitle": "以下情况欢迎联系 Atlasbot",
+    "useCase1": "为 AMR/AGV 项目挑选合适的硬件配置",
+    "useCase2": "为学生或企业项目提供技术支持",
+    "useCase3": "产品问题反馈、保修或退换货",
+    "useCase4": "合作洽谈或批量采购",
+    "contactMissing": "该渠道尚未配置，请通过另一个渠道联系。"
   }
 }

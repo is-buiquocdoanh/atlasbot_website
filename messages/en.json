@@ -3,6 +3,7 @@
     "comingSoon": "Content coming soon."
   },
   "Nav": {
+    "home": "Home",
     "blog": "Blog",
     "projects": "Projects",
     "shop": "Shop",
@@ -20,7 +21,8 @@
     "ctaShop": "Browse the Shop",
     "latestPosts": "Latest posts",
     "featuredProjects": "Featured projects",
-    "featuredProducts": "Featured products"
+    "featuredProducts": "Featured products",
+    "viewAll": "View all →"
   },
   "Footer": {
     "tagline": "Sharing AMR/AGV knowledge & hardware."
@@ -63,6 +65,43 @@
       "chassis": "Chassis & mechanics",
       "drivetrain": "Wheels & drivetrain",
       "battery": "Batteries & power"
+    },
+    "detail": {
+      "breadcrumbHome": "Home",
+      "breadcrumbShop": "Shop",
+      "sku": "SKU",
+      "noReviews": "No reviews yet",
+      "inStock": "In stock — {count} available",
+      "outOfStock": "Out of stock",
+      "chooseVariant": "Choose an option",
+      "variantStock": "{count} left",
+      "variantOutOfStock": "Out of stock",
+      "quantity": "Quantity",
+      "orderMessenger": "Order via Messenger",
+      "chatZalo": "Chat on Zalo",
+      "manualConfirmNote": "Orders are confirmed manually via Messenger/Zalo — online payment isn't supported yet.",
+      "contactMissing": "This channel isn't configured yet, please use the other one.",
+      "imagePlaceholder": "Placeholder image — real photos coming soon",
+      "trustWarranty": "Official warranty",
+      "trustWarrantyDesc": "12 months against defects",
+      "trustShipping": "Nationwide shipping",
+      "trustShippingDesc": "2-4 business days",
+      "trustSupport": "Technical support",
+      "trustSupportDesc": "Via Messenger/Zalo",
+      "relatedTitle": "Related products"
+    },
+    "tabs": {
+      "description": "Description",
+      "specifications": "Specifications",
+      "videos": "Video guides",
+      "usage": "How to use",
+      "about": "About",
+      "noVideos": "No video guides for this product yet.",
+      "noUsageSteps": "No usage instructions for this product yet.",
+      "aboutStatCategories": "Product groups",
+      "aboutStatSupport": "Technical support",
+      "aboutStatWarranty": "Warranty days",
+      "aboutStatResponse": "Response time"
     }
   },
   "Cart": {
@@ -86,9 +125,39 @@
     "contactMissing": "This channel isn't configured yet, please use the other one."
   },
   "About": {
-    "title": "About"
+    "title": "About",
+    "heroTitle": "Atlasbot — knowledge and parts for AMR/AGV robots",
+    "heroSubtitle": "From real projects to shared knowledge and field-tested parts — everything on Atlasbot starts with actually building and running real robots.",
+    "storyParagraph1": "Atlasbot grew out of a very practical need: while building autonomous mobile robots (AMR) — from a differential-drive robot and a Mecanum robot to Atlas A2 running on a Jetson Orin Nano — every step meant hunting through scattered documentation, trial-and-error with parts of unknown quality, and rebuilding foundational knowledge from scratch, since good AMR/AGV material in Vietnamese was hard to find.",
+    "storyParagraph2": "Atlasbot exists to fix exactly that: a systematic collection of technical knowledge, a showcase of real projects that actually run, and a curated set of parts based on hands-on experience from those same projects — instead of just reselling components that were never actually tested.",
+    "storyParagraph3": "Beyond sharing knowledge and selling parts, Atlasbot works directly alongside AMR/AGV projects — from student capstone and research projects to real-world deployments at companies rolling out autonomous mobile robots. Whether it's a school project or a production rollout, the approach stays the same: helping pick the right hardware configuration and providing hands-on technical support from idea to a robot that actually runs — not just selling a product and walking away.",
+    "pillarsTitle": "What Atlasbot offers",
+    "pillarBlogTitle": "Technical blog",
+    "pillarBlogDesc": "9 topics from foundational knowledge to advanced ROS2 Navigation, written in the order you'd actually learn them — no fluff.",
+    "pillarProjectsTitle": "Real projects",
+    "pillarProjectsDesc": "Mecanum robot, differential-drive robot, Atlas A2 — open source on GitHub, with demo videos and the full build process.",
+    "pillarShopTitle": "Component shop",
+    "pillarShopDesc": "Sensors, microcontrollers, motors, chassis, wheels, batteries — curated from real hands-on use, not components that were never field-tested.",
+    "visionTitle": "Where this is headed",
+    "visionText": "Atlasbot is currently in an early stage — the blog and shop mainly serve students and individual engineers in Vietnam, while AMR/AGV project support for businesses is handled on a per-project basis. Orders and project support requests are both confirmed manually via Messenger/Zalo — online payment isn't supported yet. The longer-term goal is to grow into a wholesale distributor serving larger business customers and international markets.",
+    "ctaBlog": "Read the Blog",
+    "ctaProjects": "View Projects",
+    "ctaShop": "Visit the Shop"
   },
   "Contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "subtitle": "Questions about a product, need help sizing components for an AMR/AGV project, or want to collaborate — message directly via Messenger or Zalo below.",
+    "messengerTitle": "Messenger",
+    "messengerDesc": "Good for quick questions, and for sharing photos/videos of a product or issue.",
+    "ctaMessenger": "Chat on Messenger",
+    "zaloTitle": "Zalo",
+    "zaloDesc": "Good if you prefer Zalo, or need a call to go through details.",
+    "ctaZalo": "Chat on Zalo",
+    "useCasesTitle": "Reach out to Atlasbot for",
+    "useCase1": "Help choosing the right components for an AMR/AGV project",
+    "useCase2": "Technical support for student or business projects",
+    "useCase3": "Product issues, warranty, or returns",
+    "useCase4": "Partnerships or bulk orders",
+    "contactMissing": "This channel isn't configured yet — please reach out through the other one."
   }
 }

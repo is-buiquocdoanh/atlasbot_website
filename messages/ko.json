@@ -3,6 +3,7 @@
     "comingSoon": "콘텐츠가 곧 업데이트될 예정입니다."
   },
   "Nav": {
+    "home": "홈",
     "blog": "블로그",
     "projects": "프로젝트",
     "shop": "샵",
@@ -20,7 +21,8 @@
     "ctaShop": "샵 둘러보기",
     "latestPosts": "최신 글",
     "featuredProjects": "주요 프로젝트",
-    "featuredProducts": "추천 상품"
+    "featuredProducts": "추천 상품",
+    "viewAll": "전체 보기 →"
   },
   "Footer": {
     "tagline": "AMR/AGV 지식과 부품을 공유합니다."
@@ -63,6 +65,43 @@
       "chassis": "섀시 & 기구부",
       "drivetrain": "휠 & 구동계",
       "battery": "배터리 & 전원"
+    },
+    "detail": {
+      "breadcrumbHome": "홈",
+      "breadcrumbShop": "샵",
+      "sku": "제품 코드",
+      "noReviews": "아직 리뷰가 없습니다",
+      "inStock": "재고 있음 — {count}개",
+      "outOfStock": "일시 품절",
+      "chooseVariant": "옵션 선택",
+      "variantStock": "{count}개 남음",
+      "variantOutOfStock": "품절",
+      "quantity": "수량",
+      "orderMessenger": "Messenger로 주문하기",
+      "chatZalo": "Zalo로 상담하기",
+      "manualConfirmNote": "주문은 Messenger/Zalo를 통해 수동으로 확인됩니다 — 온라인 결제는 아직 지원하지 않습니다.",
+      "contactMissing": "이 채널은 아직 설정되지 않았습니다. 다른 채널을 이용해 주세요.",
+      "imagePlaceholder": "예시 이미지 — 실제 제품 사진은 추후 업데이트됩니다",
+      "trustWarranty": "정품 보증",
+      "trustWarrantyDesc": "제조 결함 12개월 보증",
+      "trustShipping": "전국 배송",
+      "trustShippingDesc": "영업일 기준 2-4일",
+      "trustSupport": "기술 지원",
+      "trustSupportDesc": "Messenger/Zalo로 상담",
+      "relatedTitle": "관련 상품"
+    },
+    "tabs": {
+      "description": "상세 설명",
+      "specifications": "사양",
+      "videos": "영상 가이드",
+      "usage": "사용 방법",
+      "about": "소개",
+      "noVideos": "이 제품에 대한 영상 가이드가 아직 없습니다.",
+      "noUsageSteps": "이 제품에 대한 사용 방법이 아직 없습니다.",
+      "aboutStatCategories": "제품 그룹",
+      "aboutStatSupport": "기술 지원",
+      "aboutStatWarranty": "보증 일수",
+      "aboutStatResponse": "응답 시간"
     }
   },
   "Cart": {
@@ -86,9 +125,39 @@
     "contactMissing": "이 채널은 아직 설정되지 않았습니다. 다른 채널을 이용해 주세요."
   },
   "About": {
-    "title": "소개"
+    "title": "소개",
+    "heroTitle": "Atlasbot — AMR/AGV 로봇을 위한 지식과 부품",
+    "heroSubtitle": "실제 프로젝트에서 시작된 지식 공유와 검증된 부품까지 — Atlasbot의 모든 것은 실제 로봇을 직접 조립하고 운용하는 것에서 출발합니다.",
+    "storyParagraph1": "Atlasbot은 아주 현실적인 필요에서 시작되었습니다. 차동구동 로봇, 메카넘 로봇부터 Jetson Orin Nano 기반의 Atlas A2까지 자율주행 이동로봇(AMR)을 직접 만들면서, 흩어진 자료를 일일이 찾아야 했고 품질을 알 수 없는 부품으로 시행착오를 겪어야 했으며, 베트남어로 된 AMR/AGV 자료가 부족해 기초 지식을 스스로 체계화해야 했습니다.",
+    "storyParagraph2": "Atlasbot은 바로 그 문제를 해결하기 위해 만들어졌습니다 — 기술 지식을 체계적으로 정리하고, 실제로 작동하는 프로젝트를 소개하며, 한 번도 써보지 않은 부품을 되파는 대신 같은 프로젝트에서 직접 사용해 본 경험을 바탕으로 부품을 선별해 제공합니다.",
+    "storyParagraph3": "지식 공유와 부품 판매에 그치지 않고, Atlasbot은 AMR/AGV 프로젝트를 직접 함께합니다 — 학생의 졸업 작품·연구 프로젝트부터 기업이 실제로 자율주행 로봇을 도입하는 프로젝트까지 함께합니다. 학습 프로젝트든 실제 운영 프로젝트든 접근 방식은 동일합니다: 적합한 하드웨어 구성을 함께 정하고, 아이디어에서 실제로 작동하는 로봇이 되기까지 기술 지원을 이어갑니다 — 단순히 제품을 팔고 끝나는 것이 아닙니다.",
+    "pillarsTitle": "Atlasbot이 제공하는 것",
+    "pillarBlogTitle": "기술 블로그",
+    "pillarBlogDesc": "기초 지식부터 고급 ROS2 Navigation까지 9개 주제를 실제 학습 순서에 맞춰 작성 — 공허한 이론이 아닙니다.",
+    "pillarProjectsTitle": "실전 프로젝트",
+    "pillarProjectsDesc": "메카넘 로봇, 차동구동 로봇, Atlas A2 — GitHub에 공개된 오픈소스, 데모 영상과 전체 제작 과정 포함.",
+    "pillarShopTitle": "부품 스토어",
+    "pillarShopDesc": "센서, 마이크로컨트롤러, 모터, 로봇 프레임, 바퀴, 배터리 — 실제 사용 경험을 바탕으로 선별, 테스트하지 않은 부품은 판매하지 않습니다.",
+    "visionTitle": "앞으로의 방향",
+    "visionText": "Atlasbot은 현재 초기 단계로, 블로그와 쇼핑몰은 주로 베트남의 학생과 개인 엔지니어를 대상으로 하며, 기업 대상 AMR/AGV 프로젝트 지원은 프로젝트별로 제공하고 있습니다. 주문과 프로젝트 지원 요청은 모두 Messenger/Zalo를 통해 수동으로 확인하며, 아직 온라인 결제는 지원하지 않습니다. 장기적으로는 대규모 기업 고객과 해외 시장을 대상으로 하는 도매 유통업체로 성장하는 것이 목표입니다.",
+    "ctaBlog": "블로그 읽기",
+    "ctaProjects": "프로젝트 보기",
+    "ctaShop": "쇼핑몰 가기"
   },
   "Contact": {
-    "title": "문의"
+    "title": "문의",
+    "subtitle": "제품 관련 문의, AMR/AGV 프로젝트 구성 상담, 협업 제안까지 — 아래 Messenger 또는 Zalo로 직접 메시지를 보내주세요.",
+    "messengerTitle": "Messenger",
+    "messengerDesc": "빠른 문의에 적합하며, 제품이나 문제 상황을 사진·영상으로 함께 보낼 수 있습니다.",
+    "ctaMessenger": "Messenger로 문의하기",
+    "zaloTitle": "Zalo",
+    "zaloDesc": "Zalo가 더 편하거나 전화로 자세히 상담하고 싶을 때 적합합니다.",
+    "ctaZalo": "Zalo로 문의하기",
+    "useCasesTitle": "이럴 때 Atlasbot에 문의하세요",
+    "useCase1": "AMR/AGV 프로젝트에 맞는 부품 선택 상담",
+    "useCase2": "학생 또는 기업 프로젝트 기술 지원",
+    "useCase3": "제품 불량 신고, 보증, 교환/반품",
+    "useCase4": "협업 제안 또는 대량 주문",
+    "contactMissing": "이 채널은 아직 설정되지 않았습니다. 다른 채널로 문의해 주세요."
   }
 }

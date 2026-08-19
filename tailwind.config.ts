@@ -15,10 +15,25 @@ const config: Config = {
         muted: "#6B7280",
         success: "#16A34A",
         danger: "#DC2626",
+        // Design tokens bổ sung cho trang chi tiết sản phẩm
+        // (docs/product-detail-page-spec.md mục 1) — thêm mới, không đổi
+        // các token phẳng ở trên để không ảnh hưởng trang/component cũ.
+        "primary-dark": "#1D4ED8",
+        "primary-tint": "#EFF4FF",
+        "accent-dark": "#EA580C",
+        "accent-tint": "#FFF3E9",
+        "success-bg": "#F0FDF4",
+        "surface-subtle": "#F7F9FC",
+        ink: "#0F172A",
+        "ink-muted": "#5B6472",
+        "ink-faint": "#94A0AF",
+        line: "#E4E9F0",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
         mono: ["var(--font-jetbrains-mono)", "monospace"],
+        display: ["var(--font-space-grotesk)", "var(--font-inter)", "sans-serif"],
+        body: ["var(--font-inter)", "sans-serif"],
       },
       typography: ({ theme }: { theme: (path: string) => string }) => ({
         DEFAULT: {
@@ -56,6 +71,9 @@ const config: Config = {
           },
         },
       }),
+      borderRadius: {
+        card: "14px",
+      },
     },
   },
   plugins: [typography],

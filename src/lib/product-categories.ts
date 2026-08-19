@@ -10,3 +10,14 @@ export const PRODUCT_CATEGORIES = [
 ] as const;
 
 export type ProductCategorySlug = (typeof PRODUCT_CATEGORIES)[number]["slug"];
+
+// Tra cứu qua lại giữa slug (URL, VD: /shop/motor/...) và value (tên tiếng
+// Việt lưu trong field `category` của sản phẩm) — dùng khi build link sản
+// phẩm và khi validate param [category] trên route chi tiết.
+export function getCategoryByValue(value: string) {
+  return PRODUCT_CATEGORIES.find((c) => c.value === value);
+}
+
+export function getCategoryBySlug(slug: string) {
+  return PRODUCT_CATEGORIES.find((c) => c.slug === slug);
+}

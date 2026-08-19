@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">MPU6050 — kết nối I2C với Arduino</text>
+
+  <!-- MPU6050 board -->
+  <rect x="90" y="120" width="150" height="110" rx="8" fill="#2563EB" opacity="0.1" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="115" y="145" width="100" height="60" rx="4" fill="#2563EB" opacity="0.25"/>
+  <text x="165" y="180" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">MPU6050</text>
+  <text x="165" y="245" text-anchor="middle" font-size="11" fill="#111827">VCC · GND · SCL · SDA</text>
+
+  <!-- wires -->
+  <line x1="240" y1="150" x2="450" y2="150" stroke="#F97316" stroke-width="2" marker-end="url(#arrowM)"/>
+  <text x="345" y="140" text-anchor="middle" font-size="10" fill="#F97316">SDA</text>
+  <line x1="240" y1="185" x2="450" y2="185" stroke="#16A34A" stroke-width="2" marker-end="url(#arrowM)"/>
+  <text x="345" y="175" text-anchor="middle" font-size="10" fill="#16A34A">SCL</text>
+
+  <defs>
+    <marker id="arrowM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <!-- Arduino -->
+  <rect x="460" y="90" width="200" height="180" rx="8" fill="#16A34A" opacity="0.08" stroke="#16A34A" stroke-width="2"/>
+  <text x="560" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#111827">Arduino / ESP32</text>
+  <text x="560" y="145" text-anchor="middle" font-size="10" fill="#6B7280">I2C address: 0x68</text>
+  <text x="560" y="163" text-anchor="middle" font-size="10" fill="#6B7280">(0x69 nếu AD0 = HIGH)</text>
+
+  <rect x="490" y="185" width="140" height="60" rx="6" fill="#FFFFFF" stroke="#E5E9EF"/>
+  <text x="560" y="208" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">mpu.getMotion6(</text>
+  <text x="560" y="224" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">&ax,&ay,&az,</text>
+  <text x="560" y="238" text-anchor="middle" font-size="10" font-family="monospace" fill="#111827">&gx,&gy,&gz)</text>
+
+  <rect x="90" y="310" width="620" height="45" rx="8" fill="#F3F5F8" stroke="#E5E9EF"/>
+  <text x="400" y="337" text-anchor="middle" font-size="12" fill="#111827">testConnection() trả về false → thường do đấu nhầm SDA/SCL hoặc thiếu pull-up</text>
+</svg>

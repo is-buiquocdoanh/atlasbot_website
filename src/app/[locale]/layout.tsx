@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -16,6 +16,14 @@ const inter = Inter({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
+});
+
+// Dùng cho tiêu đề sản phẩm/heading (trang Shop) — không hỗ trợ subset
+// "vietnamese" trên Google Fonts, chữ có dấu sẽ tự rơi về font-inter trong
+// fallback stack (xem fontFamily.display trong tailwind.config.ts).
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +50,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
+      <body
+        className={`${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} font-sans`}
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main className="max-w-6xl mx-auto px-4 py-10 min-h-[70vh]">

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Arial, sans-serif">
+  <rect width="800" height="420" fill="#FFFFFF"/>
+  <text x="400" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">YOLO: 1 lần xử lý, nhiều vật thể</text>
+
+  <rect x="90" y="80" width="620" height="260" rx="8" fill="#F3F5F8" stroke="#E5E9EF" stroke-width="1.5"/>
+
+  <!-- bounding boxes -->
+  <rect x="140" y="130" width="110" height="150" fill="none" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="140" y="112" width="70" height="20" fill="#2563EB"/>
+  <text x="175" y="127" text-anchor="middle" font-size="10" fill="#FFFFFF">person 0.91</text>
+
+  <rect x="320" y="180" width="160" height="90" fill="none" stroke="#16A34A" stroke-width="2.5"/>
+  <rect x="320" y="162" width="70" height="20" fill="#16A34A"/>
+  <text x="355" y="177" text-anchor="middle" font-size="10" fill="#FFFFFF">box 0.87</text>
+
+  <rect x="540" y="140" width="120" height="130" fill="none" stroke="#F97316" stroke-width="2.5"/>
+  <rect x="540" y="122" width="70" height="20" fill="#F97316"/>
+  <text x="575" y="137" text-anchor="middle" font-size="10" fill="#FFFFFF">shelf 0.78</text>
+
+  <text x="400" y="380" text-anchor="middle" font-size="12" fill="#111827">1 khung hình → 1 lần đi qua mạng neural → tất cả bounding box + nhãn cùng lúc</text>
+</svg>
